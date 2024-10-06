@@ -14,6 +14,7 @@ module.exports = {
     extend: {
       fontFamily: {
         poppins: ["var(--font-poppins)"],
+        righteous: ["var(--font-righteous)"],
       },
       colors: {
         cutie: {
