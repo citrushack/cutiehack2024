@@ -45,7 +45,7 @@ const Landing = () => {
           ) : (
             <div
               className="bg-blue-300 px-4 py-1"
-              onClick={() => SignIn("google")}
+              onClick={() => signIn("google")}
             >
               Login
             </div>
