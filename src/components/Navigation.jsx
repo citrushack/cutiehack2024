@@ -62,7 +62,7 @@ const Navigation = () => {
           expand ? "fixed left-0 h-screen w-1/2 pt-5" : `hidden`
         }`}
       >
-        <div className="grid h-full w-full grid-cols-1 grid-rows-10 flex-col place-items-center bg-hackathon-blue-200">
+        <div className="grid h-full w-full grid-cols-1 grid-rows-10 flex-col place-items-center bg-cutie-blue-300">
           <div className="items-center lg:flex">
             <Image src={LOGO} className="h-10 w-10" alt={`${data.name} Logo`} />
           </div>

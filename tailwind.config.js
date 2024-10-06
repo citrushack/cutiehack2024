@@ -16,6 +16,16 @@ module.exports = {
         poppins: ["var(--font-poppins)"],
       },
       colors: {
+        cutie: {
+          violet: "#9097D9",
+          "blue-100": "#5682B1",
+          "blue-200": "#123F7C",
+          "blue-300": "#021334",
+          green: "#DAF6AA",
+          yellow: "#FFF2A1",
+          tan: "#FFCAA7",
+          gray: "#DADADA",
+        },
         hackathon: {
           "blue-100": "#38A3A5",
           "blue-200": "#22577A",
