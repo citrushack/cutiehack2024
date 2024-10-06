@@ -8,7 +8,7 @@ import Edge from "@/public/assets/edgebubble.svg";
 
 const About = () => {
   return (
-    <div className="relative flex items-center justify-center bg-cutie-blue-300 font-righteous">
+    <div className="relative -mt-3 flex items-center justify-center bg-cutie-blue-300 font-righteous">
       <Image src={Bubble} alt="Rocket Bubble" className="inset-0 z-10 w-full" />
       <div className="absolute z-10 w-8/12 rounded-xl border-8 border-cutie-blue-200 bg-cutie-violet p-4 text-center md:w-4/12 md:p-8">
         <div className="text-base font-semibold text-cutie-yellow md:text-3xl">
@@ -41,13 +41,18 @@ const About = () => {
         <Image
           src={Satellite}
           alt="Satellite"
-          className="absolute right-[2%] top-[23%] z-10 hidden w-[20%] md:block"
+          className="absolute right-[0%] top-[20%] z-10 hidden w-[20%] rotate-180 md:block"
         />
         <Image
           src={Edge}
           alt="Rocket Bubble"
           className="absolute -bottom-[10%] right-[0%] z-0 w-full"
         />
+        <div className="absolute right-[14%] top-[38%] z-10 hidden rotate-[30deg] flex-col items-center gap-5 md:flex">
+          <p className="w-6 animate-pulse bg-cutie-gray py-0.5 text-3xl" />
+          <p className="w-10 animate-pulse bg-cutie-gray py-0.5 text-3xl" />
+          <p className="w-14 animate-pulse bg-cutie-gray py-0.5 text-3xl" />
+        </div>
       </div>
     </div>
   );

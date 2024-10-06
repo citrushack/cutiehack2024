@@ -33,7 +33,7 @@ const Countdown = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const timeLeft = data.end - new Date().getTime();
+      const timeLeft = data.date - new Date().getTime();
       timeLeft <= 0
         ? setCountdown({ days: 0, hours: 0, minutes: 0, seconds: 0 })
         : setCountdown({
