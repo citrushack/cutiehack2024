@@ -1,5 +1,7 @@
+"use client";
+
 const Landing = () => {
-  return <div className="flex items-center justify-center">Landing</div>;
+  return <div>Landing</div>;
 };
 
 export default Landing;
