@@ -1,29 +1,37 @@
 "use client";
 
-import { signIn } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import Link from "next/link";
-import items from "@/data/Navigator";
+import { items } from "@/data/live/Navigation";
 
-function Hero() {
+const Navigation = () => {
+  const { data: session } = useSession();
   return (
-    <div className="flex cursor-pointer justify-evenly bg-[#021334] p-6 font-semibold text-white">
-      {items.map((item, index) =>
-        item.name === "LOGIN" ? (
-          <div
-            key={item.name}
-            onClick={() => signIn("google")}
+    <div className="flex cursor-pointer justify-evenly bg-[#021334] p-4 font-semibold text-white">
+      {items.map((item, index) => (
+        <Link key={index} href={item.link} className="flex p-1">
+          {item.name}
+        </Link>
+      ))}
+      {session ? (
+        Object.keys(session.user.roles).includes("participants") && (
+          <Link
+            href={"/user"}
             className="border-custom-white border p-1 shadow-custom-white"
           >
-            {item.name}
-          </div>
-        ) : (
-          <Link key={index} href={item.link} className="flex p-1">
-            {item.name}
+            Hacker Portal
           </Link>
-        ),
+        )
+      ) : (
+        <div
+          onClick={() => signIn("google")}
+          className="border-custom-white border p-1 shadow-custom-white"
+        >
+          LOGIN
+        </div>
       )}
     </div>
   );
-}
+};
 
-export default Hero;
+export default Navigation;

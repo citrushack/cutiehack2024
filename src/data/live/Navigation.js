@@ -1,4 +1,4 @@
-const items = [
+export const items = [
   {
     name: "HOME",
     link: "/",
@@ -11,10 +11,4 @@ const items = [
     name: "ABOUT",
     link: "/user/about",
   },
-  {
-    name: "LOGIN",
-    link: "#login",
-  },
 ];
-
-export default items;
