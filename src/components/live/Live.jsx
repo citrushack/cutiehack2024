@@ -8,11 +8,11 @@ import Committees from "./Committees";
 import Judges from "./Judges";
 import FAQ from "./faq/FAQ";
 import Footer from "./Footer";
-import Hero from "./Navigation";
+import Navigation from "./Navigation";
 const Live = () => {
   return (
     <div>
-      <Hero />
+      <Navigation />
       <Landing />
       <About />
       <Tracks />
