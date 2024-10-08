@@ -2,7 +2,7 @@ const rooms: string[] = ["WCH 127", "WCH 110", "WCH 130", "Byte", "WCH 129"];
 
 const Rooms = (): React.ReactNode => {
   return (
-    <div className="mb-3 mt-3 rounded-lg bg-white p-3 font-bold shadow-xl">
+    <div className="mb-3 mt-3 rounded-lg bg-cutie-violet p-3 font-bold shadow-xl">
       <div className="p-2" data-cy="rooms-title">
         🚪Hackrooms
       </div>
