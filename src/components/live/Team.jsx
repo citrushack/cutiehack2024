@@ -7,17 +7,11 @@ import {
   TEAMS as TeamMembers,
   COMMITTEES as Committees,
 } from "@/data/live/Team";
-import { Righteous } from "next/font/google";
-
-const FONT = Righteous({
-  weight: "400",
-  subsets: ["latin"],
-});
 
 const Team = () => {
   return (
     <div
-      className={`flex flex-col items-center justify-center bg-gradient-to-b from-cutie-blue-300 to-cutie-blue-200 ${FONT.className} pb-16`}
+      className={`flex flex-col items-center justify-center bg-gradient-to-b from-cutie-blue-300 to-cutie-blue-200 pb-16 font-righteous`}
     >
       <div className="mt-5 text-cutie-yellow md:text-5xl">Meet the Team</div>
       <div className="mt-10 flex flex-col items-center justify-center text-white">
@@ -39,7 +33,10 @@ const Team = () => {
           {TeamMembers.filter((val) => val.team == "Director").map(
             (val, index) => {
               return (
-                <div className="flex flex-col items-center justify-center">
+                <div
+                  className="flex flex-col items-center justify-center"
+                  key={index}
+                >
                   <Image
                     src={TeamBorder}
                     key={index}
@@ -73,7 +70,10 @@ const Team = () => {
           {TeamMembers.filter((val) => val.team == "Operations").map(
             (val, index) => {
               return (
-                <div className="flex w-56 flex-col items-center justify-center">
+                <div
+                  className="flex w-56 flex-col items-center justify-center"
+                  key={index}
+                >
                   <Image
                     src={TeamBorder}
                     key={index}
@@ -89,7 +89,10 @@ const Team = () => {
           {TeamMembers.filter((val) => val.team == "Marketing").map(
             (val, index) => {
               return (
-                <div className="flex w-56 flex-col items-center justify-center text-center">
+                <div
+                  className="flex w-56 flex-col items-center justify-center text-center"
+                  key={index}
+                >
                   <Image
                     src={TeamBorder}
                     key={index}
@@ -105,7 +108,10 @@ const Team = () => {
           {TeamMembers.filter((val) => val.team == "Sponsorship").map(
             (val, index) => {
               return (
-                <div className="flex w-56 flex-col items-center justify-center text-center">
+                <div
+                  className="flex w-56 flex-col items-center justify-center text-center"
+                  key={index}
+                >
                   <Image
                     src={TeamBorder}
                     key={index}
@@ -121,7 +127,10 @@ const Team = () => {
           {TeamMembers.filter((val) => val.team == "UI/UX").map(
             (val, index) => {
               return (
-                <div className="flex w-56 flex-col items-center justify-center text-center">
+                <div
+                  className="flex w-56 flex-col items-center justify-center text-center"
+                  key={index}
+                >
                   <Image
                     src={TeamBorder}
                     key={index}
@@ -138,7 +147,10 @@ const Team = () => {
           {TeamMembers.filter((val) => val.team == "Software").map(
             (val, index) => {
               return (
-                <div className="flex w-56 flex-col items-center justify-center text-center">
+                <div
+                  className="flex w-56 flex-col items-center justify-center text-center"
+                  key={index}
+                >
                   <Image
                     src={TeamBorder}
                     key={index}
@@ -160,7 +172,7 @@ const Team = () => {
             <div className="mb-2 text-xl">Operations</div>
             {Committees.filter((val) => val.team == "Operations").map(
               (val, index) => {
-                return <div className="">{val.name}</div>;
+                return <div key={index}>{val.name}</div>;
               },
             )}
           </div>
@@ -168,7 +180,7 @@ const Team = () => {
             <div className="mb-2 text-xl">Sponsorship</div>
             {Committees.filter((val) => val.team == "Sponsorship").map(
               (val, index) => {
-                return <div className="">{val.name}</div>;
+                return <div key={index}>{val.name}</div>;
               },
             )}
           </div>
@@ -176,7 +188,7 @@ const Team = () => {
             <div className="mb-2 text-xl">Marketing</div>
             {Committees.filter((val) => val.team == "Marketing").map(
               (val, index) => {
-                return <div className="">{val.name}</div>;
+                return <div key={index}>{val.name}</div>;
               },
             )}
           </div>
@@ -184,7 +196,7 @@ const Team = () => {
             <div className="mb-2 text-xl">Software</div>
             {Committees.filter((val) => val.team == "Software").map(
               (val, index) => {
-                return <div className="">{val.name}</div>;
+                return <div key={index}>{val.name}</div>;
               },
             )}
           </div>
@@ -192,7 +204,7 @@ const Team = () => {
             <div className="mb-2 text-xl">UI/UX</div>
             {Committees.filter((val) => val.team == "UI/UX").map(
               (val, index) => {
-                return <div className="">{val.name}</div>;
+                return <div key={index}>{val.name}</div>;
               },
             )}
           </div>
