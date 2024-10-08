@@ -1,4 +1,3 @@
-import Committees from "./Committees";
 import Profile from "./Profile";
 import Header from "./Header";
 import { DIRECTORS, TEAMS } from "@/data/live/Team";
