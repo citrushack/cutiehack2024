@@ -12,7 +12,7 @@ const Digits = ({ value, unit }) => {
           .split("")
           .map((digit, index) => (
             <div
-              className="flex items-center justify-center text-lg font-bold text-white lg:min-w-11 lg:p-1 lg:text-3xl"
+              className="flex items-center justify-center text-lg font-bold text-white lg:min-w-11 lg:p-1 lg:text-4xl"
               key={index}
             >
               {digit}
