@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Moon from "@/public/assets/moon3.svg";
+import Moon from "@/public/assets/moon.svg";
 import Astronaut from "@/public/assets/astronauthappy.svg";
 import Flag from "@/public/assets/blueflag.svg";
 import LOGO from "@/public/assets/cutiehackLOGO.svg";
