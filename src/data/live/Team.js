@@ -1,4 +1,8 @@
-import { StaticImport } from "next/dist/shared/lib/get-img-props"
+import Taaha from "@/public/board/taaha2024.webp"
+import JonathanT from "@/public/board/jonathan2024.webp"
+import Allison from "@/public/board/allison2024.webp"
+
+// import { StaticImport } from "next/dist/shared/lib/get-img-props"
 
 // type Team = "Director" | "Operations" | "Software" | "Marketing" | "UI/UX"
 
@@ -9,112 +13,58 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props"
 //     team: Team
 // }
 
-export const COMMITTEES = [
-    {
-        name: "First Last",
-        team: "Operations"
-    },
-    {
-        name: "First Last",
-        team: "Operations"
-    },
-    {
-        name: "First Last",
-        team: "Operations"
-    },
-    {
-        name: "First Last",
-        team: "Operations"
-    },
+export const COMMITTEES = {
+    Operations: [
+        "First Last",
+        "First Last",
+        "First Last",
+        "First Last"
+    ],
+    Sponsorship: [
+        "First Last",
+        "First Last",
+        "First Last",
+        "First Last"
+    ],
+    Marketing: [
+        "First Last",
+        "First Last",
+        "First Last",
+        "First Last",
+    ],
+    Software: [
+        "First Last",
+        "First Last",
+        "First Last",
+        "First Last",
+    ],
+    "UI / UX": [
+        "First Last",
+        "First Last",
+        "First Last",
+        "First Last",
+    ]
+};
 
-    {
-        name: "First Last",
-        team: "Sponsorship"
-    },
-    {
-        name: "First Last",
-        team: "Sponsorship"
-    },
-    {
-        name: "First Last",
-        team: "Sponsorship"
-    },
-    {
-        name: "First Last",
-        team: "Sponsorship"
-    },
-    {
-        name: "First Last",
-        team: "Sponsorship"
-    },
-
-    {
-        name: "First Last",
-        team: "Marketing"
-    },
-    {
-        name: "First Last",
-        team: "Marketing"
-    },
-    {
-        name: "First Last",
-        team: "Marketing"
-    },
-
-    {
-        name: "First Last",
-        team: "Software"
-    },
-    {
-        name: "First Last",
-        team: "Software"
-    },
-    {
-        name: "First Last",
-        team: "Software"
-    },
-    {
-        name: "First Last",
-        team: "Software"
-    },
-    {
-        name: "First Last",
-        team: "Software"
-    },
-    {
-        name: "First Last",
-        team: "Software"
-    },
-
-    {
-        name: "First Last",
-        team: "UI/UX"
-    },
-    {
-        name: "First Last",
-        team: "UI/UX"
-    },
-];
-
-export const TEAMS = [
-    // DIRECTORS
+export const DIRECTORS = [
     {
         name: "Minnoli Nori",
         link: "/",
-        image: "",
-        team: "Director"
+        image: ""
     },
     {
         name: "Jon Darius",
         link: "/",
-        image: "",
-        team: "Director"
-    },
+        image: ""
+    }
+]
+
+export const TEAMS = [
     // OPERATIONS
     {
         name: "Allison Pham",
         link: "/",
-        image: "",
+        image: Allison,
         team: "Operations"
     },
     {
@@ -184,13 +134,13 @@ export const TEAMS = [
     {
         name: "Jonathan Trujillo",
         link: "/",
-        image: "",
+        image: JonathanT,
         team: "Software"
     },
     {
         name: "Taaha Sayed",
         link: "/",
-        image: "",
+        image: Taaha,
         team: "Software"
     },
     {

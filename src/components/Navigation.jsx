@@ -88,8 +88,8 @@ const Navigation = () => {
                           onClick={() => setExpand(false)}
                           className={`flex w-full items-center justify-start py-1 pl-[10%] [&>*]:text-white ${
                             pathName.endsWith(tab.link)
-                              ? "bg-hackathon-blue-100"
-                              : "[&>*]:hover:text-hackathon-blue-100"
+                              ? "bg-cutie-violet"
+                              : "[&>*]:hover:text-cutie-violet"
                           }`}
                         >
                           {tab.icon}
