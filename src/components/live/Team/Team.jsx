@@ -23,7 +23,7 @@ const Team = () => {
         <Header title={"Leads"} />
         <div className="mt-3 flex w-11/12 flex-wrap justify-center gap-y-10 text-center md:w-9/12">
           {TEAMS.map((member, index) => (
-            <div className="w-1/2 p-1 md:w-1/4">
+            <div key={index} className="w-1/2 p-1 md:w-1/4">
               <Profile
                 name={member.name}
                 team={member.team}
