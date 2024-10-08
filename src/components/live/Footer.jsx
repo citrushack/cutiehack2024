@@ -1,14 +1,12 @@
 const Footer = () => {
   return (
     <div className="flexbox justify-center bg-[#021334]">
-      <div className="flex items-center justify-center">
-        <div className="-mb-5 animate-astro-move">
-          <img
-            src="/assets/astronauthappy.svg"
-            alt="astroguy"
-            className="w-[150px]"
-          />
-        </div>
+      <div className="-mb-5 flex items-center justify-center">
+        <img
+          src="/assets/astronauthappy.svg"
+          alt="astroguy"
+          className="w-[150px]"
+        />
       </div>
       <div className="flex h-[300px] justify-center overflow-hidden">
         <img
