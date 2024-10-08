@@ -99,7 +99,7 @@ export const TEAMS = [
     name: "Jonathan Trujillo",
     link: "/",
     image: JonathanT,
-    team: "Software Engineering",
+    team: "Senior Software Engineering",
   },
   {
     name: "Taaha Sayed",
