@@ -1,12 +1,7 @@
 import Image from "next/image";
 import TeamBorder from "@/public/assets/window.svg"
 import { DIRECTORS, TEAMS, COMMITTEES } from "@/data/live/Team"
-import { Righteous } from "next/font/google";
 
-const FONT = Righteous({
-  weight: "400",
-  subsets: ["latin"]
-})
 
 const Team = () => {
   return (
