@@ -1,8 +1,3 @@
-// type NavigationItem = {
-//   name: string
-//   link: string
-// };
-
 export const items = [
   {
     name: "HOME",
