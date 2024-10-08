@@ -20,6 +20,7 @@ module.exports = {
       colors: {
         cutie: {
           violet: "#9097D9",
+          magenta: "#FF00C0",
           "blue-100": "#5682B1",
           "blue-200": "#123F7C",
           "blue-300": "#021334",

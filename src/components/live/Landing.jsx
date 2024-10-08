@@ -5,6 +5,7 @@ import LOGO from "@/public/assets/cutieLogo.svg";
 import star1 from "@/public/assets/star.svg";
 import star2 from "@/public/assets/staryellow.svg";
 import star3 from "@/public/assets/starwhite.svg";
+import Link from "next/link";
 
 const Landing = () => {
   return (
@@ -18,11 +19,20 @@ const Landing = () => {
             Misson starts in:{" "}
           </p>
           <Countdown />
-          <div className="mb-4 mt-1 flex w-1/3 flex-col items-center gap-5 md:w-1/3 md:flex-row md:justify-between">
-            <Apply text={"Register"} link={"/form/participant"} />
-            <Apply text={"Mentor"} link={"/form/mentor"} />
-            <Apply text={"Volunteer"} link={"/form/volunteer"} />
+          <div className="mb-4 mt-1 flex items-center justify-center whitespace-normal font-righteous text-sm font-normal md:whitespace-nowrap md:text-3xl">
+            <p>Apply to </p>
+            <Apply text={"REGISTER"} link={"/form/participant"} />
+            <p>or</p>
+            <Apply text={"MENTOR"} link={"/form/mentor"} />
+            <p>or </p>
+            <Apply text={"VOLUNTEER"} link={"/form/volunteer"} />
           </div>
+          <Link
+            href={"/form/sponsor"}
+            className="z-10 rounded-3xl bg-[#9E0C7A] px-9 py-2 font-righteous text-sm hover:opacity-75 md:text-2xl"
+          >
+            Sponsor CutieHack!
+          </Link>
         </div>
       </div>
       <div>

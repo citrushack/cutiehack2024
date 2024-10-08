@@ -5,7 +5,7 @@ const Apply = ({ text, link }) => {
   return (
     <Link
       href={link}
-      className="flex w-full justify-center rounded-lg border-4 border-cutie-violet bg-cutie-blue-200 p-1 px-4 text-sm font-bold text-white hover:border-opacity-75 hover:bg-opacity-75 md:text-2xl"
+      className="flex w-full items-center p-1 px-4 font-righteous text-base font-bold text-cutie-magenta hover:opacity-75 md:text-3xl"
     >
       {text}
     </Link>
