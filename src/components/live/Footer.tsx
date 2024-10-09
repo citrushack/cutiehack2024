@@ -27,7 +27,7 @@ const Footer = () => {
           <Linkedin className="absolute bottom-[32%] left-[2%] h-14 w-14 -rotate-[40deg] md:bottom-[42%] md:left-[25%]" />
         </Link>
         <Link href={"tracks"}>
-          <Instagram className="absolute right-[14%] top-[40%] h-14 w-14 rotate-[30deg] md:bottom-[27.5%] md:left-[19.5%]" />
+          <Instagram className="absolute right-[14%] top-[40%] h-14 w-14 rotate-[30deg] md:-rotate-[50deg] md:top-[61%] md:left-[20%]" />
         </Link>
         <Image
           src={Flag}
