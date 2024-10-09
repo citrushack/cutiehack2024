@@ -82,6 +82,31 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "caret-blink": "caret-blink 1.25s ease-out infinite",
+        "bounce-1s": "bounce 1s infinite",
+        "jiggle-3s": "jiggle 3s ease-in-out infinite",
+        "jiggle-4s": "jiggle 4s ease-in-out infinite",
+        "jiggle-5s": "jiggle 5s ease-in-out infinite",
+        "jiggle-5.5s": "jiggle 5.5s ease-in-out infinite",
+      },
+      keyframes: {
+        bounce: {
+          "0%": {
+            transform: "translate(0px,-7px)",
+            "animation-timing-function": "cubic-bezier(0.8, 0, 1, 1)",
+          },
+          "50%": {
+            transform: "translate(0px, 0px)",
+            "animation-timing-function": "cubic-bezier(0, 0, 0.2, 1)",
+          },
+          "100%": {
+            transform: "translate(0px,-7px)",
+            "animation-timing-function": "cubic-bezier(0.8, 0, 1, 1)",
+          },
+        },
+        jiggle: {
+          "0%": { transform: "translate(0)" },
+          "50%": { transform: "translate(0px, 15px)" },
+        },
       },
       boxShadow: {
         "custom-white": "0px 4px 4px rgba(255, 255, 255, 0.5)",
