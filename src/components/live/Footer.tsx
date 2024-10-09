@@ -15,6 +15,13 @@ const Footer = () => {
           alt="astroguy"
           className="z-20 animate-jiggle-3s md:w-[150px]"
         />
+        <div className="absolute right-[35%] top-[1%] animate-jiggle-3s md:right-[45%]">
+          <span className="flex -rotate-45 flex-col gap-3">
+            <p className="w-10 -rotate-12 bg-white py-0.5" />
+            <p className="w-10 bg-white py-0.5" />
+            <p className="w-10 rotate-12 bg-white py-0.5" />
+          </span>
+        </div>
       </div>
       <div className="flex justify-center overflow-hidden md:h-[350px]">
         <Image src={Moon} alt="Moon Icon" className="z-10 h-full w-full" />
@@ -27,7 +34,7 @@ const Footer = () => {
           <Linkedin className="absolute bottom-[32%] left-[2%] h-14 w-14 -rotate-[40deg] md:bottom-[42%] md:left-[25%]" />
         </Link>
         <Link href={"tracks"}>
-          <Instagram className="absolute right-[14%] top-[40%] h-14 w-14 rotate-[30deg] md:-rotate-[50deg] md:top-[61%] md:left-[20%]" />
+          <Instagram className="absolute right-[14%] top-[40%] h-14 w-14 rotate-[30deg] md:left-[20%] md:top-[61%] md:-rotate-[50deg]" />
         </Link>
         <Image
           src={Flag}

@@ -5,10 +5,14 @@ export const items = [
   },
   {
     name: "SCHEDULE",
-    link: "/user/schedule",
+    link: "#schedule",
   },
+  // {
+  //   name: "TRACKS",
+  //   link: "#tracks",
+  // },
   {
     name: "ABOUT",
-    link: "/user/about",
+    link: "#about",
   },
 ];
