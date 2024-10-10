@@ -21,9 +21,9 @@ const Team = () => {
       </div>
       <div className="mt-20 flex flex-col items-center justify-center gap-10 text-white">
         <Header title={"Leads"} />
-        <div className="mt-3 grid grid-cols-2 md:grid-cols-4 w-11/12 justify-center gap-y-10 gap-x-2 text-center md:w-full">
+        <div className="mt-3 grid w-11/12 grid-cols-2 justify-center gap-x-2 gap-y-10 text-center md:w-full md:grid-cols-4">
           {TEAMS.map((member, index) => (
-            <div key={index} className="w-full p-1 mx-1">
+            <div key={index} className="mx-1 w-full p-1">
               <Profile
                 name={member.name}
                 team={member.team}
