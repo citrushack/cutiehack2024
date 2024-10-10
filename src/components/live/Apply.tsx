@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const Apply = ({ text, link }) => {
+const Apply = ({ text, link }: { text: string; link: string }) => {
   return (
     <Link
       href={link}

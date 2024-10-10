@@ -22,7 +22,7 @@ const Status = ({ object, statuses, setState }) => {
         If you believe that your status is incorrect, please reach out to us
         immediately.
       </p>
-      <Button text="Apply" onClick={() => setState(1)} color="green" />
+      <Button text="Apply" onClick={() => setState(1)} color="purple" />
     </div>
   );
 };

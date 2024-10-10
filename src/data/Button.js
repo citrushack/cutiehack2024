@@ -24,6 +24,11 @@ export const COLORS = {
     text: "text-white",
     border: "border-0",
   },
+  purple: {
+    bg: "bg-cutie-purple",
+    text: "text-white",
+    border: "border-0",
+  },
 };
 export const SIZES = {
   xs: "text-xs",

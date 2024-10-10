@@ -7,7 +7,7 @@ import { items } from "@/data/live/Navigation";
 const Navigation = () => {
   const { data: session } = useSession();
   return (
-    <div className="flex cursor-pointer justify-evenly bg-[#021334] p-5 font-semibold text-white">
+    <div className="sticky top-0 z-20 flex cursor-pointer justify-evenly bg-cutie-blue-300 p-5 font-semibold text-white">
       {items.map((item, index) => (
         <Link key={index} href={item.link} className="flex p-1">
           {item.name}
