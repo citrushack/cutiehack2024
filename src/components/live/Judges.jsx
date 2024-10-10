@@ -7,7 +7,7 @@ const Judges = () => {
       <Title text={"Judges"} />
       <div className="mt-[8vh] flex w-full flex-wrap justify-center gap-10 py-2 md:w-7/12">
         {JUDGES.map((judge, index) => (
-          <div key={index} className="">
+          <div key={index}>
             <Profile name={judge.name} image={judge.image} team={judge.title} />
           </div>
         ))}
