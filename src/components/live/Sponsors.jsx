@@ -13,7 +13,7 @@ const Sponsors = () => {
       <Image src={RingLeft} alt="Left Ring" className=" h-full w-full" />
     </div>
 
-    <div className='absolute right-0 top-[150px] z-0' >
+    <div className='absolute right-0 top-[600px] lg:top-[450px] 2xl:top-[150px] z-0' >
       <Image src={RingRight} alt="Right Ring" className=" h-full w-full" />
     </div>
 
