@@ -28,6 +28,8 @@ module.exports = {
           yellow: "#FFF2A1",
           tan: "#FFCAA7",
           gray: "#DADADA",
+          purple: "#7A84E2",
+          purple2: "#43487C",
         },
         hackathon: {
           "blue-100": "#38A3A5",
