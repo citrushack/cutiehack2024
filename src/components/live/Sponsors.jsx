@@ -1,5 +1,5 @@
 
-import { CoolerMaster, SponsorSmall, SponsorXS, RingRight, RingLeft } from '@/public/assets/sponsors';
+import { CoolerMaster, SponsorFlag, SponsorSmall, RingRight, RingLeft } from '@/public/assets/sponsors';
 
 import Image from 'next/image';
 const Sponsors = () => {
@@ -30,16 +30,16 @@ const Sponsors = () => {
 
     <div className="flex flex-wrap justify-center gap-x-[173px] gap-y-[20px] mt-[77px] z-10 w-full">
       <div className="w-[306px]">
-        <Image src={SponsorSmall} alt="Small Sponsor" className="w-full h-auto max-h-[347px] object-contain" />
+        <Image src={SponsorFlag} alt="Small Sponsor" className="w-full h-auto max-h-[347px] object-contain" />
       </div>
       <div className="w-[306px]">
-        <Image src={SponsorSmall} alt="Small Sponsor" className="w-full h-auto max-h-[347px] object-contain" />
+        <Image src={SponsorFlag} alt="Small Sponsor" className="w-full h-auto max-h-[347px] object-contain" />
       </div>
     </div>
 
     <div className="flex flex-wrap justify-center gap-x-[173px] gap-y-[20px] mt-[23px] z-10 w-full">
       <div className="w-[190px] ">
-        <Image src={SponsorXS} alt="XS Sponsor" className="w-full h-auto max-h-[255px] object-contain" />
+        <Image src={SponsorSmall} alt="XS Sponsor" className="w-full h-auto max-h-[255px] object-contain" />
       </div>
     </div>
 
