@@ -28,7 +28,7 @@ const RootLayout = async ({ children }: Props) => {
   const session = await getServerSession(options);
 
   return (
-    <html lang="en" className="h-full bg-cutie-blue-300">
+    <html lang="en" className="h-full">
       <body
         className={`${poppins.variable} ${righteous.variable} flex h-full flex-col lg:flex-row`}
       >

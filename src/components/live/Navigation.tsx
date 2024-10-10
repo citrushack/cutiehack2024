@@ -11,7 +11,7 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="sticky top-0 z-20 flex items-center justify-between bg-cutie-blue-300/70 p-5 font-semibold text-white md:bg-cutie-blue-300">
+    <div className="sticky top-0 z-20 flex items-center justify-between bg-cutie-blue-300 p-5 font-semibold text-white shadow-2xl md:shadow-none">
       {/* Desktop Nav */}
       <div className="hidden w-full justify-evenly md:flex">
         {items.map((item, index) => (
@@ -61,7 +61,7 @@ const Navigation = () => {
             Object.keys(session.user.roles).includes("participants") && (
               <Link
                 href={"/user"}
-                className="border-custom-white mt-2 w-full border p-1 px-2 text-center shadow-custom-white"
+                className="border-custom-white mt-2 w-fit border p-1 px-2 text-center shadow-custom-white"
                 onClick={() => setIsOpen(false)}
               >
                 HACKER PORTAL
