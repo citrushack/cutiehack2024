@@ -28,25 +28,25 @@ const Footer = () => {
       </div>
       <div className="text-white">
         <Link href={"about"}>
-          <Mail className="absolute left-[20%] top-[38%] h-14 w-14 -rotate-[28deg] md:left-[32%] md:top-[37%]" />
+          <Mail className="absolute left-[20%] top-[38%] z-30 h-14 w-14 -rotate-[28deg] md:left-[32%] md:top-[37%]" />
         </Link>
         <Link href={"schedule"}>
-          <Linkedin className="absolute bottom-[32%] left-[2%] h-14 w-14 -rotate-[40deg] md:bottom-[42%] md:left-[25%]" />
+          <Linkedin className="absolute bottom-[32%] left-[2%] z-30 h-14 w-14 -rotate-[40deg] md:bottom-[42%] md:left-[25%]" />
         </Link>
         <Link href={"tracks"}>
-          <Instagram className="absolute right-[14%] top-[40%] h-14 w-14 rotate-[30deg] md:left-[20%] md:top-[61%] md:-rotate-[50deg]" />
+          <Instagram className="absolute right-[14%] top-[40%] z-30 h-14 w-14 rotate-[30deg] md:left-[20%] md:top-[61%] md:-rotate-[50deg]" />
         </Link>
-        <Image
-          src={Flag}
-          alt="Flag"
-          className="absolute right-[26%] top-[22.5%] z-0 hidden rotate-[23deg] md:block"
-        />
-        <Image
-          src={LOGO}
-          alt="CutieHack Logo"
-          className="absolute right-[25%] top-[26%] z-0 hidden w-[7%] rotate-[23deg] md:block"
-        />
       </div>
+      <Image
+        src={Flag}
+        alt="Flag"
+        className="absolute right-[26%] top-[22.5%] z-0 hidden rotate-[23deg] md:block"
+      />
+      <Image
+        src={LOGO}
+        alt="CutieHack Logo"
+        className="absolute right-[25%] top-[26%] z-0 hidden w-[7%] rotate-[23deg] md:block"
+      />
     </div>
   );
 };
