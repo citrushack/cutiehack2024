@@ -5,10 +5,12 @@ import { DIRECTORS, TEAMS } from "@/data/live/Team";
 const Team = () => {
   return (
     <div className="flex w-full flex-col items-center justify-center bg-gradient-to-b from-cutie-blue-300 to-cutie-blue-200 py-10 font-righteous">
-      <div className="mt-5 text-cutie-yellow md:text-5xl">Meet the Team</div>
+      <div className="mt-5 text-3xl text-cutie-yellow md:text-5xl">
+        Meet the Team
+      </div>
       <div className="mt-10 flex flex-col items-center justify-center gap-10 text-white">
         <Header title={"Directors"} />
-        <div className="mx-10 flex w-11/12 justify-between">
+        <div className="mx-5 flex w-full flex-wrap justify-center gap-5 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 2xl:gap-20">
           {DIRECTORS.map((director, index) => (
             <Profile
               name={director.name}
@@ -21,7 +23,7 @@ const Team = () => {
       </div>
       <div className="mt-20 flex flex-col items-center justify-center gap-10 text-white">
         <Header title={"Leads"} />
-        <div className="mt-3 grid w-11/12 grid-cols-2 justify-center gap-x-2 gap-y-10 text-center md:w-full md:grid-cols-4">
+        <div className="mt-3 grid w-11/12 grid-cols-2 gap-x-2 gap-y-10 text-center sm:gap-x-4 md:grid-cols-3 md:gap-x-6 lg:grid-cols-4 lg:gap-x-8 xl:gap-x-12 2xl:gap-x-16">
           {TEAMS.map((member, index) => (
             <div key={index} className="mx-1 w-full p-1">
               <Profile
