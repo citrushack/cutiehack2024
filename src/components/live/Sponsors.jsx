@@ -1,9 +1,5 @@
 
-import CoolerMaster from '@/public/assets/sponsors_section/sponsors_coolermaster.svg'
-import SponsorSmall from '@/public/assets/sponsors_section/SponsorSmall.svg'
-import SponsorXS from '@/public/assets/sponsors_section/SponsorXS.svg'
-import RingLeft from '@/public/assets/sponsors_section/ring_left.svg'
-import RingRight from '@/public/assets/sponsors_section/ring_right.svg'
+import { CoolerMaster, SponsorSmall, SponsorXS, RingRight, RingLeft } from '@/public/assets/sponsors';
 
 import Image from 'next/image';
 const Sponsors = () => {
