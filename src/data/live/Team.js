@@ -108,6 +108,12 @@ export const TEAMS = [
     team: "Software Engineering",
   },
   {
+    name: "Brandon Sun",
+    link: "/",
+    image: "",
+    team: "Software Engineering",
+  },
+  {
     name: "Amir Shanti",
     link: "/",
     image: "",
