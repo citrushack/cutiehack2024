@@ -201,7 +201,7 @@ const Questions = ({
         <Link
           href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
           target="_blank"
-          className="mt-1 flex items-center text-hackathon-green-300 no-underline hover:text-opacity-65"
+          className="mt-1 flex items-center text-white no-underline hover:text-opacity-65"
         >
           MLH Code of Conduct
           <LucideLink className="mx-2" />
@@ -209,7 +209,7 @@ const Questions = ({
         <Link
           href="https://mlh.io/privacy"
           target="_blank"
-          className="mt-3 flex items-center text-hackathon-green-300 no-underline hover:text-opacity-65"
+          className="mt-3 flex items-center text-white no-underline hover:text-opacity-65"
         >
           MLH Privacy Policy
           <LucideLink className="mx-2" />
@@ -217,7 +217,7 @@ const Questions = ({
         <Link
           href="https://github.com/MLH/mlh-policies/blob/main/contest-terms.md"
           target="_blank"
-          className="mt-3 flex items-center text-hackathon-green-300 no-underline hover:text-opacity-65"
+          className="mt-3 flex items-center text-white no-underline hover:text-opacity-65"
         >
           MLH Contest Terms and Conditions
           <LucideLink className="mx-2" />
@@ -239,7 +239,7 @@ const Questions = ({
           text="Submit"
           onClick={handleSubmit}
           loading={loading}
-          color="green"
+          color="purple"
         />
       </div>
     </div>

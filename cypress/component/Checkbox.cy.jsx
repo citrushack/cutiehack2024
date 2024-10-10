@@ -34,10 +34,7 @@ describe("Checkbox", () => {
 
     cy.mount(<Parent />);
 
-    cy.get('[data-cy="checkbox-bg"]').should(
-      "have.class",
-      "bg-hackathon-blue-100",
-    );
+    cy.get('[data-cy="checkbox-bg"]').should("have.class", "bg-cutie-violet");
   });
 
   it("Display Text", () => {
@@ -71,9 +68,6 @@ describe("Checkbox", () => {
     cy.mount(<Parent />);
 
     cy.get('[data-cy="checkbox-bg"]').click();
-    cy.get('[data-cy="checkbox-bg"]').should(
-      "have.class",
-      "bg-hackathon-blue-100",
-    );
+    cy.get('[data-cy="checkbox-bg"]').should("have.class", "bg-cutie-violet");
   });
 });
