@@ -3,7 +3,7 @@ import Title from "./Title";
 import { JUDGES } from "@/data/live/Judges";
 const Judges = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-10 bg-gradient-to-b from-cutie-blue-200 from-[70%] to-cutie-blue-300 py-10 font-righteous">
+    <div className="flex flex-col items-center justify-center gap-10 bg-gradient-to-b from-cutie-blue-200 from-[70%] to-cutie-blue-300 py-10 font-righteous -mt-1">
       <Title text={"Judges"} />
       <div className="mt-[8vh] flex w-full flex-wrap justify-center gap-8 py-2 md:w-8/12 md:gap-14">
         {JUDGES.map((judge, index) => (
