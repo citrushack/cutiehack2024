@@ -12,13 +12,12 @@ const Team = () => {
         <Header title={"Directors"} />
         <div className="mx-5 flex w-full flex-wrap justify-center gap-5 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 2xl:gap-20">
           {DIRECTORS.map((director, index) => (
-             <div key={index} className="w-2/5 md:w-fit">
-            <Profile
-              name={director.name}
-              team="Director"
-              image={director.image}
-
-            />
+            <div key={index} className="w-2/5 md:w-fit">
+              <Profile
+                name={director.name}
+                team="Director"
+                image={director.image}
+              />
             </div>
           ))}
         </div>
