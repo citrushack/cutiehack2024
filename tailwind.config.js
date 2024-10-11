@@ -89,6 +89,7 @@ module.exports = {
         "jiggle-4s": "jiggle 4s ease-in-out infinite",
         "jiggle-5s": "jiggle 5s ease-in-out infinite",
         "jiggle-5.5s": "jiggle 5.5s ease-in-out infinite",
+        "spin-10s": "spin 120s linear infinite",
       },
       keyframes: {
         bounce: {
@@ -108,6 +109,10 @@ module.exports = {
         jiggle: {
           "0%": { transform: "translate(0)" },
           "50%": { transform: "translate(0px, 15px)" },
+        },
+        spin: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
         },
       },
       boxShadow: {
