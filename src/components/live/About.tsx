@@ -1,11 +1,5 @@
 import Image from "next/image";
 import Bubble from "@/public/assets/rocketbubble.svg";
-import Rocket from "@/public/assets/rocketship.svg";
-import Star from "@/public/assets/star.svg";
-import UFO from "@/public/assets/ufo.svg";
-import Satellite from "@/public/assets/satellite.svg";
-import Galaxy from "@/public/assets/galaxy.svg";
-import Edge from "@/public/assets/edgebubble.svg";
 import SVGS from "./SVGS";
 
 const About = () => {
