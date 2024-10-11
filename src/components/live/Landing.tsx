@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const Landing = () => {
   return (
-    <div className="relative -mt-1 flex w-full flex-col bg-cutie-blue-300 text-white">
+    <div className="relative mt-5 flex w-full flex-col bg-cutie-blue-300 text-white">
       <div className="mt-[9vh] flex w-full items-end justify-center">
         <div className="flex w-full flex-col items-center justify-end">
           <p className="my-1 text-base font-bold text-white md:text-4xl">

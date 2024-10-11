@@ -46,7 +46,7 @@ const Navigation = () => {
         />
       </div>
       {isOpen && (
-        <div className="absolute left-0 top-16 flex w-full flex-col items-center bg-cutie-blue-300/70 p-5">
+        <div className="absolute left-0 top-16 flex w-full flex-col items-center bg-gradient-to-t from-cutie-blue-200 to-cutie-blue-300 pb-5 pt-2 shadow-2xl">
           {items.map((item, index) => (
             <Link
               key={index}
