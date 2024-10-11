@@ -11,7 +11,7 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="sticky top-0 z-20 flex items-center justify-between bg-cutie-blue-300 p-5 font-semibold text-white shadow-2xl md:shadow-none">
+    <div className="sticky top-0 z-20 flex items-center justify-between bg-cutie-blue-300 p-5 font-semibold text-white">
       {/* Desktop Nav */}
       <div className="hidden w-full justify-evenly md:flex">
         {items.map((item, index) => (
