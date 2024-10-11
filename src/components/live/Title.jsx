@@ -18,22 +18,22 @@ const Title = ({ text }) => {
         <Image
           src={Star}
           alt="Yellow star"
-          className="absolute -right-[23%] -top-[17%] w-[18%]"
+          className="absolute -right-[16%] -top-[3%] w-[18%] md:-top-[17%]"
         />
         <Image
           src={White}
           alt="White star"
-          className="absolute -right-[33%] top-[22%]"
+          className="absolute -right-[43%] top-[22%] w-[33%] md:-right-[33%] md:w-fit"
         />
         <Image
           src={Star}
           alt="Yellow star"
-          className="absolute -bottom-[16%] -left-[22%] w-[18%]"
+          className="absolute -bottom-[3%] -left-[22%] w-[18%] md:-bottom-[16%]"
         />
         <Image
           src={White}
           alt="White star"
-          className="absolute -left-[32%] bottom-[27%]"
+          className="absolute -left-[44%] bottom-[27%] w-[33%] md:-left-[32%] md:w-fit"
         />
       </div>
     </div>
