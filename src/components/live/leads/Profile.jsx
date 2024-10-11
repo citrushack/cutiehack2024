@@ -3,7 +3,7 @@ import Border from "@/public/assets/window.svg";
 
 const Profile = ({ name, team, image }) => {
   return (
-    <div className="flex w-fit flex-col items-center justify-center">
+    <div className="flex w-fit flex-col items-center justify-center text-center text-white">
       <div className="relative mb-6 flex w-10/12 items-center justify-center">
         <Image src={Border} alt="window" />
         <Image

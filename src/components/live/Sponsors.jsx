@@ -5,11 +5,13 @@ import {
   RingRight,
   RingLeft,
 } from "@/public/assets/sponsors";
+import Title from "./Title";
 
 import Image from "next/image";
 const Sponsors = () => {
   return (
     <div className="relative flex flex-col items-center justify-center bg-cutie-blue-300 px-[50px] pb-[191px] sm:px-[107px]">
+      <Title text={"Sponsors"} />
       <div className="absolute left-0 top-0 z-0">
         <Image src={RingLeft} alt="Left Ring" className="h-full w-full" />
       </div>

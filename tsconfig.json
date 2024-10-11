@@ -27,7 +27,9 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/live/Landing.jsx"
+    "src/components/live/Landing.tsx",
+    "src/components/live/team/Committees.jsx",
+    "src/components/live/team/Header.jsx"
   ],
   "exclude": ["node_modules"]
 }
