@@ -7,7 +7,7 @@ const Modal = ({ data, setModal }) => {
       data-cy="modal"
     >
       <div
-        className="flex items-center justify-between rounded-t-xl bg-cutie-purple p-3"
+        className="flex items-center justify-between rounded-t-xl bg-hackathon-green-300 p-3"
         data-cy="modal-title"
       >
         <span className="text-3xl font-bold text-white">{data.title}</span>
