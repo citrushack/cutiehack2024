@@ -35,7 +35,7 @@ const VirtualizedContent = ({ items, setSelected, userFn, searchable }) => {
       className="dropdown-content h-fit max-h-[400px] w-[var(--radix-dropdown-menu-trigger-width)] overflow-y-scroll pt-0"
       data-cy="select-menu"
     >
-      <div className="sticky top-0 z-50 bg-white pt-1">
+      <div className="bg-whites sticky top-0 z-50 pt-1">
         {searchable && (
           <Input
             placeholder="search"
@@ -44,7 +44,7 @@ const VirtualizedContent = ({ items, setSelected, userFn, searchable }) => {
           />
         )}
       </div>
-      <DropdownMenuGroup className="relative w-full">
+      <DropdownMenuGroup className="relative w-full font-righteous">
         <div style={{ height: `${getTotalSize()}px` }}>
           {getVirtualItems().map((virtualRow) => {
             const option = options[virtualRow.index];
@@ -99,7 +99,7 @@ const Select = ({
         <DropdownMenuTrigger className="w-full" asChild>
           <Button
             data-cy="select-toggle"
-            className="w-full justify-between whitespace-normal break-words bg-gradient-to-r from-cutie-purple to-cutie-purple2"
+            className="w-full justify-between whitespace-normal break-words bg-gradient-to-r from-cutie-purple to-cutie-purple2 font-righteous text-white"
             variant="outline"
             disabled={disabled}
           >
