@@ -17,7 +17,9 @@ const Body = ({ getIsSelected, getVisibleCells, Dropdown, original }) => {
         <AccordionItem value="participant-info">
           <div
             className={`flex items-center px-3 ${
-              getIsSelected() ? "bg-green-100" : "bg-white"
+              getIsSelected()
+                ? "font-righteous"
+                : "bg-gradient-to-r from-cutie-purple to-cutie-purple2 font-righteous text-white"
             }`}
             data-cy={original.uid}
           >
