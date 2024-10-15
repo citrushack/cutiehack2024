@@ -5,7 +5,7 @@ import { DIRECTORS, TEAMS } from "@/data/live/Team";
 const Team = () => {
   return (
     <div className="flex w-full flex-col items-center justify-center bg-gradient-to-b from-cutie-blue-300 to-cutie-blue-200 py-10 font-righteous">
-      <div className="mt-5 text-3xl text-cutie-yellow md:text-5xl font-semibold">
+      <div className="mt-5 text-3xl font-semibold text-cutie-yellow md:text-5xl">
         Meet the Team
       </div>
       <div className="mt-10 flex flex-col items-center justify-center gap-10 text-white">
