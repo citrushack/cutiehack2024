@@ -15,7 +15,7 @@ const Navigation = () => {
       {/* Desktop Nav */}
       <div className="hidden w-full justify-evenly md:flex">
         {items.map((item, index) => (
-          <Link key={index} href={item.link} className="p-1">
+          <Link key={index} href={item.link} className="p-1 font-bold">
             {item.name}
           </Link>
         ))}

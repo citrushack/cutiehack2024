@@ -14,7 +14,7 @@ const About = () => {
         <div className="text-base font-semibold text-cutie-yellow md:text-3xl">
           What is CutieHack?
         </div>
-        <p className="mt-2 text-xs text-cutie-blue-200 md:text-lg">
+        <p className="mt-2 text-xs text-cutie-blue-200 md:text-lg font-medium">
           Cutie Hack is a 12-hour, beginner-oriented hackathon hosted by
           students at University of California, Riverside where hackers are
           challenged to create a cool project within the time frame to demo in

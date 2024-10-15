@@ -13,7 +13,7 @@ const Item = ({ title, children }: props) => {
     <div>
       <button
         onClick={() => setState(!state)}
-        className="flex w-full items-center justify-between whitespace-nowrap py-3 text-lg"
+        className="flex w-full items-center justify-between whitespace-nowrap py-3 text-lg font-semibold"
       >
         {title}
         <ChevronDown className={`${state && "rotate-180"} duration-500`} />
@@ -23,7 +23,7 @@ const Item = ({ title, children }: props) => {
           state ? "opacity-100" : "opacity-0"
         }`}
       >
-        {state && <div className="text-base">{children}</div>}
+        {state && <div className="text-base font-medium">{children}</div>}
       </div>
     </div>
   );
