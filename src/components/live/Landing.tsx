@@ -19,7 +19,7 @@ const Landing = () => {
             Misson starts in:{" "}
           </p>
           <Countdown />
-          <div className="mb-4 mt-1 flex items-center justify-center whitespace-normal font-righteous text-sm md:whitespace-nowrap md:text-3xl font-medium">
+          <div className="mb-4 mt-1 flex items-center justify-center whitespace-normal font-righteous text-sm font-medium md:whitespace-nowrap md:text-3xl">
             <p>Apply to </p>
             <Apply text={"REGISTER"} link={"/form/participant"} />
             <p>or</p>
@@ -29,7 +29,7 @@ const Landing = () => {
           </div>
           <Link
             href={"/form/sponsor"}
-            className="z-10  font-medium rounded-3xl bg-[#9E0C7A] px-9 py-2 font-righteous text-sm hover:opacity-75 md:text-2xl"
+            className="z-10 rounded-3xl bg-[#9E0C7A] px-9 py-2 font-righteous text-sm font-medium hover:opacity-75 md:text-2xl"
           >
             Sponsor CutieHack!
           </Link>

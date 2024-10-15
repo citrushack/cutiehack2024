@@ -8,7 +8,7 @@ const Committees = () => {
       <div className="mt-3 flex w-full flex-row flex-wrap justify-center gap-5 text-center sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 2xl:gap-20">
         {Object.keys(COMMITTEES).map((val, index) => (
           <div className="flex flex-col" key={index}>
-            <div className="mb-3 text-2xl">{val}</div>
+            <div className="mb-3 text-2xl font-semibold">{val}</div>
             {COMMITTEES[val].map((member, index) => (
               <div key={index} className="text-lg">
                 {member}

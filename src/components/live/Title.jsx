@@ -6,11 +6,11 @@ import White from "@/public/assets/whitestar.svg";
 const Title = ({ text }) => {
   return (
     <div className="relative w-fit py-10 font-righteous">
-      <div className="text-5xl text-white md:text-8xl font-bold">
+      <div className="text-5xl font-bold text-white md:text-8xl">
         <span className="underline">{text.charAt(0)}</span>
         <span className="w-full">{text.slice(1)}</span>
       </div>
-      <p className="mt-8 text-center text-xs text-cutie-blue-100 md:text-3xl font-medium">
+      <p className="mt-8 text-center text-xs font-medium text-cutie-blue-100 md:text-3xl">
         Thank you so much!
       </p>
       <div>
