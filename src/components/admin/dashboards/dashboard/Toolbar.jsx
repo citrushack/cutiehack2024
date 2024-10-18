@@ -179,19 +179,19 @@ const Toolbar = ({
           onChangeFn={(e) => onChange(search.search, e.target.value)}
           clearFn={() => onChange(search.search, "")}
         />
-        <div>
+        <div className="font-righteous text-white">
           Rows:<span className="mx-2">{meta.total}</span>
         </div>
         <RotateCcw
           size={30}
           onClick={handleReload}
-          className="text-hackathon-gray-300 duration-150 hover:cursor-pointer hover:opacity-70"
+          className="text-white duration-150 hover:cursor-pointer hover:opacity-70"
         />
         <Trash2
           data-cy="delete"
           onClick={confirmDelete}
           size={30}
-          className="mx-2 text-hackathon-gray-300 duration-150 hover:cursor-pointer hover:opacity-70"
+          className="mx-2 text-white duration-150 hover:cursor-pointer hover:opacity-70"
         />
       </div>
 

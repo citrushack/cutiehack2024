@@ -6,7 +6,7 @@ const Title = ({ title }: props) => {
   return (
     <div
       data-cy={`${title}-title`}
-      className="hidden pr-5 text-2xl font-extrabold lg:block"
+      className="hidden pr-5 font-righteous text-2xl font-extrabold text-white lg:block"
     >
       {title}
     </div>

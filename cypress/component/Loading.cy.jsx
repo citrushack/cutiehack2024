@@ -6,10 +6,10 @@ describe("Loading", () => {
 
     cy.contains("Loading...")
       .should("exist")
-      .and("have.class", "text-3xl", "font-bold", "text-hackathon-blue-100");
+      .and("have.class", "text-3xl", "font-bold", "text-cutie-cutusomPurple2");
 
     cy.get(".animate-spin")
       .should("exist")
-      .and("have.class", "text-hackathon-blue-100");
+      .and("have.class", "text-cutie-cutusomPurple2");
   });
 });

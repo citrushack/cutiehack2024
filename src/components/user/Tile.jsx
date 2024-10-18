@@ -1,10 +1,10 @@
 import Link from "next/link";
 
-const Tile = ({ icon, text, link }) => {
+const Tile = ({ icon, text, link, color }) => {
   return (
     <Link
       href={link}
-      className="mb-3 flex w-full items-center gap-5 rounded-xl bg-white p-7 shadow-xl hover:opacity-70 md:my-0 md:w-1/2"
+      className="mb-3 flex w-full items-center gap-5 rounded-xl bg-cutie-violet p-7 shadow-xl hover:opacity-70 md:my-0 md:w-1/2"
       data-cy="tile-link"
     >
       <div className="text-black" data-cy="tile-icon">
@@ -21,3 +21,4 @@ const Tile = ({ icon, text, link }) => {
 };
 
 export default Tile;
+// bg-[#9097D9]

@@ -19,7 +19,7 @@ const Checkbox: React.FC<checkbox> = ({ toggle, onClick, text, color }) => {
         onChange={onClick}
         className={`mr-2 h-4 w-4 rounded-sm ${
           toggle
-            ? `${color ? color : "bg-hackathon-blue-100"}`
+            ? `${color ? color : "bg-cutie-violet"}`
             : "bg-hackathon-gray-100"
         }`}
         data-cy="checkbox-bg"
