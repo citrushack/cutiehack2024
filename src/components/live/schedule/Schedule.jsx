@@ -1,6 +1,6 @@
-import { api } from "@/utils/api";
-import Events from "./Events";
-import Title from "../Title"
+// import { api } from "@/utils/api";
+// import Events from "./Events";
+import Title from "../Title";
 
 const Schedule = async () => {
   // const { items } = await api({
@@ -21,10 +21,10 @@ const Schedule = async () => {
 
   // return <Events events={items} totalDays={totalDays} />;
   return (
-    <div className="-mt-1 flex flex-col items-center justify-center gap-10 bg-cutie-blue-300 py-10 font-righteous h-screen">
+    <div className="-mt-1 flex h-screen flex-col items-center justify-center gap-10 bg-cutie-blue-300 py-10 font-righteous">
       <Title text={"Schedule"} subtext={"Coming soon!"} />
     </div>
-  )
+  );
 };
 
 export default Schedule;
