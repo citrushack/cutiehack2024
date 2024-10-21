@@ -18,11 +18,11 @@ const Navigation = () => {
         {items.map((item, index) => (
           <Scroll
             key={index}
-            to={item.link}
+            to={item.id}
+            href={item.link}
             spy={true}
             smooth={true}
-            offset={-70}
-            duration={500}
+            offset={-100}
             className="cursor-pointer p-1 font-bold"
           >
             {item.name}
@@ -59,11 +59,11 @@ const Navigation = () => {
           {items.map((item, index) => (
             <Scroll
               key={index}
-              to={item.link}
+              to={item.id}
+              href={item.link}
               spy={true}
               smooth={true}
               offset={-70}
-              duration={500}
               className="w-full cursor-pointer py-2 text-center"
               onClick={() => setIsOpen(false)}
             >
