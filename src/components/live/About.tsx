@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Bubble from "@/public/assets/rocketbubble.svg";
+import { FLEX } from "@/data/live/Stats";
 import SVGS from "./SVGS";
 
 const About = () => {
@@ -10,7 +11,7 @@ const About = () => {
         alt="Rocket Bubble"
         className="inset-0 z-10 min-w-full"
       />
-      <div className="absolute z-10 w-8/12 rounded-xl border-8 border-cutie-blue-200 bg-cutie-violet p-4 text-center md:w-4/12 md:p-8">
+      <div className="absolute z-10 w-8/12 rounded-xl border-8 border-cutie-blue-200 bg-cutie-violet p-4 text-center shadow md:w-4/12 md:p-8">
         <div className="text-base font-semibold text-cutie-yellow md:text-3xl">
           What is CutieHack?
         </div>
@@ -21,6 +22,19 @@ const About = () => {
           order to win awesome prizes and participate in workshops, fun games,
           and networking.
         </p>
+      </div>
+      <div className="absolute bottom-[25%] z-10 flex w-1/2 animate-jiggle-12s flex-wrap justify-center gap-5">
+        {FLEX.map((item, index) => (
+          <div
+            key={index}
+            className="w-1/4 text-center text-4xl font-bold text-white"
+          >
+            {item.number}
+            <p className="text-2xl font-medium text-cutie-gray/90">
+              {item.type}
+            </p>
+          </div>
+        ))}
       </div>
       <SVGS />
     </div>

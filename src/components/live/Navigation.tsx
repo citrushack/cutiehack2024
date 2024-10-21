@@ -31,7 +31,7 @@ const Navigation = () => {
         ) : (
           <div
             onClick={() => signIn("google")}
-            className="border-custom-white border p-1 px-2 shadow-custom-white"
+            className="border-custom-white cursor-pointer border p-1 px-2 shadow-custom-white"
           >
             LOGIN
           </div>
