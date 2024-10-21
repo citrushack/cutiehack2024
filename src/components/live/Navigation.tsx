@@ -40,7 +40,7 @@ const Navigation = () => {
         ) : (
           <div
             onClick={() => signIn("google")}
-            className="border-custom-white border p-1 px-2 shadow-custom-white"
+            className="border-custom-white cursor-pointer border p-1 px-2 shadow-custom-white"
           >
             LOGIN
           </div>
@@ -86,7 +86,7 @@ const Navigation = () => {
                 signIn("google");
                 setIsOpen(false);
               }}
-              className="border-custom-white mt-2 w-full border p-1 px-2 text-center shadow-custom-white"
+              className="border-custom-white mt-2 w-fit border p-1 px-2 text-center shadow-custom-white"
             >
               LOGIN
             </div>

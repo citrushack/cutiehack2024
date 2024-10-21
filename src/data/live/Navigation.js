@@ -12,6 +12,12 @@ export const items = [
   // {
   //   name: "TRACKS",
   //   link: "#tracks",
+  //   id: "tracks",
+  // },
+  // {
+  //   name: "FAQ",
+  //   link: "#faq",
+  //   id: "faq",
   // },
   {
     name: "SCHEDULE",
