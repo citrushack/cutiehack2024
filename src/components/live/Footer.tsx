@@ -28,17 +28,17 @@ const Footer = () => {
       </div>
       <div className="text-white">
         <Link href={"mailto:citrushack@gmail.com"}>
-          <Mail className="absolute left-[20%] top-[38%] z-30 h-14 w-14 -rotate-[28deg] md:left-[32%] md:top-[37%]" />
+          <Mail className="absolute left-[21%] top-[41%] z-30 h-11 w-11 -rotate-[28deg] md:left-[32%] md:top-[37%] md:h-14 md:w-14" />
         </Link>
         <Link
           href={
             "https://www.linkedin.com/company/citrus-hack/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BAC1WcAAKQca8p%2FC%2BKLt32g%3D%3D"
           }
         >
-          <Linkedin className="absolute bottom-[32%] left-[2%] z-30 h-14 w-14 -rotate-[40deg] md:bottom-[42%] md:left-[25%]" />
+          <Linkedin className="absolute bottom-[34%] left-[5%] z-30 h-11 w-11 -rotate-[40deg] md:bottom-[44%] md:left-[25%] md:h-14 md:w-14" />
         </Link>
         <Link href={"https://www.instagram.com/cutiehack_ucr/"}>
-          <Instagram className="absolute right-[14%] top-[40%] z-30 h-14 w-14 rotate-[30deg] md:left-[20%] md:top-[61%] md:-rotate-[50deg]" />
+          <Instagram className="absolute right-[16%] top-[45%] z-30 h-11 w-11 rotate-[30deg] md:left-[20%] md:top-[61%] md:h-14 md:w-14 md:-rotate-[50deg]" />
         </Link>
       </div>
       <Image

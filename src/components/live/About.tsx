@@ -12,7 +12,10 @@ const About = () => {
         className="inset-0 z-10 min-w-full"
       />
       <div className="absolute z-10 w-8/12 rounded-xl border-8 border-cutie-blue-200 bg-cutie-violet p-4 text-center shadow md:w-4/12 md:p-8">
-        <div className="text-base font-semibold text-cutie-yellow md:text-3xl">
+        <div
+          id="about"
+          className="text-base font-semibold text-cutie-yellow md:text-3xl"
+        >
           What is CutieHack?
         </div>
         <p className="mt-2 text-xs font-medium text-cutie-blue-200 md:text-lg">
@@ -23,14 +26,14 @@ const About = () => {
           and networking.
         </p>
       </div>
-      <div className="absolute bottom-[25%] z-10 flex w-1/2 animate-jiggle-12s flex-wrap justify-center gap-5">
+      <div className="absolute bottom-[-30%] z-10 flex w-2/3 animate-jiggle-12s flex-wrap justify-center gap-5 md:bottom-[25%] md:w-1/2">
         {FLEX.map((item, index) => (
           <div
             key={index}
-            className="w-1/4 text-center text-4xl font-bold text-white"
+            className="w-1/4 text-center text-xl font-bold text-white md:text-4xl"
           >
             {item.number}
-            <p className="text-2xl font-medium text-cutie-gray/90">
+            <p className="text-base font-medium text-cutie-gray/90 md:text-2xl">
               {item.type}
             </p>
           </div>
