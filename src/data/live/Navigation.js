@@ -5,17 +5,17 @@ export const items = [
     id: "home",
   },
   {
-    name: "SCHEDULE",
-    link: "#schedule",
-    id: "schedule",
+    name: "ABOUT",
+    link: "#about",
+    id: "about",
   },
   // {
   //   name: "TRACKS",
   //   link: "#tracks",
   // },
   {
-    name: "ABOUT",
-    link: "#about",
-    id: "about",
+    name: "SCHEDULE",
+    link: "#schedule",
+    id: "schedule",
   },
 ];
