@@ -5,7 +5,7 @@ export const items = [
   },
   {
     name: "SCHEDULE",
-    link: "#schedule",
+    link: "schedule",
   },
   // {
   //   name: "TRACKS",
@@ -13,6 +13,6 @@ export const items = [
   // },
   {
     name: "ABOUT",
-    link: "#about",
+    link: "about",
   },
 ];

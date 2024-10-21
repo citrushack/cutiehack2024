@@ -13,10 +13,16 @@ const Live = () => {
   return (
     <div>
       <Navigation />
-      <Landing />
-      <About />
+      <div id="/">
+        <Landing />
+      </div>
+      <div id="about">
+        <About />
+      </div>
       <Tracks />
-      <Schedule />
+      <div id="schedule">
+        <Schedule />
+      </div>
       {/* <Sponsors />
       <Team />
       <Committees />
