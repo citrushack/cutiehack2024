@@ -11,7 +11,10 @@ const About = () => {
         className="inset-0 z-10 min-w-full"
       />
       <div className="absolute z-10 w-8/12 rounded-xl border-8 border-cutie-blue-200 bg-cutie-violet p-4 text-center md:w-4/12 md:p-8">
-        <div className="text-base font-semibold text-cutie-yellow md:text-3xl">
+        <div
+          id="about"
+          className="text-base font-semibold text-cutie-yellow md:text-3xl"
+        >
           What is CutieHack?
         </div>
         <p className="mt-2 text-xs font-medium text-cutie-blue-200 md:text-lg">
