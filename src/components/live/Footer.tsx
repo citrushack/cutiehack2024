@@ -27,17 +27,21 @@ const Footer = () => {
         <Image src={Moon} alt="Moon Icon" className="z-10 h-full w-full" />
       </div>
       <div className="text-white">
-        <Link href={"mailto:citrushack@gmail.com"}>
+        <Link target={"_blank"} href={"mailto:citrushack@gmail.com"}>
           <Mail className="absolute left-[21%] top-[41%] z-30 h-11 w-11 -rotate-[28deg] md:left-[32%] md:top-[37%] md:h-14 md:w-14" />
         </Link>
         <Link
+          target={"_blank"}
           href={
             "https://www.linkedin.com/company/citrus-hack/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BAC1WcAAKQca8p%2FC%2BKLt32g%3D%3D"
           }
         >
           <Linkedin className="absolute bottom-[34%] left-[5%] z-30 h-11 w-11 -rotate-[40deg] md:bottom-[44%] md:left-[25%] md:h-14 md:w-14" />
         </Link>
-        <Link href={"https://www.instagram.com/cutiehack_ucr/"}>
+        <Link
+          target={"_blank"}
+          href={"https://www.instagram.com/cutiehack_ucr/"}
+        >
           <Instagram className="absolute right-[16%] top-[45%] z-30 h-11 w-11 rotate-[30deg] md:left-[20%] md:top-[61%] md:h-14 md:w-14 md:-rotate-[50deg]" />
         </Link>
       </div>

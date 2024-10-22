@@ -17,7 +17,7 @@ export const QUESTIONS: QuestionAnswer[] = [
   {
     question: "Where is the hackathon?",
     answer:
-      "Attend weekly meetings for full onboarding. You can clone the repo, install necesssary packages with `npm i`(download node.js first). You would need to reach out to a swe lead for repo secrets file. Follow the steps on the readme for more.",
+      "It will take place in your favorite engineering buildings! It will be held throughout Winston Chung Hall and certain BCOE buildings and classrooms. There will be a comprehensive list of activities and their locations in the final itinerary!",
   },
   {
     question: "Who can come to Cutie Hack?",
@@ -27,7 +27,7 @@ export const QUESTIONS: QuestionAnswer[] = [
   {
     question: "Is Cutie Hack free?",
     answer:
-      "Check out `/engineering` to read up on the different technologies we used and the challenges we solved!",
+      "Cutie Hack is a completely free event! You will be allowed to attend workshops, listen to some wonderful speakers, and best of all, win great prizes with no entrance fee. 🤠",
   },
   {
     question: "How long do I have to hack?",
@@ -42,7 +42,7 @@ export const QUESTIONS: QuestionAnswer[] = [
   {
     question: "What if I've never been to a hackathon?",
     answer:
-      "Check out `/engineering` to read up on the different technologies we used and the challenges we solved!",
+      "All the more reason to come and experience a hackathon! You can learn from the various workshops, speakers, and mentors, and they can help guide a personal project of your choice if you want!",
   },
   {
     question: "What if I don't have a team?",
@@ -51,7 +51,6 @@ export const QUESTIONS: QuestionAnswer[] = [
   },
   {
     question: "Where will I submit?",
-    answer:
-      "Check out `/engineering` to read up on the different technologies we used and the challenges we solved!",
+    answer: "Devpost. We will tell provide guidence on submission as well!",
   },
 ];
