@@ -7,12 +7,12 @@ export const QUESTIONS: QuestionAnswer[] = [
   {
     question: "What is a hackathon?",
     answer:
-      "This repo centralizes the backbone for all websites. It serves as a template for mainly the backend, user registration, user dashboard and and admin portal for organizers. The frontend is built out by respective hackathon committees.",
+      "A hackathon is an event where people come together to collaborate on technology projects, typically over a short period of time. Participants work in teams to create software, hardware, or other tech solutions, often addressing specific challenges or themes.",
   },
   {
     question: "When does Cutie Hack start?",
     answer:
-      "No experience is required. You can reach out to us on discord and start working! We have weekly meetings and tasks via GitHub",
+      "Cutie Hack will start Saturday Morning on November 16. Stay tuned to the schedule for updated times",
   },
   {
     question: "Where is the hackathon?",
@@ -22,7 +22,7 @@ export const QUESTIONS: QuestionAnswer[] = [
   {
     question: "Who can come to Cutie Hack?",
     answer:
-      "Check out `/engineering` to read up on the different technologies we used and the challenges we solved!",
+      "Cutie Hack is targeted towards beginners, but we welcome anyone to participate regardless of their experience or education level.",
   },
   {
     question: "Is Cutie Hack free?",
@@ -31,13 +31,12 @@ export const QUESTIONS: QuestionAnswer[] = [
   },
   {
     question: "How long do I have to hack?",
-    answer:
-      "Check out `/engineering` to read up on the different technologies we used and the challenges we solved!",
+    answer: "For CutieHacK you will have 12 hours!",
   },
   {
     question: "Do I have to hack or make a project?",
     answer:
-      "Check out `/engineering` to read up on the different technologies we used and the challenges we solved!",
+      "Absolutely not!! While we encourage everyone to make a project anyone is welcome to come for the free food and shirt! ",
   },
   {
     question: "What if I've never been to a hackathon?",
@@ -47,7 +46,7 @@ export const QUESTIONS: QuestionAnswer[] = [
   {
     question: "What if I don't have a team?",
     answer:
-      "Check out `/engineering` to read up on the different technologies we used and the challenges we solved!",
+      "We will have oppotunites to meet new people as well as our team page will allow you to find people to work with!",
   },
   {
     question: "Where will I submit?",
