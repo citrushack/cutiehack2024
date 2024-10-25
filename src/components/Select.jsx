@@ -35,9 +35,10 @@ const VirtualizedContent = ({ items, setSelected, userFn, searchable }) => {
       className="dropdown-content h-fit max-h-[400px] w-[var(--radix-dropdown-menu-trigger-width)] overflow-y-scroll pt-0"
       data-cy="select-menu"
     >
-      <div className="bg-whites sticky top-0 z-50 pt-1">
+      <div className="sticky top-0 z-50 bg-transparent pt-1">
         {searchable && (
           <Input
+            className="bg-gradient-to-r from-cutie-purple-100 to-cutie-purple-200 text-white placeholder:text-white"
             placeholder="search"
             onKeyDown={(event) => event.stopPropagation()}
             onChange={handleInput}

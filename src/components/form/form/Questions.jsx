@@ -170,7 +170,7 @@ const Questions = ({
           {field.input === "textarea" && (
             <Textarea
               data-cy={`${field.title}-textarea`}
-              className="border-1 w-full resize-none border border-black pl-3 placeholder:text-hackathon-gray-200 focus:outline-none"
+              className="border-1 w-full resize-none border border-black pl-3 placeholder:text-white focus:outline-none"
               maxLength={500}
               value={object[field.name]}
               onChange={(e) =>
@@ -201,7 +201,7 @@ const Questions = ({
         <Link
           href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
           target="_blank"
-          className="mt-1 flex items-center text-white no-underline hover:text-opacity-65"
+          className="mt-1 flex items-center text-white text-opacity-65 no-underline"
         >
           MLH Code of Conduct
           <LucideLink className="mx-2" />
@@ -228,7 +228,7 @@ const Questions = ({
           href={data.packet}
           target="_blank"
           rel="noreferrer noopener"
-          className="flex items-center no-underline"
+          className="no-sunderline flex items-center"
         >
           Sponsorship Packet
           <LucideLink className="mx-2" />
