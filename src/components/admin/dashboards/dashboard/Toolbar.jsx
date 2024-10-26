@@ -4,10 +4,10 @@ import { useState, useEffect } from "react";
 import { Trash2, RotateCcw } from "lucide-react";
 import toaster from "@/utils/toaster";
 import Popup from "../../Popup";
-import Tag from "../../Tag";
-import { COLORS } from "@/data/Tags";
+// import { COLORS } from "@/data/Tags";
 import Input from "../../Input";
 import Select from "@/components/Select";
+import { Badge } from "@/components/ui/badge";
 
 const Toolbar = ({
   page,
@@ -149,12 +149,9 @@ const Toolbar = ({
     >
       <div className="flex gap-3">
         {tags.map((tag, index) => (
-          <Tag
-            key={index}
-            text={tag.text}
-            onClick={() => onClick(tag.value)}
-            color={COLORS[tag.value]}
-          />
+          <Badge key={index} onClick={() => onClick(tag.value)}>
+            {tag.text}
+          </Badge>
         ))}
       </div>
 

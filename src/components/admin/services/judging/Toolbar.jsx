@@ -1,8 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Input from "../../Input";
-import Tag from "../../Tag";
-import { COLORS } from "@/data/Tags";
+// import { COLORS } from "@/data/Tags";
 import Popup from "../../Popup";
 import toaster from "@/utils/toaster";
 import { useRouter } from "next/navigation";
@@ -13,6 +12,7 @@ import {
   InputOTPSlot,
 } from "@/components/ui/input-otp";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 const tags = ["professor", "industry", "student"];
 
@@ -255,7 +255,7 @@ const Toolbar = ({
 
         <div className="flex flex-row justify-center">
           {tags.map((tag, index) => (
-            <Tag key={index} color={COLORS[tag]} text={tag} classes="mx-2" />
+            <Badge key={index}>{tag}</Badge>
           ))}
         </div>
       </form>

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import Tag from "../../admin/Tag";
-import { COLORS } from "@/data/Tags";
+// import { COLORS } from "@/data/Tags";
+import { Badge } from "@/components/ui/badge";
 
 const Status = ({ object, statuses, setState }) => {
   return (
@@ -8,11 +8,8 @@ const Status = ({ object, statuses, setState }) => {
       <p>
         Hello <b>{object.name}</b>, your status is currently
       </p>
-      <Tag
-        color={COLORS[object.roles[object.form]]}
-        text={statuses[object.roles[object.form]]}
-        classes="mb-2"
-      />
+      <Badge>{statuses[object.roles[object.form]]}</Badge>
+
       <p data-cy="status-confirmation" className="text-center">
         You have already filled out the form. If you wish to change any
         information, please fill out the form again. Note that your status will

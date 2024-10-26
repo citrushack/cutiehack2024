@@ -1,10 +1,10 @@
-import Tag from "../../Tag";
-import { COLORS } from "@/data/Tags";
+// import { COLORS } from "@/data/Tags";
 import Link from "next/link";
 import { ICONS } from "@/data/admin/Icons";
 import Loading from "@/components/Loading";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import { useRef } from "react";
+import { Badge } from "@/components/ui/badge";
 
 const Table = ({ data }) => {
   const team = data?.filter((group) => !group.hidden);
@@ -45,7 +45,7 @@ const Table = ({ data }) => {
               >
                 <div className="w-full rounded-xl bg-white p-3">
                   <div className="flex items-center justify-between">
-                    <Tag color={COLORS["grayblue"]} text={group.name} />
+                    <Badge>{group.name}</Badge>
                     <div className="ml-2 flex w-full justify-start">
                       {group.links &&
                         group.links
@@ -72,12 +72,7 @@ const Table = ({ data }) => {
                       <p className="mb-0 mr-2 font-semibold">{index + 1}</p>
                       <div className="flex items-center">
                         {judges.map(({ name, affiliation }, i) => (
-                          <Tag
-                            classes="mx-1"
-                            color={COLORS[affiliation.toLowerCase()]}
-                            key={i}
-                            text={name}
-                          />
+                          <Badge key={i}>{name}</Badge>
                         ))}
                       </div>
                     </div>

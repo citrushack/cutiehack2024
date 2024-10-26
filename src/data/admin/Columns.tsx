@@ -1,7 +1,7 @@
-import Tag from "@/components/admin/Tag";
-import { COLORS } from "../Tags";
+// import { COLORS } from "../Tags";
 import Checkbox from "@/components/Checkbox";
 import { Table, Row, CellContext } from "@tanstack/react-table";
+import { Badge } from "@/components/ui/badge";
 
 export const generateSelect = <TData extends object>() => ({
   id: "select",
@@ -29,10 +29,7 @@ export const generateAffiliation = <TData extends stringRecord>(
   header: "Affiliation",
   meta: { width: "w-1/12" },
   cell: ({ getValue }: CellContext<TData, string>) => (
-    <Tag
-      text={affiliations[getValue().toLowerCase()]}
-      color={COLORS[getValue().toLowerCase() as keyof typeof COLORS]}
-    />
+    <Badge>{affiliations[getValue().toLowerCase()]}</Badge>
   ),
 });
 
@@ -48,10 +45,7 @@ export const generateStatus = <TData extends object>(
     return filter.includes(status);
   },
   cell: ({ getValue }: CellContext<TData, string>) => (
-    <Tag
-      text={statuses[getValue()]}
-      color={COLORS[getValue() as keyof typeof COLORS]}
-    />
+    <Badge>{statuses[getValue().toLowerCase()]}</Badge>
   ),
 });
 export const generateTiers = <TData extends stringRecord>(
@@ -61,9 +55,6 @@ export const generateTiers = <TData extends stringRecord>(
   header: "Tier",
   meta: { width: "w-1/12" },
   cell: ({ getValue }: CellContext<TData, string>) => (
-    <Tag
-      text={tiers[getValue().toLowerCase()]}
-      color={COLORS[getValue().toLowerCase() as keyof typeof COLORS]}
-    />
+    <Badge>{tiers[getValue().toLowerCase()]}</Badge>
   ),
 });

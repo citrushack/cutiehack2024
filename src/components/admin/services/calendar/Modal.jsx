@@ -1,7 +1,7 @@
 import { X, MapPin, User } from "lucide-react";
-import Tag from "../../Tag";
-import { LABELS } from "@/data/admin/Calendar";
-import { COLORS } from "@/data/Tags";
+// import { LABELS } from "@/data/admin/Calendar";
+// import { COLORS } from "@/data/Tags";
+import { Badge } from "@/components/ui/badge";
 
 const CalendarModal = ({ event, setEvent }) => {
   return (
@@ -31,10 +31,7 @@ const CalendarModal = ({ event, setEvent }) => {
             })}
           </div>
           <div>
-            <Tag
-              text={event.category}
-              color={COLORS[LABELS[event.category].color]}
-            />
+            <Badge>{event.category}</Badge>
           </div>
         </div>
         <div className="my-2 flex items-center">

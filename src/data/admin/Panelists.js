@@ -1,8 +1,8 @@
 import View from "@/components/admin/dashboards/dashboard/View";
 import { generateSelect, generateStatus } from "./Columns";
-import Tag from "@/components/admin/Tag";
-import { COLORS } from "@/data/Tags";
+// import { COLORS } from "@/data/Tags";
 import { STATUSES } from "@/data/Statuses";
+import { Badge } from "@/components/ui/badge";
 
 export const TAGS = [
   {
@@ -48,9 +48,7 @@ export const COLUMNS = [
     accessorKey: "panelist",
     header: "Panelist",
     meta: { width: "w-[15%]" },
-    cell: ({ getValue }) => (
-      <Tag text={getValue()} color={COLORS[getValue()]} />
-    ),
+    cell: ({ getValue }) => <Badge>{getValue()}</Badge>,
   },
   generateStatus(STATUSES),
   {
