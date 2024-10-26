@@ -1,5 +1,5 @@
-import Button from "./Button";
 import { X } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Popup = ({ popup, onClick, setPopup, text }) => {
   return (
@@ -17,21 +17,18 @@ const Popup = ({ popup, onClick, setPopup, text }) => {
         </div>
         <p>{popup.text}</p>
         <div className="flex w-full justify-end gap-3">
+          <Button onClick={() => setPopup({ ...popup, visible: false })}>
+            cancel
+          </Button>
+
           <Button
-            color="grayOutline"
-            text="cancel"
-            size="text-lg"
-            onClick={() => setPopup({ ...popup, visible: false })}
-          />
-          <Button
-            color={popup.color}
-            text={text}
-            size="text-lg"
             onClick={() => {
               onClick();
               setPopup({ ...popup, visible: false });
             }}
-          />
+          >
+            {text}
+          </Button>
         </div>
       </div>
     </div>

@@ -11,10 +11,10 @@ import { COUNTRIES } from "@/data/form/Country";
 import Input from "../Input";
 import Radio from "../Radio";
 import Select from "../Select";
-import Button from "../Button";
 import Checkbox from "../Checkbox";
 import { api } from "@/utils/api";
 import toaster from "@/utils/toaster";
+import { Button } from "@/components/ui/button";
 
 const User = ({ user, setUser, edit, setEdit }) => {
   const handleEdit = () => {
@@ -153,12 +153,8 @@ const User = ({ user, setUser, edit, setEdit }) => {
         </div>
       </div>
       <div className="flex w-full justify-center">
-        {edit && (
-          <Button color="green" size="xl" text="save" onClick={handleSave} />
-        )}
-        {!edit && (
-          <Button color="green" size="xl" text="edit" onClick={handleEdit} />
-        )}
+        {edit && <Button onClick={handleSave}>save</Button>}
+        {!edit && <Button onClick={handleEdit}>edit</Button>}
       </div>
     </div>
   );

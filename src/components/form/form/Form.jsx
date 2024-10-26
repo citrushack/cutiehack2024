@@ -4,11 +4,11 @@ import { useState } from "react";
 import Status from "./Status";
 import Questions from "./Questions";
 import Confirmation from "./Confirmation";
-import Button from "../../Button";
 import { signOut } from "next-auth/react";
 import Image from "next/image";
 import LOGO from "@/app/favicon.ico";
-import { useRouter } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Form = ({
   object,
@@ -19,8 +19,6 @@ const Form = ({
   statuses,
   bypass = false,
 }) => {
-  const router = useRouter();
-
   const [loading, setLoading] = useState(false);
 
   const [state, setState] = useState(
@@ -30,18 +28,12 @@ const Form = ({
   return (
     <div className="overflow-scroll-y flex h-full w-full flex-col items-center font-poppins">
       <div className="mr-[10%] flex w-full flex-row justify-end space-x-4">
-        <Button
-          text="Back to Home"
-          onClick={() => router.push("/")}
-          loading={loading}
-          color="green"
-        />
-        <Button
-          text="Sign Out"
-          onClick={() => signOut({ callbackUrl: "/", redirect: true })}
-          loading={loading}
-          color="green"
-        />
+        <Button asChild>
+          <Link href="/">Back to Home</Link>
+        </Button>
+        <Button onClick={() => signOut({ callbackUrl: "/", redirect: true })}>
+          Sign Out
+        </Button>
       </div>
       <div className="flex w-10/12 flex-col items-center pb-12 pt-5 md:w-1/2 xl:w-1/3">
         <Image src={LOGO} className="m-4 w-1/3" alt="Logo" />

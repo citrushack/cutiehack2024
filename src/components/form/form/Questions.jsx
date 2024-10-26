@@ -1,7 +1,6 @@
 import Select from "@/components/Select";
 import Checkbox from "@/components/Checkbox";
 import Input from "@/components/Input";
-import Button from "@/components/Button";
 import { Textarea } from "@/components/ui/textarea";
 import Upload from "@/components/form/form/Upload";
 import toaster from "@/utils/toaster";
@@ -11,6 +10,7 @@ import data from "@/data/Config";
 import Terms from "./Terms";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button";
 const Questions = ({
   fields,
   object,
@@ -236,12 +236,9 @@ const Questions = ({
         </Link>
       )}
       <div className="flex justify-center">
-        <Button
-          text="Submit"
-          onClick={handleSubmit}
-          loading={loading}
-          color="green"
-        />
+        <Button onClick={handleSubmit} disabled={loading}>
+          Submit
+        </Button>
       </div>
     </div>
   );

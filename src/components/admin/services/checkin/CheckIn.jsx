@@ -3,11 +3,11 @@ import { useState } from "react";
 import Title from "../../Title";
 import Scanner from "./Scanner";
 import Select from "@/components/Select";
-import Button from "../../Button";
 import toaster from "@/utils/toaster";
 import { api } from "@/utils/api";
 import { getEvents, getUser } from "./actions";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { Button } from "@/components/ui/button";
 
 const CheckIn = () => {
   const [event, setEvent] = useState({ name: "No events" });
@@ -85,7 +85,7 @@ const CheckIn = () => {
   return (
     <div className="flex h-full flex-col gap-3 py-4 font-poppins">
       <Title title="Check In" />
-      <div className="grid grid-cols-1 overflow-auto">
+      <div className="flex flex-col items-center justify-center">
         <div className="flex flex-col gap-3 overflow-hidden py-3">
           {events && (
             <Select
@@ -99,15 +99,9 @@ const CheckIn = () => {
           <Scanner setResult={setResult} />
         </div>
         <div>{code && code.split("&")[2]}</div>
-      </div>
-
-      <div className="flex flex-shrink-0 justify-center p-6">
-        <Button
-          text="Check in"
-          color="green"
-          onClick={handleCheckIn}
-          size="text-xl"
-        />
+        <Button className="w-fit" onClick={handleCheckIn}>
+          Check In
+        </Button>
       </div>
     </div>
   );

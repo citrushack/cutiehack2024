@@ -13,12 +13,12 @@ import {
   CircleHelp,
   HeartHandshake,
 } from "lucide-react";
-import Button from "../../Button";
 import Select from "@/components/Select";
 import { useState } from "react";
 import { api } from "@/utils/api";
 import toaster from "@/utils/toaster";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 const STATUSES = ["confirmed", "pending", "not attending"];
 
@@ -86,12 +86,10 @@ const Contact = ({ role, disabled, setDisabled }) => {
           onChange={() => setDisabled(status.status === "")}
           className="placeholder-gray-400"
         />
-        <Button
-          text="copy"
-          color="green"
-          onClick={onClick}
-          disabled={status.status === "" || disabled}
-        />
+
+        <Button onClick={onClick} disabled={status.status === "" || disabled}>
+          copy
+        </Button>
       </CardContent>
     </Card>
   );

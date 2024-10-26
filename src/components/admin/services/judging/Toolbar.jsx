@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import Input from "../../Input";
-import Button from "../../Button";
 import Tag from "../../Tag";
 import { COLORS } from "@/data/Tags";
 import Popup from "../../Popup";
@@ -13,6 +12,7 @@ import {
   InputOTPGroup,
   InputOTPSlot,
 } from "@/components/ui/input-otp";
+import { Button } from "@/components/ui/button";
 
 const tags = ["professor", "industry", "student"];
 
@@ -224,19 +224,21 @@ const Toolbar = ({
         </div>
 
         <div className="flex flex-row justify-center gap-3">
-          <Button color="green" text="generate" onClick={generate} />
+          <Button onClick={generate}>generate</Button>
           <Button
-            color="red"
-            text="reset"
+            variant="destructive"
             onClick={handleReset}
             disabled={!data || data.some(({ rounds }) => rounds.length === 0)}
-          />
+          >
+            reset
+          </Button>
+
           <Button
-            color="green"
-            text="change view"
             onClick={handleView}
             disabled={!data || data.some(({ rounds }) => rounds.length === 0)}
-          />
+          >
+            change view
+          </Button>
         </div>
         <div className="pl-2">
           <Input
