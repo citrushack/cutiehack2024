@@ -1,6 +1,5 @@
 import Select from "@/components/Select";
 import Checkbox from "@/components/Checkbox";
-import Input from "@/components/Input";
 import { Textarea } from "@/components/ui/textarea";
 import Upload from "@/components/form/form/Upload";
 import toaster from "@/utils/toaster";
@@ -11,6 +10,7 @@ import Terms from "./Terms";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 const Questions = ({
   fields,
   object,
@@ -81,18 +81,20 @@ const Questions = ({
               </div>
             ))}
           {field.input === "input" && (
-            <Input
-              name={field.name}
-              type={field.type}
-              title={field.title}
-              placeholder={field.placeholder}
-              value={object[field.name]}
-              maxLength={field.maxLength}
-              user={object}
-              setUser={setObject}
-              required={field.required}
-              editable={field.editable}
-            />
+            <>
+              <Label htmlFor={field.name}>{field.title}</Label>
+              <Input
+                id={field.name}
+                type={field.type}
+                placeholder={field.placeholder}
+                value={object[field.name]}
+                maxLength={field.maxLength}
+                disabled={!field.editable}
+                onChange={(e) =>
+                  setUser({ ...user, [field.name]: e.target.value })
+                }
+              />
+            </>
           )}
           {field.input === "select" && (
             <Select
