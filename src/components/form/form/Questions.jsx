@@ -10,6 +10,7 @@ import { Link as LucideLink } from "lucide-react";
 import data from "@/data/Config";
 import Terms from "./Terms";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Label } from "@/components/ui/label";
 const Questions = ({
   fields,
   object,
@@ -154,15 +155,15 @@ const Questions = ({
                 {field.text}
                 {field.required && <span className="text-red-500">*</span>}
               </p>
-              <RadioGroup value={object[field.field]}>
+              <RadioGroup
+                value={object[field.field]}
+                onValueChange={(value) => handleClick(value, field.field)}
+              >
                 {Object.values(field.options).map((option, index) => (
-                  <label key={index}>
-                    <RadioGroupItem
-                      value={option}
-                      onClick={() => handleClick(option, field.field)}
-                    />
-                    {option}
-                  </label>
+                  <div className="flex items-center space-x-2" key={index}>
+                    <RadioGroupItem value={option} id={option} />
+                    <Label htmlFor={option}>{option}</Label>
+                  </div>
                 ))}
               </RadioGroup>
             </>
