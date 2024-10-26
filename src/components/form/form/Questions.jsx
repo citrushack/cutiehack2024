@@ -201,7 +201,7 @@ const Questions = ({
         <Link
           href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
           target="_blank"
-          className="mt-1 flex items-center text-white text-opacity-65 no-underline"
+          className="mt-1 flex items-center text-white no-underline hover:text-opacity-65"
         >
           MLH Code of Conduct
           <LucideLink className="mx-2" />
