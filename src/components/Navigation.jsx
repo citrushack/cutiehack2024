@@ -73,7 +73,7 @@ const Navigation = () => {
           >
             {Object.entries(tabs).map(([title, subTabs], index) => (
               <AccordionItem key={index} value={title} className="border-none">
-                <AccordionTrigger className="px-3 py-0 text-xl font-bold text-white opacity-100 transition-opacity hover:cursor-pointer hover:opacity-40">
+                <AccordionTrigger className="px-3 py-0 text-xl font-bold text-white opacity-100 transition-opacity hover:cursor-pointer hover:no-underline hover:opacity-40">
                   {title}
                 </AccordionTrigger>
                 <AccordionContent>

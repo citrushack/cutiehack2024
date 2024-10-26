@@ -20,6 +20,7 @@ const VirtualizedContent = ({ items, setSelected, userFn, searchable }) => {
     getScrollElement: () => ref.current,
     estimateSize: () => 50,
   });
+
   const handleInput = (e) => {
     setOptions(
       items.filter((name) =>
@@ -29,6 +30,7 @@ const VirtualizedContent = ({ items, setSelected, userFn, searchable }) => {
       ),
     );
   };
+
   return (
     <DropdownMenuContent
       ref={ref}
@@ -38,7 +40,7 @@ const VirtualizedContent = ({ items, setSelected, userFn, searchable }) => {
       <div className="sticky top-0 z-50 bg-white pt-1">
         {searchable && (
           <Input
-            placeholder="search"
+            placeholder="Search"
             onKeyDown={(event) => event.stopPropagation()}
             onChange={handleInput}
           />
@@ -58,7 +60,6 @@ const VirtualizedContent = ({ items, setSelected, userFn, searchable }) => {
                 }}
                 key={virtualRow.index}
                 onClick={() => {
-                  console.log(option);
                   setSelected(option.name || option);
                   userFn(option);
                 }}
@@ -103,7 +104,11 @@ const Select = ({
             variant="outline"
             disabled={disabled}
           >
-            {selected ? selected : placeholder}
+            {selected ? (
+              selected
+            ) : (
+              <p className="text-gray-400">{placeholder}</p>
+            )}
             <ChevronDown />
           </Button>
         </DropdownMenuTrigger>
