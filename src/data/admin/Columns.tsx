@@ -9,7 +9,7 @@ export const generateSelect = <TData extends object>() => ({
   header: ({ table }: { table: Table<TData> }) => (
     <Checkbox
       toggle={table.getIsAllRowsSelected()}
-      onClick={() => table.getToggleAllRowsSelectedHandler()}
+      onClick={table.getToggleAllRowsSelectedHandler}
     />
   ),
   cell: ({ row }: { row: Row<TData> }) => (
@@ -20,10 +20,8 @@ export const generateSelect = <TData extends object>() => ({
   ),
 });
 
-type stringRecord = Record<string, string>;
-
-export const generateAffiliation = <TData extends stringRecord>(
-  affiliations: stringRecord,
+export const generateAffiliation = <TData extends Record<string, string>>(
+  affiliations: Record<string, string>,
 ) => ({
   accessorKey: "affiliation",
   header: "Affiliation",
@@ -34,7 +32,7 @@ export const generateAffiliation = <TData extends stringRecord>(
 });
 
 export const generateStatus = <TData extends object>(
-  statuses: stringRecord,
+  statuses: Record<string, string>,
 ) => ({
   accessorKey: "status",
   header: "Status",
@@ -45,11 +43,11 @@ export const generateStatus = <TData extends object>(
     return filter.includes(status);
   },
   cell: ({ getValue }: CellContext<TData, string>) => (
-    <Badge>{statuses[getValue().toLowerCase()]}</Badge>
+    <Badge>{statuses[getValue()]}</Badge>
   ),
 });
-export const generateTiers = <TData extends stringRecord>(
-  tiers: stringRecord,
+export const generateTiers = <TData extends Record<string, string>>(
+  tiers: Record<string, string>,
 ) => ({
   accessorKey: "tier",
   header: "Tier",

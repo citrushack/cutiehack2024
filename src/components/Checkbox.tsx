@@ -8,6 +8,8 @@ type checkbox = {
 };
 
 const Checkbox: React.FC<checkbox> = ({ toggle, onClick, text, color }) => {
+  console.log(toggle, onClick);
+
   return (
     <div
       className="flex w-fit items-center hover:cursor-pointer"
@@ -16,7 +18,7 @@ const Checkbox: React.FC<checkbox> = ({ toggle, onClick, text, color }) => {
     >
       <Check
         checked={toggle}
-        onChange={onClick}
+        // onChange={onClick}
         className={`mr-2 h-4 w-4 rounded-sm ${
           toggle
             ? `${color ? color : "bg-hackathon-blue-100"}`

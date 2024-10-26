@@ -91,7 +91,7 @@ const Questions = ({
                 maxLength={field.maxLength}
                 disabled={!field.editable}
                 onChange={(e) =>
-                  setUser({ ...user, [field.name]: e.target.value })
+                  setObject({ ...object, [field.name]: e.target.value })
                 }
               />
             </>
@@ -171,20 +171,21 @@ const Questions = ({
             </>
           )}
           {field.input === "textarea" && (
-            <Textarea
-              data-cy={`${field.title}-textarea`}
-              className="border-1 w-full resize-none border border-black pl-3 placeholder:text-hackathon-gray-200 focus:outline-none"
-              maxLength={500}
-              value={object[field.name]}
-              onChange={(e) =>
-                setObject({ ...object, [field.name]: e.target.value })
-              }
-              placeholder={field.placeholder}
-              name={field.name}
-              rows={field.rows}
-              title={field.title}
-              required={field.required}
-            />
+            <>
+              <Label htmlFor={field.name}>{field.title}</Label>
+              <Textarea
+                data-cy={`${field.title}-textarea`}
+                className="border-1 w-full resize-none border border-black pl-3 placeholder:text-hackathon-gray-200 focus:outline-none"
+                maxLength={500}
+                value={object[field.name]}
+                onChange={(e) =>
+                  setObject({ ...object, [field.name]: e.target.value })
+                }
+                placeholder={field.placeholder}
+                rows={field.rows}
+                title={field.title}
+              />
+            </>
           )}
           {field.input === "upload" && (
             <Upload
