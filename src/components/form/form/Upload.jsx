@@ -104,20 +104,25 @@ const Upload = ({ field, user, setUser, text, maxSize, types, required }) => {
           </div>
         )}
 
-        <Dialog open={showModal} onOpenChange={(value) => setShowModal(value)}>
-          <DialogContent>
-            <DialogHeader>
-              <DialogTitle>{user.name}&apos;s Picture</DialogTitle>
-            </DialogHeader>
-            <embed
-              fill={true}
-              className="h-full w-full object-cover"
-              src={file.src}
-              alt="Photo of the Judge"
-              data-cy="modal-image"
-            />
-          </DialogContent>
-        </Dialog>
+        {showModal && (
+          <Dialog
+            open={showModal}
+            onOpenChange={(value) => setShowModal(value)}
+          >
+            <DialogContent>
+              <DialogHeader>
+                <DialogTitle>{user.name}&apos;s Picture</DialogTitle>
+              </DialogHeader>
+              <embed
+                fill={true}
+                className="h-full w-full object-cover"
+                src={file.src}
+                alt="Photo of the Judge"
+                data-cy="modal-image"
+              />
+            </DialogContent>
+          </Dialog>
+        )}
       </div>
       {toaster.type === "error"
         ? uploading && "UPLOADING ..."
