@@ -12,7 +12,7 @@ const Checkbox: React.FC<checkbox> = ({ toggle, onClick, text, color }) => {
 
   return (
     <div
-      className="flex w-fit items-center hover:cursor-pointer"
+      className="flex w-fit items-center hover:cursor-pointer text-sm font-normal font-poppins"
       onClick={onClick}
       data-cy="checkbox"
     >
