@@ -41,15 +41,15 @@ const CustomToolbar = ({ onView, onNavigate, date, view, setTag }) => {
             className="mx-2 hover:cursor-pointer"
           />
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center gap-x-2">
           <Badge onClick={() => onView("month")}>month</Badge>
           <Badge onClick={() => onView("week")}>week</Badge>
         </div>
       </div>
-      <div className="flex flex-col items-center md:items-end">
+      <div className="flex flex-col items-center md:items-end gap-y-2 ">
         <Badge onClick={() => setTag("all")}>all events</Badge>
         <div className="flex flex-col md:block">
-          <div className="flex flex-wrap items-center justify-center gap-x-2 md:justify-end">
+          <div className="flex flex-wrap items-center justify-center gap-x-2 md:justify-end ">
             {Object.entries(LABELS)
               .filter(([_, { type }]) => type === "leads")
               .map(([key, { color }], index) => (
@@ -58,7 +58,7 @@ const CustomToolbar = ({ onView, onNavigate, date, view, setTag }) => {
                 </Badge>
               ))}
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-x-2 md:justify-end">
+          <div className="flex flex-wrap items-center justify-center gap-x-2 md:justify-end my-2">
             {Object.entries(LABELS)
               .filter(([_, { type }]) => type !== "leads")
               .map(([key, { color }], index) => (
