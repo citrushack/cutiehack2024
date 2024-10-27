@@ -1,4 +1,4 @@
-// import { COLORS } from "../Tags";
+import { COLORS } from "../Tags";
 import Checkbox from "@/components/Checkbox";
 import { Table, Row, CellContext } from "@tanstack/react-table";
 import { Badge } from "@/components/ui/badge";
@@ -33,18 +33,29 @@ export const generateAffiliation = <TData extends Record<string, string>>(
 
 export const generateStatus = <TData extends object>(
   statuses: Record<string, string>,
-) => ({
-  accessorKey: "status",
-  header: "Status",
-  enableColumnFilter: true,
-  filterFn: (row: Row<TData>, col: string, filter: string[]) => {
-    const status = row.getValue(col) as string;
-    return filter.includes(status);
-  },
-  cell: ({ getValue }: CellContext<TData, string>) => (
-    <Badge>{statuses[getValue()]}</Badge>
-  ),
-});
+) => {
+  return {
+    accessorKey: "status",
+    header: "Status",
+    enableColumnFilter: true,
+    filterFn: (row: Row<TData>, col: string, filter: string[]) => {
+      const status = row.getValue(col) as string;
+      return filter.includes(status);
+    },
+
+    cell: ({ getValue }: CellContext<TData, string>) => (
+      <Badge
+        type={getValue() as keyof typeof COLORS}
+      >
+        {statuses[getValue()]}
+      </Badge>
+    ),
+  };
+};
+
+
+
+
 export const generateTiers = <TData extends Record<string, string>>(
   tiers: Record<string, string>,
 ) => ({
