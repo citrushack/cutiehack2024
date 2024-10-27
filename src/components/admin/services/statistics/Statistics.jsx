@@ -1,5 +1,4 @@
 "use client";
-import Title from "@/components/admin/Title";
 import Tabs from "./Tabs";
 import Loading from "@/components/Loading";
 
