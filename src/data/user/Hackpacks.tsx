@@ -8,6 +8,9 @@ import {
   SiMongodb as Mongodb,
   SiPython as Python,
   SiUnity as Unity,
+  SiGithubactions as GithubActions,
+  SiEslint as Eslint,
+  SiPrettier as Prettier,
 } from "@icons-pack/react-simple-icons";
 
 export const TECHSTACKS: Record<string, React.ReactNode> = {
@@ -20,18 +23,21 @@ export const TECHSTACKS: Record<string, React.ReactNode> = {
   Python: <Python />,
   Unity: <Unity />,
   "C++": <CPlusPlus />,
+  GithubActions: <GithubActions/>, 
+  Eslint: <Eslint/>,
+  Prettier: <Prettier/>,
 };
 export const HACKPACKS = [
   {
     link: "https://github.com/acm-ucr/firebase-nextjs-hackpack",
     text: "Full Stack Web App",
-    techs: ["Javascript", "Next.js", "Firebase", "Tailwind"],
+    techs: ["Javascript", "Next.js", "Firebase", "Tailwind", "Prettier", "Eslint", "GithubActions"],
     description: "A Firebase + Next.js Starter Pack",
   },
   {
     link: "https://github.com/acm-ucr/nextjs-hackpack",
     text: "Full Stack Web App",
-    techs: ["Javascript", "Next.js", "Tailwind"],
+    techs: ["Javascript", "Next.js", "Tailwind",  "Prettier", "Eslint", "GithubActions"],
     description: "A Firebase + Next.js Starter Pack",
   },
   {
