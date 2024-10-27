@@ -3,7 +3,7 @@ import Fault from "@/utils/error";
 import Navigation from "@/components/Navigation";
 import { headers } from "next/headers";
 import { getSession } from "@/utils/auth";
-import SignIn from "./SignIn";
+import SignIn from "@/utils/signin";
 
 const ProtectedPage = async ({ children, restrictions, title }) => {
   const session = await getSession();
