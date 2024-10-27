@@ -41,7 +41,6 @@ export const COLUMNS: (ColumnDef<Volunteer, string> & {
   {
     accessorKey: "name",
     header: "Name",
-    meta: { width: "w-[28%]" },
     enableColumnFilter: true,
     filterFn: "includesString",
     searchable: true,
@@ -52,7 +51,6 @@ export const COLUMNS: (ColumnDef<Volunteer, string> & {
   {
     accessorKey: "email",
     header: "Email",
-    meta: { width: "w-[30%]" },
     enableColumnFilter: true,
     filterFn: "includesString",
     searchable: true,
@@ -63,7 +61,6 @@ export const COLUMNS: (ColumnDef<Volunteer, string> & {
   {
     accessorKey: "discord",
     header: "Discord",
-    meta: { width: "w-[25%]" },
     enableColumnFilter: true,
     filterFn: "includesString",
     searchable: true,

@@ -38,7 +38,6 @@ export const COLUMNS: (ColumnDef<Mentor, string> & {
   {
     accessorKey: "name",
     header: "Name",
-    meta: { width: "w-[28%]" },
     enableColumnFilter: true,
     filterFn: "includesString",
     searchable: true,
@@ -49,7 +48,6 @@ export const COLUMNS: (ColumnDef<Mentor, string> & {
   {
     accessorKey: "email",
     header: "Email",
-    meta: { width: "w-[35%]" },
     enableColumnFilter: true,
     filterFn: "includesString",
     searchable: true,
@@ -60,7 +58,6 @@ export const COLUMNS: (ColumnDef<Mentor, string> & {
   {
     accessorKey: "discord",
     header: "Discord",
-    meta: { width: "w-[20%]" },
     enableColumnFilter: true,
     filterFn: "includesString",
     searchable: true,

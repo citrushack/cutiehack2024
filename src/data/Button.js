@@ -25,6 +25,7 @@ export const COLORS = {
     border: "border-0",
   },
 };
+
 export const SIZES = {
   xs: "text-xs",
   sm: "text-sm",
