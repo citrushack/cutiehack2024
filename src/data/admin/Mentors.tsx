@@ -75,10 +75,12 @@ export const DROPDOWN: React.FC<dropdownProps> = ({ object }) => {
         <div className="grid w-11/12 grid-flow-col grid-rows-4">
           {AVAILABILITY.map((text, index) => (
             <Checkbox
-              toggle={object.availability.includes(text)}
-              text={text}
+              id="availability"
+              checked={object.availability.includes(text)}
               key={index}
-            />
+            >
+              {text}
+            </Checkbox>
           ))}
         </div>
       </div>

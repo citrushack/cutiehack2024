@@ -12,7 +12,7 @@ const Checkbox = ({ id, checked, onClick, children }: checkbox) => {
   return (
     <div className="flex items-center gap-2">
       <Check id={id} checked={checked} onClick={onClick} />
-      {children && <Label htmlFor="terms">{children}</Label>}
+      {children && <Label htmlFor={id}>{children}</Label>}
     </div>
   );
 };
