@@ -36,6 +36,7 @@ const Filters = ({ statuses, filters, setFilters }) => {
             onClick={() =>
               onClick(parseInt(key), selectedFilters.includes(parseInt(key)))
             }
+            className="bg-gray-300"
           >
             {value}
           </ToggleGroupItem>
