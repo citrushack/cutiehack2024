@@ -9,14 +9,14 @@ export const generateSelect = <TData extends object>() => ({
     <Checkbox
       id="select-all"
       checked={table.getIsAllRowsSelected()}
-      onClick={table.getToggleAllRowsSelectedHandler}
+      onClick={table.getToggleAllRowsSelectedHandler()}
     />
   ),
   cell: ({ row }: { row: Row<TData> }) => (
     <Checkbox
       id="select-one"
       checked={row.getIsSelected()}
-      onClick={() => row.getToggleSelectedHandler()}
+      onClick={row.getToggleSelectedHandler()}
     />
   ),
 });
