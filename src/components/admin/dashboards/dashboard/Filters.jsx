@@ -32,6 +32,7 @@ const Filters = ({ statuses, filters, setFilters }) => {
       <ToggleGroup type="multiple">
         {Object.entries(statuses).map(([key, value]) => (
           <ToggleGroupItem
+            key={key}
             value={parseInt(key)}
             onClick={() =>
               onClick(parseInt(key), selectedFilters.includes(parseInt(key)))
