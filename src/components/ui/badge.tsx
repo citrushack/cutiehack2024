@@ -3,6 +3,8 @@ import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/utils/tailwind";
 
+import { COLORS } from "@/data/Tags";
+
 const badgeVariants = cva(
   "inline-flex items-center rounded border border-slate-200 px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 dark:border-slate-800 dark:focus:ring-slate-300",
   {
@@ -25,11 +27,13 @@ const badgeVariants = cva(
 
 export interface BadgeProps
   extends React.HTMLAttributes<HTMLDivElement>,
-    VariantProps<typeof badgeVariants> {}
+    VariantProps<typeof badgeVariants> {type?: keyof typeof COLORS;}
 
-function Badge({ className, variant, ...props }: BadgeProps) {
+function Badge({ className, variant, type = "none",  ...props }: BadgeProps) {
+  const {background, text, hover} = COLORS[type];
+
   return (
-    <div className={cn(badgeVariants({ variant }), className)} {...props} />
+    <div className={cn(badgeVariants({ variant }), className, background, text, hover)} {...props} />
   );
 }
 
