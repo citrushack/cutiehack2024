@@ -32,7 +32,8 @@ interface Attributes {
   phone: string;
   company: string;
   position: string;
-  tier: string;
+  tier: "Bronze" | "Silver" | "Gold" | "Tier4" | "Tier5" | "Other";
+  comments: string;
   requirements: string[];
 }
 
@@ -42,8 +43,9 @@ export const ATTRIBUTES: Attributes = {
   phone: "",
   company: "",
   position: "",
-  tier: "",
+  tier: "Bronze",
   requirements: [],
+  comments: "",
 };
 
 type Fields = {

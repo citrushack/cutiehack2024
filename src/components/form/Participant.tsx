@@ -2,27 +2,33 @@
 
 import { useState } from "react";
 import Form from "@/components/form/form/Form";
-import { FIELDS, ATTRIBUTES } from "@/data/form/Interest";
+import { FIELDS, ATTRIBUTES } from "@/data/form/Participant";
 import { useSession } from "next-auth/react";
 import { STATUSES } from "@/data/Statuses";
-import { schema } from "@/schemas/interest";
+import { schema } from "@/schemas/participant";
 import { submit } from "@/utils/form";
 
-const Interest = () => {
+const Participant = () => {
   const { data: session } = useSession();
-  const [interest, setInterest] = useState({
+
+  if (!session?.user) return null;
+
+  const [participant, setParticipant] = useState({
     ...ATTRIBUTES,
     name: session.user.name,
     email: session.user.email,
     roles: session.user.roles,
-    form: "interests",
+    form: "participants",
   });
 
-  const onSubmit = async (setLoading, setState) => {
+  const onSubmit = async (
+    setLoading: (value: boolean) => void,
+    setState: (value: number) => void,
+  ) => {
     await submit({
-      data: interest,
+      data: participant,
       schema,
-      url: "/api/dashboard/interests",
+      url: "/api/dashboard/participants",
       setLoading,
       setState,
     });
@@ -31,13 +37,13 @@ const Interest = () => {
   return (
     <Form
       fields={FIELDS}
-      object={interest}
-      setObject={setInterest}
-      header="INTEREST APPLICATION"
+      object={participant}
+      setObject={setParticipant}
+      header="HACKER APPLICATION"
       onSubmit={onSubmit}
       statuses={STATUSES}
     />
   );
 };
 
-export default Interest;
+export default Participant;

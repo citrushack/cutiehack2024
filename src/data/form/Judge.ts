@@ -15,16 +15,10 @@ interface Attributes {
   phone: string;
   gender: string;
   shirt: string;
-  affiliation: string;
+  affiliation: "Professor" | "Student" | "Industry";
   title: string;
   photo: string;
   requirements: string[];
-}
-
-interface Affiliations {
-  professor: string;
-  student: string;
-  industry: string;
 }
 
 interface Fields {
@@ -38,6 +32,12 @@ interface Fields {
   title: TextInput;
   photo: UploadInput;
   requirements: TermsAndConditions;
+}
+
+interface Affiliations {
+  professor: string;
+  student: string;
+  industry: string;
 }
 
 export const AFFILIATIONS: Affiliations = {
@@ -176,7 +176,7 @@ export const ATTRIBUTES: Attributes = {
   phone: "",
   gender: "",
   shirt: "",
-  affiliation: "",
+  affiliation: "Professor",
   title: "",
   photo: "",
   requirements: [],

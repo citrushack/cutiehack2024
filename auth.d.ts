@@ -10,6 +10,7 @@ declare module "next-auth" {
       [key: string]: Number;
     };
     team: string;
+    photo: string;
   }
 
   export interface Session {

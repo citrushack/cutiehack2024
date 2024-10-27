@@ -16,8 +16,9 @@ const Form = ({
   header,
   fields,
   onSubmit,
-  statuses,
+  statuses = {},
   bypass = false,
+  packet = false,
 }) => {
   const [loading, setLoading] = useState(false);
 
@@ -53,6 +54,7 @@ const Form = ({
                 fields={fields}
                 onSubmit={onSubmit}
                 setState={setState}
+                packet={packet}
               />
             ) : (
               <Confirmation />

@@ -25,6 +25,10 @@ interface Attributes {
   resume: string;
   requirements: string[];
   priorHackathons: string[];
+  discord: string;
+  eventSource: string;
+  priorExperience: string;
+  response: string;
 }
 
 export const ATTRIBUTES: Attributes = {
@@ -39,6 +43,10 @@ export const ATTRIBUTES: Attributes = {
   resume: "",
   requirements: [],
   priorHackathons: [],
+  discord: "",
+  eventSource: "",
+  priorExperience: "",
+  response: "",
 };
 
 interface Fields {

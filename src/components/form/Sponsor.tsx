@@ -2,45 +2,47 @@
 
 import { useState } from "react";
 import Form from "@/components/form/form/Form";
-import { FIELDS, ATTRIBUTES } from "@/data/form/Committees";
+import { FIELDS, ATTRIBUTES } from "@/data/form/Sponsors";
 import { useSession } from "next-auth/react";
 import { STATUSES } from "@/data/Statuses";
-import { schema } from "@/schemas/committee";
+import { schema } from "@/schemas/sponsor";
 import { submit } from "@/utils/form";
 
-const Committee = () => {
+const Sponsor = () => {
   const { data: session } = useSession();
 
   if (!session?.user) return null;
 
-  const [committee, setCommittee] = useState({
+  const [sponsor, setSponsor] = useState({
     ...ATTRIBUTES,
     name: session.user.name,
     email: session.user.email,
     roles: session.user.roles,
-    form: "committees",
+    form: "sponsors",
   });
 
-  const onSubmit = async (setLoading, setState) => {
+  const onSubmit = async (
+    setLoading: (value: boolean) => void,
+    setState: (value: number) => void,
+  ) => {
     await submit({
-      data: committee,
+      data: sponsor,
       schema,
-      url: "/api/dashboard/committees",
+      url: "/api/dashboard/sponsors",
       setLoading,
       setState,
     });
   };
-
   return (
     <Form
       fields={FIELDS}
-      object={committee}
-      setObject={setCommittee}
-      header="COMMITTEE PORTAL REQUEST"
+      object={sponsor}
+      setObject={setSponsor}
+      header="SPONSORSHIP INQUIRY"
       onSubmit={onSubmit}
       statuses={STATUSES}
     />
   );
 };
 
-export default Committee;
+export default Sponsor;

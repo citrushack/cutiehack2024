@@ -30,6 +30,7 @@ interface Attributes {
   resume: string;
   requirements: string[];
   team: string;
+  discord: string;
 }
 
 interface Fields {
@@ -241,4 +242,5 @@ export const ATTRIBUTES: Attributes = {
   resume: "",
   requirements: [],
   team: "",
+  discord: "",
 };

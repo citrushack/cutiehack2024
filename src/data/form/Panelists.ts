@@ -131,14 +131,28 @@ export const FIELDS = {
   },
 };
 
-export const ATTRIBUTES = {
+interface Attributes {
+  name: string;
+  email: string;
+  phone: string;
+  gender: string;
+  shirt: string;
+  title: string;
+  photo: string;
+  requirements: string[];
+  company: string;
+  panelist: "Intern" | "Professor" | "Researcher";
+}
+
+export const ATTRIBUTES: Attributes = {
   name: "",
   email: "",
   phone: "",
   gender: "",
   shirt: "",
-  affiliation: "",
   title: "",
   photo: "",
   requirements: [],
+  company: "",
+  panelist: "Intern",
 };
