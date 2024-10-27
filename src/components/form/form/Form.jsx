@@ -28,7 +28,7 @@ const Form = ({
 
   return (
     <div className="overflow-scroll-y flex h-full w-full flex-col items-center font-poppins">
-      <div className="mr-[10%] flex w-full flex-row justify-end space-x-4">
+      <div className="mt-4 flex w-full flex-row justify-end space-x-4">
         <Button asChild>
           <Link href="/">Back to Home</Link>
         </Button>
