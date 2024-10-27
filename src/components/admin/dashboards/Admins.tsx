@@ -1,6 +1,6 @@
 "use client";
-import { TAGS, COLUMNS, DROPDOWN } from "@/data/admin/admins";
-import { STATUSES } from "@/data/statuses";
+import { TAGS, COLUMNS, DROPDOWN } from "@/data/admin/Admins";
+import { STATUSES } from "@/data/Statuses";
 import Table from "./dashboard/dashboard";
 import { SearchParams } from "@/types/dashboard";
 

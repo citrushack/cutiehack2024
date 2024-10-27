@@ -11,6 +11,9 @@ import {
   SiGithubactions as GithubActions,
   SiEslint as Eslint,
   SiPrettier as Prettier,
+  SiDiscord as Discord,
+  SiJupyter as Jupyter,
+  SiPandas as Pandas,
 } from "@icons-pack/react-simple-icons";
 
 export const TECHSTACKS: Record<string, React.ReactNode> = {
@@ -26,42 +29,69 @@ export const TECHSTACKS: Record<string, React.ReactNode> = {
   GithubActions: <GithubActions/>, 
   Eslint: <Eslint/>,
   Prettier: <Prettier/>,
+  Discord: <Discord/>,
+  Jupyter: <Jupyter/>,
+  Pandas: <Pandas/>
 };
 export const HACKPACKS = [
   {
     link: "https://github.com/acm-ucr/firebase-nextjs-hackpack",
-    text: "Full Stack Web App",
+    text: "Firebase Web App",
     techs: ["Javascript", "Next.js", "Firebase", "Tailwind", "Prettier", "Eslint", "GithubActions"],
     description: "A Firebase + Next.js Starter Pack",
+  },
+  {
+    link: "https://github.com/acm-ucr/firebase-nextjs-hackpack",
+    text: "MongoDB Web App",
+    techs: ["Javascript", "Next.js", "MongoDB", "Tailwind", "Prettier", "Eslint", "GithubActions"],
+    description: "A MongoDB + Next.js Starter Pack",
   },
   {
     link: "https://github.com/acm-ucr/nextjs-hackpack",
     text: "Full Stack Web App",
     techs: ["Javascript", "Next.js", "Tailwind",  "Prettier", "Eslint", "GithubActions"],
-    description: "A Firebase + Next.js Starter Pack",
+    description: "A Next.js Starter Pack",
   },
   {
     link: "https://github.com/acm-ucr/arduino-hackpack",
     text: "Hardware",
     techs: ["Arduino", "C++"],
-    description: "A Firebase + Next.js Starter Pack",
+    description: "An Arduino Starter Pack",
   },
   {
     link: "https://github.com/acm-ucr/unity-hackpack",
     text: "Game Development",
     techs: ["Unity"],
-    description: "A Firebase + Next.js Starter Pack",
+    description: "A Unity Starter Pack",
   },
   {
-    link: "https://github.com/acm-ucr/discord_python_hackpack",
-    text: "Discord Bot",
-    techs: ["Python"],
-    description: "A Firebase + Next.js Starter Pack",
+    link: "https://github.com/acm-ucr/discord-javascript-hackpack",
+    text: "Javascript Discord Bot",
+    techs: ["Javascript", "Discord", "Prettier", "Eslint", "GithubActions"],
+    description: "A Javascript + Discord API Starter Pack",
   },
   {
-    link: "https://github.com/acm-ucr/discord_python_hackpack",
-    text: "Python Application",
+    link: "https://github.com/acm-ucr/discord-python-hackpack",
+    text: "Python Discord Bot",
     techs: ["Python"],
-    description: "A Firebase + Next.js Starter Pack",
+    description: "A Python + Discord API Starter Pack",
+  },
+  {
+    link: "https://github.com/acm-ucr/discord-python-hackpack",
+    text: "Computer Vision",
+    techs: ["Python"],
+    description: "A Computer Vision Starter Pack",
+  },
+  {
+    link: "https://github.com/acm-ucr/python-hackpack",
+    text: "Python",
+    techs: ["Python"],
+    description: "A Python Starter Pack",
+  },
+  {
+    link: "https://github.com/acm-ucr/python-hackpack",
+    text: "Machine Learning",
+    techs: ["Python", "Jupyter", "Pandas", "Matplotlib"],
+    description: "A Machine Learning Starter Pack",
   },
 ];
