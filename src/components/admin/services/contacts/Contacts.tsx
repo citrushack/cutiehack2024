@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import Title from "../../Title";
 import Contact from "./Contact";
+import { Label } from "@/components/ui/label";
 
 const contacts = [
   "participants",
@@ -23,7 +23,7 @@ const Contacts = () => {
 
   return (
     <div className="flex h-full flex-col gap-3 py-4 font-poppins">
-      <Title title="Contacts" />
+      <Label className="pr-5 text-2xl font-bold">Contacts</Label>
 
       <div className="grid w-full grid-cols-1 gap-4 p-4 md:grid-cols-2 lg:grid-cols-3">
         {contacts.map((role, index) => (

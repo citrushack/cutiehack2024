@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Title from "../../Title";
 import Scanner from "./Scanner";
 import Select from "@/components/Select";
 import toaster from "@/utils/toaster";
@@ -8,6 +7,7 @@ import { api } from "@/utils/api";
 import { getEvents, getUser } from "./actions";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
 
 const CheckIn = () => {
   const [event, setEvent] = useState({ name: "No events" });
@@ -84,7 +84,7 @@ const CheckIn = () => {
 
   return (
     <div className="flex h-full flex-col gap-3 py-4 font-poppins">
-      <Title title="Check In" />
+      <Label className="pr-5 text-2xl font-bold">Checkin</Label>
       <div className="flex flex-col items-center justify-center">
         <div className="flex flex-col gap-3 overflow-hidden py-3">
           {events && (

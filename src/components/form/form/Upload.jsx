@@ -41,7 +41,7 @@ const Upload = ({ field, user, setUser, text, maxSize, types, required }) => {
 
   return (
     <div className="flex flex-col">
-      <p className="mb-0 font-semibold">
+      <p className="mb-1 font-semibold">
         {text}
         {required && <span className="text-red-500">*</span>}
       </p>

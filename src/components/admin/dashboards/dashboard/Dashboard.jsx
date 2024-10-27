@@ -10,7 +10,7 @@ import { useState } from "react";
 import Toolbar from "./Toolbar";
 import Filters from "./Filters";
 import Table from "./Table";
-import Title from "../../Title";
+import { Label } from "@/components/ui/label";
 
 const Dashboard = ({
   title,
@@ -60,7 +60,7 @@ const Dashboard = ({
   return (
     <div className="w-full">
       <div className="my-2 flex items-center">
-        <Title title={title} />
+        <Label className="pr-5 text-2xl font-bold">{title}</Label>
         <Filters
           statuses={statuses}
           filters={filters}

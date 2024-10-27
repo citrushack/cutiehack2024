@@ -1,8 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import Input from "../../Input";
 // import { COLORS } from "@/data/Tags";
-import Popup from "../../Popup";
 import toaster from "@/utils/toaster";
 import { useRouter } from "next/navigation";
 import { api } from "@/utils/api";
@@ -15,6 +13,16 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { InputWithClear } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
 
 const tags = ["professor", "industry", "student"];
 
@@ -199,14 +207,30 @@ const Toolbar = ({
 
   return (
     <>
-      {popup.visible && (
-        <Popup
-          setPopup={setPopup}
-          popup={popup}
-          onClick={() => router.push("/admin/judges")}
-          text="add judges"
-        />
-      )}
+      <AlertDialog open={popup.visible}>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+            <AlertDialogDescription>{popup.text}</AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogCancel
+              onClick={() => setPopup({ ...popup, visible: false })}
+            >
+              Cancel
+            </AlertDialogCancel>
+            <AlertDialogAction
+              onClick={() => {
+                router.push("/admin/judges");
+                setPopup({ ...popup, visible: false });
+              }}
+            >
+              Add Judges
+            </AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
+
       <form
         className="flex w-full flex-col justify-between gap-2 sm:flex-row sm:items-center"
         onSubmit={generate}

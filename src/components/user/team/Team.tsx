@@ -1,8 +1,8 @@
-import Title from "@/components/admin/Title";
 import Details from "./Details";
 import NewTeam from "./NewTeam";
 import { getSession } from "@/utils/auth";
 import { fetchTeam } from "@/actions/join";
+import { Label } from "@/components/ui/label";
 
 const Team = async () => {
   const session = await getSession();
@@ -15,7 +15,7 @@ const Team = async () => {
 
   return (
     <div className="flex h-full flex-col gap-3 py-4">
-      <Title title="Team" />
+      <Label className="pr-5 text-2xl font-bold">Team</Label>
       {team === "" ? <NewTeam /> : <Details team={details} />}
     </div>
   );

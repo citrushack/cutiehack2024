@@ -71,7 +71,7 @@ const Table = ({ data }) => {
                     <div key={index} className="my-2 flex items-center">
                       <p className="mb-0 mr-2 font-semibold">{index + 1}</p>
                       <div className="flex items-center">
-                        {judges.map(({ name, affiliation }, i) => (
+                        {judges.map(({ name }, i) => (
                           <Badge key={i}>{name}</Badge>
                         ))}
                       </div>

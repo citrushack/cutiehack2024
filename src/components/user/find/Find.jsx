@@ -1,6 +1,6 @@
 "use client";
 
-import Title from "@/components/admin/Title";
+import { Label } from "@/components/ui/label";
 import Toolbar from "../Toolbar";
 import Idea from "./Idea";
 import { useVirtualizer } from "@tanstack/react-virtual";
@@ -26,7 +26,7 @@ const Find = () => {
   return (
     <div className="flex h-[calc(100vh-48px)] w-full flex-col">
       <div className="pb-3 pt-4">
-        <Title title="Find a Team" />
+        <Label className="pr-5 text-2xl font-bold">Find a Team</Label>
       </div>
       <Toolbar />
       <div className="relative h-full overflow-y-scroll">

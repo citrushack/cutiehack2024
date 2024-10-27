@@ -49,7 +49,12 @@ export const COLUMNS: (ColumnDef<Participant, string> & {
     filterFn: "includesString",
     searchable: true,
     cell: (props: CellContext<Participant, Participant["name"]>) => (
-      <div>{props.getValue()}</div>
+      <div
+        onClick={props.row.getToggleSelectedHandler()}
+        className="hover:cursor-pointer"
+      >
+        {props.getValue()}
+      </div>
     ),
   },
   {

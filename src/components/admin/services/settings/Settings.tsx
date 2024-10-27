@@ -1,6 +1,6 @@
 "use client";
-import Title from "@/components/admin/Title";
 import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
 import { api } from "@/utils/api";
 import toaster from "@/utils/toaster";
 
@@ -17,7 +17,8 @@ const Settings = () => {
 
   return (
     <div className="flex h-full flex-col py-4 font-poppins">
-      <Title title="Settings" />
+      <Label className="pr-5 text-2xl font-bold">Settings</Label>
+
       <Button onClick={syncStatsWithDatabase}>Sync Stats</Button>
     </div>
   );
