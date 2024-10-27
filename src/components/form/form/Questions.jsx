@@ -168,12 +168,17 @@ const Questions = ({
                 value={object[field.field]}
                 onValueChange={(value) => handleClick(value, field.field)}
               >
-                {Object.values(field.options).map((option, index) => (
-                  <div className="flex items-center space-x-2" key={index}>
-                    <RadioGroupItem value={option} id={option} />
-                    <Label htmlFor={option}>{option}</Label>
-                  </div>
-                ))}
+                <div className="grid grid-cols-2">
+                  {Object.values(field.options).map((option, index) => (
+                    <div
+                      className="mb-2 flex items-center space-x-2"
+                      key={index}
+                    >
+                      <RadioGroupItem value={option} id={option} />
+                      <Label htmlFor={option}>{option}</Label>
+                    </div>
+                  ))}
+                </div>
               </RadioGroup>
             </>
           )}
