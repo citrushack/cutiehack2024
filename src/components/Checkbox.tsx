@@ -10,8 +10,8 @@ type checkbox = {
 
 const Checkbox = ({ id, checked, onClick, children }: checkbox) => {
   return (
-    <div className="flex items-center gap-2">
-      <Check id={id} checked={checked} onClick={onClick} />
+    <div className="flex items-center gap-2" onClick={onClick}>
+      <Check id={id} checked={checked} />
       {children && <Label htmlFor={id}>{children}</Label>}
     </div>
   );
