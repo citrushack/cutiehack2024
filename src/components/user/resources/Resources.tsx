@@ -1,12 +1,13 @@
 "use client";
 import { HACKPACKS } from "@/data/user/Hackpacks";
-import Toolbar from "../find/Toolbar";
+import Toolbar from "../Toolbar";
 import Title from "@/components/admin/Title";
 import Hackpack from "./Hackpack";
 import { useState } from "react";
 
 const Resources = () => {
   const [search, setSearch] = useState(HACKPACKS);
+
   return (
     <>
       <div className="pb-3 pt-4">
