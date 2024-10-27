@@ -3,7 +3,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/utils/tailwind";
 
-import { COLORS } from "@/data/Tags";
+import { COLORS } from "@/data/tags";
 
 const badgeVariants = cva(
   "inline-flex items-center rounded border border-slate-200 px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 dark:border-slate-800 dark:focus:ring-slate-300",

@@ -1,4 +1,4 @@
-import { COLORS } from "../Tags";
+import { COLORS } from "../tags";
 import Checkbox from "@/components/checkbox";
 import { Table, Row, CellContext } from "@tanstack/react-table";
 import { Badge } from "@/components/ui/badge";
