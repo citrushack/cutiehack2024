@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Clock from "./Clock";
+import Clock from "./clock";
 import { v4 as uuidv4 } from "uuid";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";

@@ -1,5 +1,5 @@
-import data from "@/data/Config";
-import Template from "./Template";
+import data from "@/data/config";
+import Template from "./template";
 import { Button, Section, Text } from "@react-email/components";
 
 const Acceptance = ({ name, position, preview }) => {

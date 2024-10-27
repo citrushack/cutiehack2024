@@ -7,8 +7,8 @@ import {
   TextareaInput,
   TextInput,
 } from "@/types/forms";
-import { MAJORS, GRADES, GENDERS, SHIRTS, AVAILABILITY } from "./Information";
-import data from "@/data/Config";
+import { MAJORS, GRADES, GENDERS, SHIRTS, AVAILABILITY } from "./information";
+import data from "@/data/config";
 
 type Fields = {
   description: Description;

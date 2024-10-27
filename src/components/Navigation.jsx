@@ -4,9 +4,9 @@ import { useState } from "react";
 import LOGO from "@/app/favicon.ico";
 import Image from "next/image";
 import Link from "next/link";
-import { TABS } from "@/data/Navigation";
+import { TABS } from "@/data/navigation";
 import { usePathname } from "next/navigation";
-import data from "@/data/Config";
+import data from "@/data/config";
 import { LogIn, Globe, Code, MessageSquare } from "lucide-react";
 import { signOut } from "next-auth/react";
 import {

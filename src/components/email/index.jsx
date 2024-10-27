@@ -1,6 +1,6 @@
-import Acceptance from "./Acceptance";
-import Confirmation from "./Confirmation";
-import Rejection from "./Rejection";
+import Acceptance from "./acceptance";
+import Confirmation from "./confirmation";
+import Rejection from "./rejection";
 
 const Email = ({ id, name, position, preview }) => {
   if (id === "confirmation")

@@ -1,6 +1,6 @@
-import RELEASES from "@/data/Releases";
+import RELEASES from "@/data/releases";
 import Fault from "@/utils/error";
-import Navigation from "@/components/Navigation";
+import Navigation from "@/components/navigation";
 import { headers } from "next/headers";
 import { getSession } from "@/utils/auth";
 import SignIn from "@/utils/signin";

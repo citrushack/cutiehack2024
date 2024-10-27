@@ -1,7 +1,7 @@
 "use client";
-import { TAGS, COLUMNS, DROPDOWN } from "@/data/admin/Mentors";
-import { STATUSES } from "@/data/Statuses";
-import Table from "./dashboard/Dashboard";
+import { TAGS, COLUMNS, DROPDOWN } from "@/data/admin/mentors";
+import { STATUSES } from "@/data/statuses";
+import Table from "./dashboard/dashboard";
 import { SearchParams } from "@/types/dashboard";
 
 type props = {

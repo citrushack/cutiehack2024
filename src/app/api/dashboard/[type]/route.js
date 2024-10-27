@@ -19,9 +19,9 @@ import {
   limitToLast,
 } from "firebase/firestore";
 import { authenticate } from "@/utils/auth";
-import { AUTH, ATTRIBUTES } from "@/data/admin/Dashboard";
+import { AUTH, ATTRIBUTES } from "@/data/admin/dashboard";
 import send from "@/utils/email";
-import data from "@/data/Config";
+import data from "@/data/config";
 
 const types = new Set([
   "admins",

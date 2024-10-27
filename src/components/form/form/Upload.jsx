@@ -7,7 +7,7 @@ import {
   Eye,
 } from "lucide-react";
 import toaster from "@/utils/toaster";
-import { BYTES } from "@/data/Bytes";
+import { BYTES } from "@/data/bytes";
 import { readFileAsBase64, compress } from "@/utils/convert";
 import {
   Dialog,

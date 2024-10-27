@@ -1,4 +1,4 @@
-import { LABELS } from "@/data/admin/Calendar";
+import { LABELS } from "@/data/admin/calendar";
 // import { COLORS } from "@/data/Tags";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useCallback, useEffect } from "react";

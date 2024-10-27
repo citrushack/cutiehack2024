@@ -1,5 +1,5 @@
-import data from "../Config";
-import { SOURCES } from "./Information";
+import data from "../config";
+import { SOURCES } from "./information";
 
 const RATE = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
 

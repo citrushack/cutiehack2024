@@ -1,7 +1,7 @@
 "use client";
-import { TAGS, COLUMNS } from "@/data/admin/Teams";
-import { STATUSES } from "@/data/Statuses";
-import Table from "./dashboard/Dashboard";
+import { TAGS, COLUMNS } from "@/data/admin/teams";
+import { STATUSES } from "@/data/statuses";
+import Table from "./dashboard/dashboard";
 
 const Teams = ({ searchParams }) => {
   return (

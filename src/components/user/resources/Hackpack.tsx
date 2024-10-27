@@ -1,4 +1,4 @@
-import { TECHSTACKS } from "@/data/user/Hackpacks";
+import { TECHSTACKS } from "@/data/user/hackpacks";
 import Link from "next/link";
 import { SiGithub as Github } from "@icons-pack/react-simple-icons";
 

@@ -5,9 +5,9 @@ import {
   TermsAndConditions,
   TextInput,
 } from "@/types/forms";
-import { MAJORS, GRADES, SHIRTS, GENDERS } from "./Information";
-import data from "@/data/Config";
-import { AFFILIATIONS } from "./Information";
+import { MAJORS, GRADES, SHIRTS, GENDERS } from "./information";
+import data from "@/data/config";
+import { AFFILIATIONS } from "./information";
 
 interface Attributes {
   name: string;

@@ -1,5 +1,5 @@
 import { api } from "@/utils/api";
-import Events from "./Events";
+import Events from "./events";
 
 const Schedule = async () => {
   const { items } = await api({

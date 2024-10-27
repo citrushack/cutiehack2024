@@ -1,13 +1,13 @@
-import Landing from "./Landing";
-import About from "./About";
+import Landing from "./landing";
+import About from "./about";
 import Schedule from "./schedule";
-import Tracks from "./Tracks";
-import Sponsors from "./Sponsors";
-import Team from "./Team";
-import Committees from "./Committees";
-import Judges from "./Judges";
-import FAQ from "./FAQ";
-import Footer from "./Footer";
+import Tracks from "./tracks";
+import Sponsors from "./sponsors";
+import Team from "./team";
+import Committees from "./committees";
+import Judges from "./judges";
+import FAQ from "./faq";
+import Footer from "./footer";
 
 const Live = () => {
   return (

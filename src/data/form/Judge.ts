@@ -5,9 +5,9 @@ import {
   TextInput,
   UploadInput,
 } from "@/types/forms";
-import { GENDERS } from "./Information";
-import { SHIRTS } from "./Information";
-import data from "@/data/Config";
+import { GENDERS } from "./information";
+import { SHIRTS } from "./information";
+import data from "@/data/config";
 
 interface Attributes {
   name: string;

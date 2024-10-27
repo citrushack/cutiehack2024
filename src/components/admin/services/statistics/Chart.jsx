@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { Label, Pie, PieChart } from "recharts";
-import { ROLES, SIZES, DIETS, SCHOOLS } from "@/data/admin/Statistics";
+import { ROLES, SIZES, DIETS, SCHOOLS } from "@/data/admin/statistics";
 
 import { Card, CardContent } from "@/components/ui/card";
 import {

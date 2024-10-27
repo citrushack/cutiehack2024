@@ -1,11 +1,11 @@
-import View from "@/components/admin/dashboards/dashboard/View";
-import { AFFILIATIONS } from "../form/Information";
-import { generateAffiliation, generateSelect, generateStatus } from "./Columns";
-import { STATUSES } from "@/data/Statuses";
+import View from "@/components/admin/dashboards/dashboard/view";
+import { AFFILIATIONS } from "../form/information";
+import { generateAffiliation, generateSelect, generateStatus } from "./columns";
+import { STATUSES } from "@/data/statuses";
 import JSZip from "jszip";
 import { save } from "@/utils/download";
 import { Download } from "lucide-react";
-import data from "../Config";
+import data from "../config";
 import { Tags } from "@/types/dashboard";
 import { ColumnDef, CellContext } from "@tanstack/react-table";
 

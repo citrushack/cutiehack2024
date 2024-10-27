@@ -1,5 +1,5 @@
-import { generateSelect, generateStatus } from "./Columns";
-import { STATUSES } from "@/data/Statuses";
+import { generateSelect, generateStatus } from "./columns";
+import { STATUSES } from "@/data/statuses";
 import { Tags } from "@/types/dashboard";
 import { ColumnDef, CellContext } from "@tanstack/react-table";
 

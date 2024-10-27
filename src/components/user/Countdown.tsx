@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import data from "@/data/Config";
+import data from "@/data/config";
 
 interface props {
   value: number;

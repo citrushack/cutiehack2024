@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Contact from "./Contact";
+import Contact from "./contact";
 import { Label } from "@/components/ui/label";
 
 const contacts = [

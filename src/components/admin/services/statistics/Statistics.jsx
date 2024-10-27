@@ -1,11 +1,11 @@
 "use client";
-import Tabs from "./Tabs";
-import Loading from "@/components/Loading";
+import Tabs from "./tabs";
+import Loading from "@/components/loading";
 
-import Charts from "./Charts";
+import Charts from "./charts";
 import { getStats } from "./actions";
 import { useQuery } from "@tanstack/react-query";
-import ChartLegend from "@/components/admin/services/statistics/ChartLegend";
+import ChartLegend from "@/components/admin/services/statistics/legend";
 import { Label } from "@/components/ui/label";
 const Statistics = () => {
   const { data: counts } = useQuery({

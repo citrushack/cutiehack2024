@@ -1,5 +1,5 @@
 import { Label } from "@/components/ui/label";
-import Chart from "./Chart";
+import Chart from "./chart";
 
 const Charts = ({ counts }) => {
   const order = ["status", "shirt", "diet", "school"];

@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import Table from "./Table";
-import Toolbar from "./Toolbar";
+import Table from "./table";
+import Toolbar from "./toolbar";
 import { Label } from "@/components/ui/label";
 
 const Judging = () => {

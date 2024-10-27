@@ -5,9 +5,9 @@ import {
   Calendar as ReactBigCalendar,
   momentLocalizer,
 } from "react-big-calendar";
-import Toolbar from "./Toolbar";
-import Event from "./Event";
-import Modal from "./Modal";
+import Toolbar from "./toolbar";
+import Event from "./event";
+import Modal from "./modal";
 import { getEvents } from "./actions";
 import { useQuery } from "@tanstack/react-query";
 import "react-big-calendar/lib/css/react-big-calendar.css";

@@ -1,6 +1,6 @@
-import { TIERS } from "@/data/form/Sponsors";
-import { generateSelect, generateStatus, generateTiers } from "./Columns";
-import { STATUSES } from "@/data/Statuses";
+import { TIERS } from "@/data/form/sponsors";
+import { generateSelect, generateStatus, generateTiers } from "./columns";
+import { STATUSES } from "@/data/statuses";
 import { ColumnDef, CellContext } from "@tanstack/react-table";
 import { Tags } from "@/types/dashboard";
 

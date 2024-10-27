@@ -1,3 +1,3 @@
-import Blog from "@/components/engineering/Blog";
+import Blog from "@/components/engineering/blog";
 
 export default Blog;

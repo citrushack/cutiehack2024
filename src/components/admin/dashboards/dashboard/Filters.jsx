@@ -1,4 +1,4 @@
-import Filter from "./Filter";
+import Filter from "./filter";
 
 const Filters = ({ statuses, filters, setFilters }) => {
   const selectedFilters =

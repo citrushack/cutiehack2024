@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Form from "@/components/form/form/Form";
-import { FIELDS, ATTRIBUTES } from "@/data/form/Feedback";
+import Form from "@/components/form/form";
+import { FIELDS, ATTRIBUTES } from "@/data/form/feedback";
 import { useSession } from "next-auth/react";
 import { schema } from "@/schemas/feedback";
 import { submit } from "@/utils/form";

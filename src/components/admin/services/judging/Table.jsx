@@ -1,7 +1,7 @@
 // import { COLORS } from "@/data/Tags";
 import Link from "next/link";
-import { ICONS } from "@/data/admin/Icons";
-import Loading from "@/components/Loading";
+import { ICONS } from "@/data/admin/icons";
+import Loading from "@/components/loading";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import { useRef } from "react";
 import { Badge } from "@/components/ui/badge";

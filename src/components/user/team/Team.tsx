@@ -1,5 +1,5 @@
-import Details from "./Details";
-import NewTeam from "./NewTeam";
+import Details from "./details";
+import NewTeam from "./newteam";
 import { getSession } from "@/utils/auth";
 import { fetchTeam } from "@/actions/join";
 import { Label } from "@/components/ui/label";

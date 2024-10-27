@@ -1,13 +1,13 @@
-import Countdown from "./Countdown";
-import Header from "./Header";
-import Tile from "./Tile";
+import Countdown from "./countdown";
+import Header from "./header";
+import Tile from "./tile";
 import { QrCode, ParkingCircle } from "lucide-react";
-import Rooms from "./Rooms";
-import Packing from "./Packing";
-import BulletList from "./BulletList";
-import { JUDGING } from "@/data/user/Judging";
-import { RULES } from "@/data/user/Rules";
-import Resources from "./Resources";
+import Rooms from "./rooms";
+import Packing from "./packing";
+import BulletList from "./bulletlist";
+import { JUDGING } from "@/data/user/judging";
+import { RULES } from "@/data/user/rules";
+import Resources from "./resources";
 
 const Dashboard = () => {
   return (

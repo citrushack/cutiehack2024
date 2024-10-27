@@ -13,7 +13,7 @@ import {
   CircleHelp,
   HeartHandshake,
 } from "lucide-react";
-import Select from "@/components/Select";
+import Select from "@/components/select";
 import { useState } from "react";
 import { api } from "@/utils/api";
 import toaster from "@/utils/toaster";

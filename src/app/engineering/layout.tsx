@@ -1,4 +1,4 @@
-import Navigation from "@/components/engineering/Navigation";
+import Navigation from "@/components/engineering/navigation";
 import React, { ReactNode } from "react";
 
 interface LayoutProps {

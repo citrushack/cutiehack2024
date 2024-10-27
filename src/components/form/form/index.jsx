@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import Status from "./Status";
-import Questions from "./Questions";
-import Confirmation from "./Confirmation";
+import Status from "./status";
+import Questions from "./questions";
+import Confirmation from "./confirmation";
 import { signOut } from "next-auth/react";
 import Image from "next/image";
 import LOGO from "@/app/favicon.ico";

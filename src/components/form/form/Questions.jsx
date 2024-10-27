@@ -1,12 +1,12 @@
 import Select from "@/components/Select";
-import Checkbox from "@/components/Checkbox";
+import Checkbox from "@/components/checkbox";
 import { Textarea } from "@/components/ui/textarea";
 import Upload from "@/components/form/form/Upload";
 import toaster from "@/utils/toaster";
 import Link from "next/link";
 import { SquareArrowOutUpRight } from "lucide-react";
-import data from "@/data/Config";
-import Terms from "./Terms";
+import data from "@/data/config";
+import Terms from "./terms";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";

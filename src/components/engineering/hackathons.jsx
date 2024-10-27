@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { HackathonsData } from "@/data/engineering/HackathonsData";
+import { HackathonsData } from "@/data/engineering/hackathonsData";
 
 export const Hackathons = () => {
   return (

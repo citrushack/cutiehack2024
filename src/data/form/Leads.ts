@@ -8,10 +8,10 @@ import {
   TextInput,
   UploadInput,
 } from "@/types/forms";
-import { AGES, MAJORS } from "./Information";
-import { GRADES, GENDERS, SOURCES } from "./Information";
-import { SCHOOLS } from "./Schools";
-import data from "@/data/Config";
+import { AGES, MAJORS } from "./information";
+import { GRADES, GENDERS, SOURCES } from "./information";
+import { SCHOOLS } from "./schools";
+import data from "@/data/config";
 
 interface Attributes {
   name: string;

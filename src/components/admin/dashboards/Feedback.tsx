@@ -1,6 +1,6 @@
 "use client";
-import { STATUSES, TAGS, COLUMNS, DROPDOWN } from "@/data/admin/Feedback";
-import Table from "./dashboard/Dashboard";
+import { STATUSES, TAGS, COLUMNS, DROPDOWN } from "@/data/admin/feedback";
+import Table from "./dashboard/dashboard";
 import { SearchParams } from "@/types/dashboard";
 
 type props = {

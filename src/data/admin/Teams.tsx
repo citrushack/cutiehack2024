@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { generateSelect, generateStatus } from "./Columns";
-import { ICONS } from "./Icons";
-import { STATUSES } from "@/data/Statuses";
+import { generateSelect, generateStatus } from "./columns";
+import { ICONS } from "./icons";
+import { STATUSES } from "@/data/statuses";
 import { ColumnDef, CellContext } from "@tanstack/react-table";
 import { Tags } from "@/types/dashboard";
 

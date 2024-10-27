@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import Form from "@/components/form/form/Form";
-import { FIELDS, ATTRIBUTES } from "@/data/form/Mentors";
+import Form from "@/components/form/form";
+import { FIELDS, ATTRIBUTES } from "@/data/form/mentors";
 import { useSession } from "next-auth/react";
-import { STATUSES } from "@/data/Statuses";
+import { STATUSES } from "@/data/statuses";
 import { schema } from "@/schemas/mentor";
 import { submit } from "@/utils/form";
 

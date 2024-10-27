@@ -1,4 +1,4 @@
-import data from "../Config";
+import data from "../config";
 
 export const LANGUAGES = ["Arduino", "Next.js", "PyTorch", "Unity"];
 

@@ -1,7 +1,7 @@
-import View from "@/components/admin/dashboards/dashboard/View";
-import { ICONS } from "./Icons";
-import { generateSelect, generateStatus } from "./Columns";
-import { STATUSES } from "@/data/Statuses";
+import View from "@/components/admin/dashboards/dashboard/view";
+import { ICONS } from "./icons";
+import { generateSelect, generateStatus } from "./columns";
+import { STATUSES } from "@/data/statuses";
 import { Tags } from "@/types/dashboard";
 import { ColumnDef, CellContext } from "@tanstack/react-table";
 

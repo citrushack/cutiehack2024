@@ -1,5 +1,5 @@
 "use client";
-import { TABS } from "@/data/engineering/Navigation";
+import { TABS } from "@/data/engineering/navigation";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";

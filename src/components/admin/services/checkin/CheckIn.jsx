@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import Scanner from "./Scanner";
-import Select from "@/components/Select";
+import Scanner from "./scanner";
+import Select from "@/components/select";
 import toaster from "@/utils/toaster";
 import { api } from "@/utils/api";
 import { getEvents, getUser } from "./actions";

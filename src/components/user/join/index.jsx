@@ -1,5 +1,5 @@
 import { fetchTeam } from "@/actions/join";
-import Invite from "@/components/user/join/Invite";
+import Invite from "./invite";
 
 const Join = async ({ params }) => {
   const { teamID: id } = params;

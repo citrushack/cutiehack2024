@@ -1,5 +1,5 @@
 "use client";
-import Error from "@/components/Error";
+import Error from "@/components/error";
 
 const NotFoundError = () => {
   return (

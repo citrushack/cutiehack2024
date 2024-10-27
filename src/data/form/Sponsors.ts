@@ -6,7 +6,7 @@ import {
   TextInput,
 } from "@/types/forms";
 
-import data from "@/data/Config";
+import data from "@/data/config";
 
 type Tiers = {
   bronze: string;

@@ -7,9 +7,9 @@ import {
   useReactTable,
 } from "@tanstack/react-table";
 import { useState } from "react";
-import Toolbar from "./Toolbar";
-import Filters from "./Filters";
-import Table from "./Table";
+import Toolbar from "./toolbar";
+import Filters from "./filters";
+import Table from "./table";
 import { Label } from "@/components/ui/label";
 
 const Dashboard = ({

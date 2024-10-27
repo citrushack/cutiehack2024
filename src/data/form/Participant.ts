@@ -7,13 +7,13 @@ import {
   TextInput,
   UploadInput,
 } from "@/types/forms";
-import { AGES, DIETS, MAJORS } from "./Information";
-import { GRADES } from "./Information";
-import { GENDERS } from "./Information";
-import { SHIRTS } from "./Information";
-import { SCHOOLS } from "./Schools";
-import data from "@/data/Config";
-import { COUNTRIES } from "./Countries";
+import { AGES, DIETS, MAJORS } from "./information";
+import { GRADES } from "./information";
+import { GENDERS } from "./information";
+import { SHIRTS } from "./information";
+import { SCHOOLS } from "./schools";
+import data from "@/data/config";
+import { COUNTRIES } from "./countries";
 
 interface Attributes {
   name: string;

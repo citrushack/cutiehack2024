@@ -1,4 +1,4 @@
-import ProtectedPage from "@/components/ProtectedPage";
+import ProtectedPage from "@/components/protected";
 import Find from "@/components/user/find/Find";
 
 const Page = () => {

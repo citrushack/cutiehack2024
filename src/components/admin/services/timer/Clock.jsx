@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Controls from "./Controls";
+import Controls from "./controls";
 import { Progress } from "@/components/ui/progress";
 import { Pause, Play } from "lucide-react";
 import {

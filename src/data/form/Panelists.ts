@@ -1,6 +1,6 @@
-import { GENDERS } from "./Information";
-import { SHIRTS } from "./Information";
-import data from "@/data/Config";
+import { GENDERS } from "./information";
+import { SHIRTS } from "./information";
+import data from "@/data/config";
 
 export const PANELISTS = {
   professor: "Professor",

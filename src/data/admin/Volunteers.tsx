@@ -1,7 +1,7 @@
-import Checkbox from "@/components/Checkbox";
-import { AVAILABILITY } from "../form/Information";
-import { generateSelect, generateStatus } from "./Columns";
-import { STATUSES } from "@/data/Statuses";
+import Checkbox from "@/components/checkbox";
+import { AVAILABILITY } from "../form/information";
+import { generateSelect, generateStatus } from "./columns";
+import { STATUSES } from "@/data/statuses";
 import { Tags } from "@/types/dashboard";
 import { ColumnDef, CellContext } from "@tanstack/react-table";
 

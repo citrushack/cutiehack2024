@@ -1,4 +1,4 @@
-import { ROLES } from "@/data/admin/Statistics";
+import { ROLES } from "@/data/admin/statistics";
 
 const ChartLegend = () => {
   return (

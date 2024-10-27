@@ -4,8 +4,8 @@ import {
   SelectInput,
   TermsAndConditions,
 } from "@/types/forms";
-import data from "@/data/Config";
-import { SOURCES } from "./Information";
+import data from "@/data/config";
+import { SOURCES } from "./information";
 
 interface Attributes {
   name: string;

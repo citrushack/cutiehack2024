@@ -1,7 +1,7 @@
-import { generateAffiliation, generateSelect, generateStatus } from "./Columns";
-import { AFFILIATIONS } from "../form/Information";
-import { ICONS } from "./Icons";
-import { STATUSES } from "../Statuses";
+import { generateAffiliation, generateSelect, generateStatus } from "./columns";
+import { AFFILIATIONS } from "../form/information";
+import { ICONS } from "./icons";
+import { STATUSES } from "../statuses";
 import { CellContext, ColumnDef } from "@tanstack/react-table";
 import { Tags } from "@/types/dashboard";
 

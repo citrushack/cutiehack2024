@@ -1,7 +1,7 @@
 "use client";
-import { TAGS, COLUMNS } from "@/data/admin/Judges";
-import { STATUSES } from "@/data/Statuses";
-import Table from "./dashboard/Dashboard";
+import { TAGS, COLUMNS } from "@/data/admin/judges";
+import { STATUSES } from "@/data/statuses";
+import Table from "./dashboard/dashboard";
 
 const Judges = ({ searchParams }) => {
   return (
