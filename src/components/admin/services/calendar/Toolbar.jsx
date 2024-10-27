@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useCallback, useEffect } from "react";
 import { Badge } from "@/components/ui/badge";
 
-const CustomToolbar = ({ onView, onNavigate, date, view, setTag }) => {
+const CustomToolbar = ({ onView, onNavigate, date, setTag }) => {
   const handleShortcuts = useCallback(
     (e) => {
       switch (e.key) {
@@ -52,7 +52,7 @@ const CustomToolbar = ({ onView, onNavigate, date, view, setTag }) => {
           <div className="flex flex-wrap items-center justify-center gap-x-2 md:justify-end">
             {Object.entries(LABELS)
               .filter(([_, { type }]) => type === "leads")
-              .map(([key, { color }], index) => (
+              .map(([key], index) => (
                 <Badge key={index} onClick={() => setTag(key)}>
                   {key}
                 </Badge>
@@ -61,7 +61,7 @@ const CustomToolbar = ({ onView, onNavigate, date, view, setTag }) => {
           <div className="my-2 flex flex-wrap items-center justify-center gap-x-2 md:justify-end">
             {Object.entries(LABELS)
               .filter(([_, { type }]) => type !== "leads")
-              .map(([key, { color }], index) => (
+              .map(([key], index) => (
                 <Badge key={index} onClick={() => setTag(key)}>
                   {key}
                 </Badge>

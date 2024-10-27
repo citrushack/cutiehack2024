@@ -1,4 +1,4 @@
-import Title from "../../Title";
+import { Label } from "@/components/ui/label";
 import Chart from "./Chart";
 
 const Charts = ({ counts }) => {
@@ -8,7 +8,7 @@ const Charts = ({ counts }) => {
     <>
       {order.map((title) => (
         <div key={title}>
-          <Title title={title} />
+          <Label className="pr-5 text-2xl font-bold">{title}</Label>
           <div className="mt-3 grid w-full grid-cols-2 gap-4 p-4 md:grid-cols-4">
             {Object.entries(counts).map(([category, data]) =>
               Object.entries(data)

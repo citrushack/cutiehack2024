@@ -2,8 +2,8 @@
 import { useState } from "react";
 import Clock from "./Clock";
 import { v4 as uuidv4 } from "uuid";
-import Title from "../../Title";
 import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
 
 type TimerType = {
   id: string;
@@ -32,7 +32,8 @@ const Timer = () => {
   return (
     <div className="flex h-full flex-col py-4 font-poppins">
       <div className="mb-4 flex gap-3">
-        <Title title="Timer" />
+        <Label className="pr-5 text-2xl font-bold">Timer</Label>
+
         <Button onClick={addTimer}>+ add timer</Button>
         <Button variant="destructive" onClick={clearAll}>
           clear all

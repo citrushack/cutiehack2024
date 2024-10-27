@@ -48,6 +48,6 @@ const InputWithClear = React.forwardRef<HTMLInputElement, InputWithClearProps>(
     );
   },
 );
-Input.displayName = "InputWithClear";
+InputWithClear.displayName = "InputWithClear";
 
 export { Input, InputWithClear };
