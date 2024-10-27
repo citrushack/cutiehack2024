@@ -69,6 +69,26 @@ export const COLUMNS: (ColumnDef<Committee, string> & {
       <div>{props.getValue()}</div>
     ),
   },
+  {
+    accessorKey: "shirt",
+    header: "Shirt",
+    enableColumnFilter: true,
+    filterFn: "includesString",
+    searchable: true,
+    cell: (props: CellContext<Committee, Committee["shirt"]>) => (
+      <div>{props.getValue()}</div>
+    ),
+  },
+  {
+    accessorKey: "grade",
+    header: "Grade",
+    enableColumnFilter: true,
+    filterFn: "includesString",
+    searchable: true,
+    cell: (props: CellContext<Committee, Committee["grade"]>) => (
+      <div>{props.getValue()}</div>
+    ),
+  },
   generateAffiliation(AFFILIATIONS),
   generateStatus(STATUSES),
 ];

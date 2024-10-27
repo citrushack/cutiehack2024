@@ -56,6 +56,17 @@ export const COLUMNS: (ColumnDef<Judge, string> & {
     ),
   },
   {
+    accessorKey: "shirt",
+    header: "Shirt",
+    enableColumnFilter: true,
+    filterFn: "includesString",
+    searchable: true,
+    cell: (props: CellContext<Judge, Judge["shirt"]>) => (
+      <div>{props.getValue()}</div>
+    ),
+  },
+
+  {
     accessorKey: "title",
     header: "Title",
     enableColumnFilter: true,
