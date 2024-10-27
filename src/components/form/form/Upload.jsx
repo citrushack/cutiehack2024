@@ -107,7 +107,7 @@ const Upload = ({ field, user, setUser, text, maxSize, types, required }) => {
         <Dialog open={showModal} onOpenChange={(value) => setShowModal(value)}>
           <DialogContent>
             <DialogHeader>
-              <DialogTitle>{user.name}'s Picture</DialogTitle>
+              <DialogTitle>{user.name}&apos;s Picture</DialogTitle>
             </DialogHeader>
             <embed
               fill={true}
