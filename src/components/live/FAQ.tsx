@@ -8,7 +8,7 @@ import { QUESTIONS } from "@/data/faq";
 
 const FAQ = () => {
   return (
-    <div className="flex h-full w-full flex-col items-center">
+    <div className="flex w-full flex-col items-center">
       <div className="w-10/12">
         <Accordion type="single" collapsible className="w-full">
           {QUESTIONS.map(({ question, answer }, index) => (
