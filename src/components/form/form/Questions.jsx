@@ -83,11 +83,12 @@ const Questions = ({
             ))}
           {field.input === "input" && (
             <>
-              <Label htmlFor={field.name} className="font-semibold">
-                {field.title}
-                {field.required && <span className="text-red-500">*</span>}
-              </Label>
-
+              <div className="pb-1">
+                <Label htmlFor={field.name} className="font-semibold">
+                  {field.title}
+                  {field.required && <span className="text-red-500">*</span>}
+                </Label>
+              </div>
               <Input
                 id={field.name}
                 type={field.type}
@@ -178,10 +179,12 @@ const Questions = ({
           )}
           {field.input === "textarea" && (
             <>
-              <Label htmlFor={field.name} className="font-semibold">
-                {field.title}
-                {field.required && <span className="text-red-500">*</span>}
-              </Label>
+              <div className="mb-1">
+                <Label htmlFor={field.name} className="font-semibold">
+                  {field.title}
+                  {field.required && <span className="text-red-500">*</span>}
+                </Label>
+              </div>
               <Textarea
                 data-cy={`${field.title}-textarea`}
                 className="border-1 w-full resize-none border border-black pl-3 placeholder:text-hackathon-gray-200 focus:outline-none"
