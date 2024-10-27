@@ -1,20 +1,46 @@
-import Filter from "./filter";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
 const Filters = ({ statuses, filters, setFilters }) => {
   const selectedFilters =
     filters.find(({ id }) => id === "status")?.value || [];
 
+  const onClick = (value, isActive) => {
+    setFilters((prev) => {
+      const statuses = prev.find(({ id }) => id === "status")?.value;
+      if (!statuses) {
+        return prev.concat({
+          id: "status",
+          value: [value],
+        });
+      }
+
+      return prev.map((f) =>
+        f.id === "status"
+          ? {
+              id: "status",
+              value: isActive
+                ? statuses.filter((s) => s !== value)
+                : statuses.concat(value),
+            }
+          : f,
+      );
+    });
+  };
+
   return (
     <div className="flex w-full gap-2 lg:w-4/12">
-      {Object.entries(statuses).map(([key, value]) => (
-        <Filter
-          key={key}
-          value={parseInt(key)}
-          status={value}
-          isActive={selectedFilters.includes(parseInt(key))}
-          setFilters={setFilters}
-        />
-      ))}
+      <ToggleGroup type="multiple">
+        {Object.entries(statuses).map(([key, value]) => (
+          <ToggleGroupItem
+            value={parseInt(key)}
+            onClick={() =>
+              onClick(parseInt(key), selectedFilters.includes(parseInt(key)))
+            }
+          >
+            {value}
+          </ToggleGroupItem>
+        ))}
+      </ToggleGroup>
     </div>
   );
 };
