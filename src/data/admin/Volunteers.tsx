@@ -68,6 +68,36 @@ export const COLUMNS: (ColumnDef<Volunteer, string> & {
       <div>{props.getValue()}</div>
     ),
   },
+  {
+    accessorKey: "shirt",
+    header: "Shirt",
+    enableColumnFilter: true,
+    filterFn: "includesString",
+    searchable: true,
+    cell: (props: CellContext<Volunteer, Volunteer["shirt"]>) => (
+      <div>{props.getValue()}</div>
+    ),
+  },
+  {
+    accessorKey: "gender",
+    header: "Gender",
+    enableColumnFilter: true,
+    filterFn: "includesString",
+    searchable: true,
+    cell: (props: CellContext<Volunteer, Volunteer["gender"]>) => (
+      <div>{props.getValue()}</div>
+    ),
+  },
+  {
+    accessorKey: "grade",
+    header: "Grade",
+    enableColumnFilter: true,
+    filterFn: "includesString",
+    searchable: true,
+    cell: (props: CellContext<Volunteer, Volunteer["grade"]>) => (
+      <div>{props.getValue()}</div>
+    ),
+  },
   generateStatus(STATUSES),
 ];
 

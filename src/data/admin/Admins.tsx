@@ -65,6 +65,26 @@ export const COLUMNS: (ColumnDef<Admin, string> & {
       <div>{props.getValue()}</div>
     ),
   },
+  {
+    accessorKey: "shirt",
+    header: "Shirt",
+    enableColumnFilter: true,
+    filterFn: "includesString",
+    searchable: true,
+    cell: (props: CellContext<Admin, Admin["shirt"]>) => (
+      <div>{props.getValue()}</div>
+    ),
+  },
+  {
+    accessorKey: "gender",
+    header: "Gender",
+    enableColumnFilter: true,
+    filterFn: "includesString",
+    searchable: true,
+    cell: (props: CellContext<Admin, Admin["gender"]>) => (
+      <div>{props.getValue()}</div>
+    ),
+  },
   generateAffiliation(AFFILIATIONS),
   generateStatus(STATUSES),
 ];

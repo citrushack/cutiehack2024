@@ -19,6 +19,8 @@ type Leads = {
   name: string;
   email: string;
   discord: string;
+  grade: string;
+  gender: string;
 };
 
 export const COLUMNS: (ColumnDef<Leads, string> & {
@@ -52,6 +54,26 @@ export const COLUMNS: (ColumnDef<Leads, string> & {
     filterFn: "includesString",
     searchable: true,
     cell: (props: CellContext<Leads, Leads["discord"]>) => (
+      <div>{props.getValue()}</div>
+    ),
+  },
+  {
+    accessorKey: "grade",
+    header: "Grade",
+    enableColumnFilter: true,
+    filterFn: "includesString",
+    searchable: true,
+    cell: (props: CellContext<Leads, Leads["grade"]>) => (
+      <div>{props.getValue()}</div>
+    ),
+  },
+  {
+    accessorKey: "gender",
+    header: "Gender",
+    enableColumnFilter: true,
+    filterFn: "includesString",
+    searchable: true,
+    cell: (props: CellContext<Leads, Leads["gender"]>) => (
       <div>{props.getValue()}</div>
     ),
   },

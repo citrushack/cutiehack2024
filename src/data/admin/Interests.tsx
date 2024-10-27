@@ -6,6 +6,7 @@ import { ColumnDef, CellContext } from "@tanstack/react-table";
 type Interest = {
   name: string;
   email: string;
+  eventSource: string;
 };
 
 export const TAGS: Tags[] = [
@@ -40,6 +41,16 @@ export const COLUMNS: (ColumnDef<Interest, string> & {
     filterFn: "includesString",
     searchable: true,
     cell: (props: CellContext<Interest, Interest["email"]>) => (
+      <div>{props.getValue()}</div>
+    ),
+  },
+  {
+    accessorKey: "eventSource",
+    header: "Event Source",
+    enableColumnFilter: true,
+    filterFn: "includesString",
+    searchable: true,
+    cell: (props: CellContext<Interest, Interest["eventSource"]>) => (
       <div>{props.getValue()}</div>
     ),
   },

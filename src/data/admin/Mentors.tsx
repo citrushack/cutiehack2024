@@ -11,6 +11,9 @@ type Mentor = {
   discord: string;
   availability: string[];
   response: string;
+  shirt: string;
+  gender: string;
+  grade: string;
 };
 
 type dropdownProps = {
@@ -62,6 +65,36 @@ export const COLUMNS: (ColumnDef<Mentor, string> & {
     filterFn: "includesString",
     searchable: true,
     cell: (props: CellContext<Mentor, Mentor["discord"]>) => (
+      <div>{props.getValue()}</div>
+    ),
+  },
+  {
+    accessorKey: "gender",
+    header: "Gender",
+    enableColumnFilter: true,
+    filterFn: "includesString",
+    searchable: true,
+    cell: (props: CellContext<Mentor, Mentor["gender"]>) => (
+      <div>{props.getValue()}</div>
+    ),
+  },
+  {
+    accessorKey: "shirt",
+    header: "Shirt",
+    enableColumnFilter: true,
+    filterFn: "includesString",
+    searchable: true,
+    cell: (props: CellContext<Mentor, Mentor["shirt"]>) => (
+      <div>{props.getValue()}</div>
+    ),
+  },
+  {
+    accessorKey: "grade",
+    header: "Grade",
+    enableColumnFilter: true,
+    filterFn: "includesString",
+    searchable: true,
+    cell: (props: CellContext<Mentor, Mentor["grade"]>) => (
       <div>{props.getValue()}</div>
     ),
   },
