@@ -9,7 +9,13 @@ import {
 import toaster from "@/utils/toaster";
 import { BYTES } from "@/data/Bytes";
 import { readFileAsBase64, compress } from "@/utils/convert";
-import Modal from "@/components/admin/dashboards/dashboard/Modal";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+
 const getSize = (maxSize) => BYTES[maxSize[1]] * maxSize[0];
 const getType = (types) => "." + types.join(",.");
 
@@ -20,7 +26,7 @@ const Upload = ({ field, user, setUser, text, maxSize, types, required }) => {
       : null,
   );
   const [uploading, setUploading] = useState(false);
-  const [showModal, setShowModal] = useState(null);
+  const [showModal, setShowModal] = useState(false);
 
   const handleInput = async (e) => {
     setUploading(true);
@@ -97,7 +103,21 @@ const Upload = ({ field, user, setUser, text, maxSize, types, required }) => {
             </div>
           </div>
         )}
-        {showModal && <Modal data={file} setModal={setShowModal} />}
+
+        <Dialog open={showModal} onOpenChange={(value) => setShowModal(value)}>
+          <DialogContent>
+            <DialogHeader>
+              <DialogTitle>{user.name}'s Picture</DialogTitle>
+            </DialogHeader>
+            <embed
+              fill={true}
+              className="h-full w-full object-cover"
+              src={file.src}
+              alt="Photo of the Judge"
+              data-cy="modal-image"
+            />
+          </DialogContent>
+        </Dialog>
       </div>
       {toaster.type === "error"
         ? uploading && "UPLOADING ..."
