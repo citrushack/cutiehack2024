@@ -8,6 +8,7 @@ import Popup from "../../Popup";
 import Select from "@/components/Select";
 import { Badge } from "@/components/ui/badge";
 import { InputWithClear } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 const Toolbar = ({
   page,
@@ -149,9 +150,13 @@ const Toolbar = ({
     >
       <div className="flex gap-3">
         {tags.map((tag, index) => (
-          <Badge key={index} onClick={() => onClick(tag.value)}>
+          <Button
+            key={index}
+            onClick={() => onClick(tag.value)}
+            className="text-nowrap"
+          >
             {tag.text}
-          </Badge>
+          </Button>
         ))}
       </div>
 
