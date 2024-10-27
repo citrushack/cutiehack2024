@@ -37,8 +37,8 @@ export const generateStatus = <TData extends object>(
   accessorKey: "status",
   header: "Status",
   enableColumnFilter: true,
-  filterFn: (row: any, col: any, filter: string[]) => {
-    const status = row.getValue(col);
+  filterFn: (row: Row<TData>, col: string, filter: string[]) => {
+    const status = row.getValue(col) as string;
     return filter.includes(status);
   },
   cell: ({ getValue }: CellContext<TData, string>) => (
