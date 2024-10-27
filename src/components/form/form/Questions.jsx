@@ -11,6 +11,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+
 const Questions = ({
   fields,
   object,
@@ -117,13 +118,12 @@ const Questions = ({
                 {field.text}
                 {field.required && <span className="text-red-500">*</span>}
               </p>
-              <div className="grid md:grid-cols-2">
+              <div className="grid gap-2 md:grid-cols-2">
                 {field.options.map((option, i) => (
                   <Checkbox
-                    key={i}
-                    toggle={object[field.field].includes(option)}
-                    text={option}
-                    onClick={() =>
+                    id={option.id}
+                    checked={object[field.field].includes(option)}
+                    onClick={() => {
                       setObject({
                         ...object,
                         [field.field]: object[field.field].includes(option)
@@ -131,10 +131,12 @@ const Questions = ({
                               (item) => item !== option,
                             )
                           : [...object[field.field], option],
-                      })
-                    }
-                    color="bg-hackathon-green-300"
-                  />
+                      });
+                    }}
+                    key={i}
+                  >
+                    {option}
+                  </Checkbox>
                 ))}
               </div>
             </>

@@ -1,16 +1,16 @@
 import { Checkbox as Check } from "./ui/checkbox";
+import { Label } from "./ui/label";
 
 type checkbox = {
-  toggle: boolean;
-  text?: string;
-  color?: string;
+  id: string;
+  checked: boolean;
+  children?: string;
   onClick?: () => void;
 };
 
-const Checkbox: React.FC<checkbox> = ({ toggle, onClick, text, color }) => {
-  console.log(toggle, onClick);
-
+const Checkbox = ({ id, checked, onClick, children }: checkbox) => {
   return (
+<<<<<<< HEAD
     <div
       className="flex w-fit items-center hover:cursor-pointer text-sm font-normal font-poppins"
       onClick={onClick}
@@ -31,6 +31,11 @@ const Checkbox: React.FC<checkbox> = ({ toggle, onClick, text, color }) => {
           {text}
         </p>
       )}
+=======
+    <div className="flex items-center gap-2">
+      <Check id={id} checked={checked} onClick={onClick} />
+      {children && <Label htmlFor={id}>{children}</Label>}
+>>>>>>> e123a74c77e92df95bc26eb06652f64e2dabafa9
     </div>
   );
 };

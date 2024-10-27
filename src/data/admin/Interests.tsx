@@ -26,7 +26,6 @@ export const COLUMNS: (ColumnDef<Interest, string> & {
   {
     accessorKey: "name",
     header: "Name",
-    meta: { width: "w-5/12" },
     enableColumnFilter: true,
     filterFn: "includesString",
     searchable: true,
@@ -37,7 +36,6 @@ export const COLUMNS: (ColumnDef<Interest, string> & {
   {
     accessorKey: "email",
     header: "Email",
-    meta: { width: "w-5/12" },
     enableColumnFilter: true,
     filterFn: "includesString",
     searchable: true,

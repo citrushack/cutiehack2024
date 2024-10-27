@@ -66,11 +66,20 @@ export const FIELDS = {
   },
 };
 
-export const ATTRIBUTES = {
+interface Attributes {
+  helpful: string;
+  improvements: string;
+  notBenficial: string;
+  rating: "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10";
+  eventSource: string;
+  additionalComments: string;
+}
+
+export const ATTRIBUTES: Attributes = {
   helpful: "",
   improvements: "",
-  notBeneficial: "",
-  rating: "",
+  notBenficial: "",
+  rating: "10",
   eventSource: "",
   additionalComments: "",
 };

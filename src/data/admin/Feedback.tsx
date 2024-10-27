@@ -39,7 +39,6 @@ export const COLUMNS: (ColumnDef<Feedback, string> & {
   {
     accessorKey: "rating",
     header: "Rating",
-    meta: { width: "w-[8%]" },
     searchable: true,
     cell: (props: CellContext<Feedback, Feedback["rating"]>) => (
       <div>{props.getValue()}</div>
@@ -48,7 +47,6 @@ export const COLUMNS: (ColumnDef<Feedback, string> & {
   {
     accessorKey: "eventSource",
     header: "Event Source",
-    meta: { width: "w-[15%]" },
     searchable: true,
     cell: (props: CellContext<Feedback, Feedback["eventSource"]>) => (
       <div>{props.getValue()}</div>
@@ -57,7 +55,6 @@ export const COLUMNS: (ColumnDef<Feedback, string> & {
   {
     accessorKey: "improvements",
     header: "Improvements",
-    meta: { width: "w-[31%]" },
     searchable: true,
     cell: (props: CellContext<Feedback, Feedback["improvements"]>) => (
       <div>{props.getValue()}</div>
@@ -66,7 +63,6 @@ export const COLUMNS: (ColumnDef<Feedback, string> & {
   {
     accessorKey: "helpful",
     header: "Helpful",
-    meta: { width: "w-[31%]" },
     searchable: true,
     cell: (props: CellContext<Feedback, Feedback["helpful"]>) => (
       <div>{props.getValue()}</div>

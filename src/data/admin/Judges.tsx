@@ -38,7 +38,6 @@ export const COLUMNS: (ColumnDef<Judge, string> & {
   {
     accessorKey: "name",
     header: "Name",
-    meta: { width: "w-[23%]" },
     enableColumnFilter: true,
     filterFn: "includesString",
     searchable: true,
@@ -49,7 +48,6 @@ export const COLUMNS: (ColumnDef<Judge, string> & {
   {
     accessorKey: "email",
     header: "Email",
-    meta: { width: "w-[30%]" },
     enableColumnFilter: true,
     filterFn: "includesString",
     searchable: true,
@@ -60,7 +58,6 @@ export const COLUMNS: (ColumnDef<Judge, string> & {
   {
     accessorKey: "title",
     header: "Title",
-    meta: { width: "w-[18%]" },
     enableColumnFilter: true,
     filterFn: "includesString",
     searchable: true,
@@ -106,7 +103,6 @@ export const COLUMNS: (ColumnDef<Judge, string> & {
         </div>
       );
     },
-    meta: { width: "w-1/12" },
     enableSorting: false,
     cell: (props: CellContext<Judge, Judge["photo"]>) => (
       <View src={props.getValue()} title={props.row.getValue("name")} />

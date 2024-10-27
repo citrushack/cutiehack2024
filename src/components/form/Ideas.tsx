@@ -2,28 +2,32 @@
 
 import { useState } from "react";
 import Form from "@/components/form/form/Form";
-import { FIELDS, ATTRIBUTES } from "@/data/form/Panelists";
+import { FIELDS, ATTRIBUTES } from "@/data/form/Ideas";
 import { useSession } from "next-auth/react";
-import { STATUSES } from "@/data/Statuses";
-import { schema } from "@/schemas/panel";
+import { schema } from "@/schemas/idea";
 import { submit } from "@/utils/form";
 
-const Panel = () => {
+const Ideas = () => {
   const { data: session } = useSession();
-  const [panel, setPanel] = useState({
+
+  if (!session?.user) return null;
+
+  const [idea, setIdea] = useState({
     ...ATTRIBUTES,
     name: session.user.name,
     email: session.user.email,
     roles: session.user.roles,
-    photo: session.user.photo ?? null,
-    form: "panels",
+    form: "idea",
   });
 
-  const onSubmit = async (setLoading, setState) => {
+  const onSubmit = async (
+    setLoading: (value: boolean) => void,
+    setState: (value: number) => void,
+  ) => {
     await submit({
-      data: panel,
+      data: idea,
       schema,
-      url: "/api/dashboard/panelists",
+      url: "/api/dashboard/ideas",
       setLoading,
       setState,
     });
@@ -32,13 +36,13 @@ const Panel = () => {
   return (
     <Form
       fields={FIELDS}
-      object={panel}
-      setObject={setPanel}
-      header="PANEL APPLICATIONS"
+      object={idea}
+      setObject={setIdea}
+      header="TEAM IDEA APPLICATION"
       onSubmit={onSubmit}
-      statuses={STATUSES}
+      bypass={true}
     />
   );
 };
 
-export default Panel;
+export default Ideas;

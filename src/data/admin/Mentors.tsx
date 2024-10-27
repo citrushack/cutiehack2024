@@ -38,7 +38,6 @@ export const COLUMNS: (ColumnDef<Mentor, string> & {
   {
     accessorKey: "name",
     header: "Name",
-    meta: { width: "w-[28%]" },
     enableColumnFilter: true,
     filterFn: "includesString",
     searchable: true,
@@ -49,7 +48,6 @@ export const COLUMNS: (ColumnDef<Mentor, string> & {
   {
     accessorKey: "email",
     header: "Email",
-    meta: { width: "w-[35%]" },
     enableColumnFilter: true,
     filterFn: "includesString",
     searchable: true,
@@ -60,7 +58,6 @@ export const COLUMNS: (ColumnDef<Mentor, string> & {
   {
     accessorKey: "discord",
     header: "Discord",
-    meta: { width: "w-[20%]" },
     enableColumnFilter: true,
     filterFn: "includesString",
     searchable: true,
@@ -78,10 +75,12 @@ export const DROPDOWN: React.FC<dropdownProps> = ({ object }) => {
         <div className="grid w-11/12 grid-flow-col grid-rows-4">
           {AVAILABILITY.map((text, index) => (
             <Checkbox
-              toggle={object.availability.includes(text)}
-              text={text}
+              id="availability"
+              checked={object.availability.includes(text)}
               key={index}
-            />
+            >
+              {text}
+            </Checkbox>
           ))}
         </div>
       </div>

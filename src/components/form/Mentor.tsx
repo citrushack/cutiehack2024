@@ -2,43 +2,47 @@
 
 import { useState } from "react";
 import Form from "@/components/form/form/Form";
-import { FIELDS, ATTRIBUTES } from "@/data/form/Volunteers";
+import { FIELDS, ATTRIBUTES } from "@/data/form/Mentors";
 import { useSession } from "next-auth/react";
 import { STATUSES } from "@/data/Statuses";
-import { schema } from "@/schemas/volunteer";
+import { schema } from "@/schemas/mentor";
 import { submit } from "@/utils/form";
 
-const Volunteer = () => {
+const Mentor = () => {
   const { data: session } = useSession();
 
-  const [volunteer, setVolunteer] = useState({
+  if (!session?.user) return null;
+
+  const [mentor, setMentor] = useState({
     ...ATTRIBUTES,
     name: session.user.name,
     email: session.user.email,
     roles: session.user.roles,
-    form: "volunteers",
+    form: "mentors",
   });
 
-  const onSubmit = async (setLoading, setState) => {
+  const onSubmit = async (
+    setLoading: (value: boolean) => void,
+    setState: (value: number) => void,
+  ) => {
     await submit({
-      data: volunteer,
+      data: mentor,
       schema,
-      url: "/api/dashboard/volunteers",
+      url: "/api/dashboard/mentors",
       setLoading,
       setState,
     });
   };
-
   return (
     <Form
       fields={FIELDS}
-      object={volunteer}
-      setObject={setVolunteer}
-      header="VOLUNTEER APPLICATION"
+      object={mentor}
+      setObject={setMentor}
+      header="MENTOR APPLICATION"
       onSubmit={onSubmit}
       statuses={STATUSES}
     />
   );
 };
 
-export default Volunteer;
+export default Mentor;

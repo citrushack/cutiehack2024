@@ -7,7 +7,9 @@ import { fetchTeam } from "@/actions/join";
 const Team = async () => {
   const session = await getSession();
 
-  if (!session?.user.team) return <></>;
+  console.log(session, !session?.user.team);
+
+  if (!session?.user) return <></>;
 
   const team = session.user.team;
 

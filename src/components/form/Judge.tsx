@@ -2,42 +2,49 @@
 
 import { useState } from "react";
 import Form from "@/components/form/form/Form";
-import { FIELDS, ATTRIBUTES } from "@/data/form/Mentors";
+import { FIELDS, ATTRIBUTES } from "@/data/form/Judge";
 import { useSession } from "next-auth/react";
 import { STATUSES } from "@/data/Statuses";
-import { schema } from "@/schemas/mentor";
+import { schema } from "@/schemas/judge";
 import { submit } from "@/utils/form";
 
-const Mentor = () => {
+const Judge = () => {
   const { data: session } = useSession();
 
-  const [mentor, setMentor] = useState({
+  if (!session?.user) return null;
+
+  const [judge, setJudge] = useState({
     ...ATTRIBUTES,
     name: session.user.name,
     email: session.user.email,
     roles: session.user.roles,
-    form: "mentors",
+    photo: session.user.photo ?? null,
+    form: "judges",
   });
 
-  const onSubmit = async (setLoading, setState) => {
+  const onSubmit = async (
+    setLoading: (value: boolean) => void,
+    setState: (value: number) => void,
+  ) => {
     await submit({
-      data: mentor,
+      data: judge,
       schema,
-      url: "/api/dashboard/mentors",
+      url: "/api/dashboard/judges",
       setLoading,
       setState,
     });
   };
+
   return (
     <Form
       fields={FIELDS}
-      object={mentor}
-      setObject={setMentor}
-      header="MENTOR APPLICATION"
+      object={judge}
+      setObject={setJudge}
+      header="JUDGE APPLICATION"
       onSubmit={onSubmit}
       statuses={STATUSES}
     />
   );
 };
 
-export default Mentor;
+export default Judge;

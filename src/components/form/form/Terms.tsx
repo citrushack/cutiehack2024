@@ -18,12 +18,10 @@ const Terms = ({ options, toggle, onClick }: props) => {
           <li key={index}>{option}</li>
         ))}
       </ul>
-      <Checkbox
-        toggle={toggle}
-        text="By selecting this I agree to all of the above terms"
-        onClick={onClick}
-        color="bg-hackathon-green-300"
-      />
+
+      <Checkbox id="terms" checked={toggle} onClick={onClick}>
+        By selecting this I agree to all of the above terms
+      </Checkbox>
     </>
   );
 };

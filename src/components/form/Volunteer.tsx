@@ -2,27 +2,33 @@
 
 import { useState } from "react";
 import Form from "@/components/form/form/Form";
-import { FIELDS, ATTRIBUTES } from "@/data/form/Participant";
+import { FIELDS, ATTRIBUTES } from "@/data/form/Volunteers";
 import { useSession } from "next-auth/react";
 import { STATUSES } from "@/data/Statuses";
-import { schema } from "@/schemas/participant";
+import { schema } from "@/schemas/volunteer";
 import { submit } from "@/utils/form";
 
-const Participant = () => {
+const Volunteer = () => {
   const { data: session } = useSession();
-  const [participant, setParticipant] = useState({
+
+  if (!session?.user) return null;
+
+  const [volunteer, setVolunteer] = useState({
     ...ATTRIBUTES,
     name: session.user.name,
     email: session.user.email,
     roles: session.user.roles,
-    form: "participants",
+    form: "volunteers",
   });
 
-  const onSubmit = async (setLoading, setState) => {
+  const onSubmit = async (
+    setLoading: (value: boolean) => void,
+    setState: (value: number) => void,
+  ) => {
     await submit({
-      data: participant,
+      data: volunteer,
       schema,
-      url: "/api/dashboard/participants",
+      url: "/api/dashboard/volunteers",
       setLoading,
       setState,
     });
@@ -31,13 +37,13 @@ const Participant = () => {
   return (
     <Form
       fields={FIELDS}
-      object={participant}
-      setObject={setParticipant}
-      header="HACKER APPLICATION"
+      object={volunteer}
+      setObject={setVolunteer}
+      header="VOLUNTEER APPLICATION"
       onSubmit={onSubmit}
       statuses={STATUSES}
     />
   );
 };
 
-export default Participant;
+export default Volunteer;

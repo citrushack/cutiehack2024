@@ -15,6 +15,10 @@ interface Attributes {
   discord: string;
   affiliation: string;
   requirements: string[];
+  major: string;
+  gender: string;
+  grade: string;
+  shirt: string;
 }
 
 interface Fields {
@@ -159,4 +163,8 @@ export const ATTRIBUTES: Attributes = {
   discord: "",
   affiliation: "",
   requirements: [],
+  major: "",
+  gender: "",
+  grade: "",
+  shirt: "",
 };
