@@ -26,7 +26,7 @@ export const TECHSTACKS: Record<string, React.ReactNode> = {
   Python: <Python />,
   Unity: <Unity />,
   "C++": <CPlusPlus />,
-  GithubActions: <GithubActions/>, 
+  "Github Actions": <GithubActions/>, 
   Eslint: <Eslint/>,
   Prettier: <Prettier/>,
   Discord: <Discord/>,
@@ -37,19 +37,19 @@ export const HACKPACKS = [
   {
     link: "https://github.com/acm-ucr/firebase-nextjs-hackpack",
     text: "Firebase Web App",
-    techs: ["Javascript", "Next.js", "Firebase", "Tailwind", "Prettier", "Eslint", "GithubActions"],
+    techs: ["Javascript", "Next.js", "Firebase", "Tailwind", "Prettier", "Eslint", "Github Actions"],
     description: "A Firebase + Next.js Starter Pack",
   },
   {
     link: "https://github.com/acm-ucr/firebase-nextjs-hackpack",
     text: "MongoDB Web App",
-    techs: ["Javascript", "Next.js", "MongoDB", "Tailwind", "Prettier", "Eslint", "GithubActions"],
+    techs: ["Javascript", "Next.js", "MongoDB", "Tailwind", "Prettier", "Eslint", "Github Actions"],
     description: "A MongoDB + Next.js Starter Pack",
   },
   {
     link: "https://github.com/acm-ucr/nextjs-hackpack",
     text: "Full Stack Web App",
-    techs: ["Javascript", "Next.js", "Tailwind",  "Prettier", "Eslint", "GithubActions"],
+    techs: ["Javascript", "Next.js", "Tailwind",  "Prettier", "Eslint", "Github Actions"],
     description: "A Next.js Starter Pack",
   },
   {
@@ -67,7 +67,7 @@ export const HACKPACKS = [
   {
     link: "https://github.com/acm-ucr/discord-javascript-hackpack",
     text: "Javascript Discord Bot",
-    techs: ["Javascript", "Discord", "Prettier", "Eslint", "GithubActions"],
+    techs: ["Javascript", "Discord", "Prettier", "Eslint", "Github Actions"],
     description: "A Javascript + Discord API Starter Pack",
   },
   {
@@ -91,7 +91,7 @@ export const HACKPACKS = [
   {
     link: "https://github.com/acm-ucr/python-hackpack",
     text: "Machine Learning",
-    techs: ["Python", "Jupyter", "Pandas", "Matplotlib"],
+    techs: ["Python", "Jupyter", "Pandas"],
     description: "A Machine Learning Starter Pack",
   },
 ];
