@@ -48,7 +48,7 @@ const mappings = {
     background: "",
     text: "",
     hover: "",
-  }
+  },
 };
 
 export const COLORS = {

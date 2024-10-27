@@ -44,17 +44,12 @@ export const generateStatus = <TData extends object>(
     },
 
     cell: ({ getValue }: CellContext<TData, string>) => (
-      <Badge
-        type={getValue() as keyof typeof COLORS}
-      >
+      <Badge type={getValue() as keyof typeof COLORS}>
         {statuses[getValue()]}
       </Badge>
     ),
   };
 };
-
-
-
 
 export const generateTiers = <TData extends Record<string, string>>(
   tiers: Record<string, string>,
