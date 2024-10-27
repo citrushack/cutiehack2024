@@ -3,11 +3,20 @@ import { api } from "@/utils/api";
 import { useState, useEffect } from "react";
 import { Trash2, RotateCcw } from "lucide-react";
 import toaster from "@/utils/toaster";
-import Popup from "../../Popup";
 // import { COLORS } from "@/data/Tags";
 import Select from "@/components/Select";
 import { InputWithClear } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
 
 const Toolbar = ({
   page,
@@ -194,14 +203,29 @@ const Toolbar = ({
         />
       </div>
 
-      {popup.visible && (
-        <Popup
-          popup={popup}
-          onClick={popup.onClick}
-          setPopup={setPopup}
-          text={popup.button}
-        />
-      )}
+      <AlertDialog open={popup.visible}>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+            <AlertDialogDescription>{popup.text}</AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogCancel
+              onClick={() => setPopup({ ...popup, visible: false })}
+            >
+              Cancel
+            </AlertDialogCancel>
+            <AlertDialogAction
+              onClick={() => {
+                popup.onClick();
+                setPopup({ ...popup, visible: false });
+              }}
+            >
+              {popup.button}
+            </AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </div>
   );
 };
