@@ -83,10 +83,11 @@ const Questions = ({
             ))}
           {field.input === "input" && (
             <>
-              <Label htmlFor={field.name}>{field.title}
-              {field.required && <span className="text-red-500">*</span>}
+              <Label htmlFor={field.name}>
+                {field.title}
+                {field.required && <span className="text-red-500">*</span>}
               </Label>
-              
+
               <Input
                 id={field.name}
                 type={field.type}

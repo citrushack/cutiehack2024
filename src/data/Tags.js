@@ -44,6 +44,11 @@ const mappings = {
     text: "text-hackathon-tags-pink-text",
     hover: "hover:shadow-[inset_0px_0px_0px_2px_#e384b0]",
   },
+  none: {
+    background: "",
+    text: "",
+    hover: "",
+  }
 };
 
 export const COLORS = {
@@ -87,4 +92,5 @@ export const COLORS = {
   1: mappings["green"],
   0: mappings["yellow"],
   "-1": mappings["red"],
+  none: mappings["none"],
 };
