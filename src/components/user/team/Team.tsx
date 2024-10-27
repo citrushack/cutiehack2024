@@ -5,9 +5,11 @@ import { getSession } from "@/utils/auth";
 import { fetchTeam } from "@/actions/join";
 
 const Team = async () => {
-  const {
-    user: { team },
-  } = await getSession();
+  const session = await getSession();
+
+  if (!session?.user.team) return <></>;
+
+  const team = session.user.team;
 
   const details = await fetchTeam(team);
 

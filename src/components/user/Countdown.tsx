@@ -1,8 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
-import data from "/src/data/Config.ts";
+import data from "@/data/Config";
 
-const Digits = ({ value, unit }) => {
+interface props {
+  value: number;
+  unit: string;
+}
+
+const Digits = ({ value, unit }: props) => {
   return (
     <div className="flex flex-col items-center gap-4 last:hidden sm:last:flex">
       <div className="m-3 mb-0 flex gap-1 lg:!gap-1">

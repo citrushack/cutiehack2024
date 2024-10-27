@@ -10,6 +10,9 @@ import { submit } from "@/utils/form";
 
 const Admin = () => {
   const { data: session } = useSession();
+
+  if (!session?.user) return null;
+
   const [admin, setAdmin] = useState({
     ...ATTRIBUTES,
     name: session.user.name,
@@ -18,7 +21,10 @@ const Admin = () => {
     form: "admins",
   });
 
-  const onSubmit = async (setLoading, setState) => {
+  const onSubmit = async (
+    setLoading: (value: boolean) => void,
+    setState: (value: number) => void,
+  ) => {
     await submit({
       data: admin,
       schema,

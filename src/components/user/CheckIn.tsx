@@ -18,6 +18,8 @@ const CheckinPage = () => {
     return () => clearInterval(timer);
   }, []);
 
+  if (!session?.user) return <></>;
+
   return (
     <div className="flex h-[calc(100vh-48px)] w-full flex-col">
       <div className="pb-3 pt-4">

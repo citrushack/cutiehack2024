@@ -1,7 +1,7 @@
 import { db } from "@/utils/firebase";
 import { doc, getDoc } from "firebase/firestore";
 
-export async function fetchTeam(id) {
+export async function fetchTeam(id: string) {
   if (id === "") return null;
 
   const docSnap = await getDoc(doc(db, "teams", id));

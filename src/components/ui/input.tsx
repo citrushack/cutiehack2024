@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import { cn } from "@/utils/tailwind";
+import { X } from "lucide-react";
 
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {}
@@ -22,4 +23,33 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
 );
 Input.displayName = "Input";
 
-export { Input };
+export interface InputWithClearProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {
+  onClear: () => void;
+}
+
+const InputWithClear = React.forwardRef<HTMLInputElement, InputWithClearProps>(
+  ({ className, type, onClear, ...props }, ref) => {
+    return (
+      <div className="flex w-full items-center rounded-md border border-slate-200 bg-white px-3 py-2">
+        <input
+          type={type}
+          className={cn(
+            "flex w-full text-sm placeholder:text-slate-500 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50",
+            className,
+          )}
+          ref={ref}
+          {...props}
+        />
+
+        <X
+          className="text-xl text-hackathon-gray-300 hover:cursor-pointer hover:text-red-500"
+          onClick={onClear}
+        />
+      </div>
+    );
+  },
+);
+Input.displayName = "InputWithClear";
+
+export { Input, InputWithClear };

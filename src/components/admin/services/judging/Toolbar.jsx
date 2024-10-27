@@ -13,6 +13,8 @@ import {
 } from "@/components/ui/input-otp";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { InputWithClear } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 
 const tags = ["professor", "industry", "student"];
 
@@ -241,15 +243,14 @@ const Toolbar = ({
           </Button>
         </div>
         <div className="pl-2">
-          <Input
+          <Label htmlFor="search">Search</Label>
+          <InputWithClear
+            id="search"
             value={search}
-            label="search"
-            showLabel={false}
             maxLength={100}
             placeholder="Search"
-            clear={true}
-            clearFn={() => setSearch("")}
-            onChangeFn={handleInput}
+            onClear={() => setSearch("")}
+            onChange={handleInput}
           />
         </div>
 

@@ -10,6 +10,9 @@ import { submit } from "@/utils/form";
 
 const Committee = () => {
   const { data: session } = useSession();
+
+  if (!session?.user) return null;
+
   const [committee, setCommittee] = useState({
     ...ATTRIBUTES,
     name: session.user.name,

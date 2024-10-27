@@ -5,9 +5,9 @@ import { Trash2, RotateCcw } from "lucide-react";
 import toaster from "@/utils/toaster";
 import Popup from "../../Popup";
 // import { COLORS } from "@/data/Tags";
-import Input from "../../Input";
 import Select from "@/components/Select";
 import { Badge } from "@/components/ui/badge";
+import { InputWithClear } from "@/components/ui/input";
 
 const Toolbar = ({
   page,
@@ -155,8 +155,8 @@ const Toolbar = ({
         ))}
       </div>
 
-      <div className="flex w-full items-center gap-5 lg:flex-row">
-        <div className="z-10 mx-2 w-2/12">
+      <div className="flex w-full items-center gap-2 lg:flex-row">
+        <div className="z-10 w-2/12">
           <Select
             items={searchableItems}
             user={search}
@@ -165,17 +165,15 @@ const Toolbar = ({
             placeholder={searchableItems[0]}
           />
         </div>
-        <Input
-          label="search"
-          classes="w-full"
+
+        <InputWithClear
           placeholder="Search"
-          showLabel={false}
           maxLength={100}
-          clear={true}
+          onClear={() => onChange(search.search, "")}
+          onChange={(e) => onChange(search.search, e.target.value)}
           value={value}
-          onChangeFn={(e) => onChange(search.search, e.target.value)}
-          clearFn={() => onChange(search.search, "")}
         />
+
         <div>
           Rows:<span className="mx-2">{meta.total}</span>
         </div>
