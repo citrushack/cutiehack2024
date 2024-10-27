@@ -20,7 +20,7 @@ import {
 const Table = ({
   getHeaderGroups,
   getRowModel,
-  Dropdown,
+  // Dropdown,
   empty,
   loading,
   meta,
@@ -83,7 +83,7 @@ const Table = ({
                   </TableRow>
                 )}
                 {getRowModel().rows.map(
-                  ({ id, getVisibleCells, original, getIsSelected }) => (
+                  ({ id, getVisibleCells, getIsSelected }) => (
                     <TableRow
                       key={id}
                       className={`${getIsSelected() && "bg-hackathon-green-100"}`}

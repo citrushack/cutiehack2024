@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import Input from "../../Input";
 // import { COLORS } from "@/data/Tags";
 import Popup from "../../Popup";
 import toaster from "@/utils/toaster";

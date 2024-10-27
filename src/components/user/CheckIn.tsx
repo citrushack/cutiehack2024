@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Title from "../admin/Title";
 import { QRCodeSVG } from "qrcode.react";
 import { useState, useEffect } from "react";
 import { useSession } from "next-auth/react";
+import { Label } from "@/components/ui/label";
 
 const CheckinPage = () => {
   const [date, setDate] = useState(new Date());
@@ -23,7 +23,7 @@ const CheckinPage = () => {
   return (
     <div className="flex h-[calc(100vh-48px)] w-full flex-col">
       <div className="pb-3 pt-4">
-        <Title title="Check In" />
+        <Label className="pr-5 text-2xl font-bold">Checkin</Label>
       </div>
       <div className="flex h-full flex-col lg:flex-row">
         <div className="m-auto flex flex-col items-center">
