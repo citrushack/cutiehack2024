@@ -84,7 +84,10 @@ const Table = ({
                 )}
                 {getRowModel().rows.map(
                   ({ id, getVisibleCells, original, getIsSelected }) => (
-                    <TableRow key={id}>
+                    <TableRow
+                      key={id}
+                      className={`${getIsSelected() && "bg-hackathon-green-100"}`}
+                    >
                       {getVisibleCells().map(({ id, column, getContext }) => (
                         <TableCell key={id}>
                           {flexRender(column.columnDef.cell, getContext())}
