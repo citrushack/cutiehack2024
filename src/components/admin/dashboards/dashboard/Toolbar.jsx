@@ -6,7 +6,6 @@ import toaster from "@/utils/toaster";
 import Popup from "../../Popup";
 // import { COLORS } from "@/data/Tags";
 import Select from "@/components/Select";
-import { Badge } from "@/components/ui/badge";
 import { InputWithClear } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
