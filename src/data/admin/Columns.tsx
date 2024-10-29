@@ -27,9 +27,6 @@ export const generateAffiliation = <TData extends Record<string, string>>(
   accessorKey: "affiliation",
   header: "Affiliation",
   cell: ({ getValue }: CellContext<TData, string>) => {
-    console.log("what the fuck", getValue());
-    console.log("get this done", COLORS[getValue().toLowerCase()]);
-
     return (
       <Badge type={getValue().toLowerCase() as keyof typeof COLORS}>
         {getValue().toLowerCase()}

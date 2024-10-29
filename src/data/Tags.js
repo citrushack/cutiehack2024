@@ -17,32 +17,32 @@ const mappings = {
   gray: {
     background: "bg-hackathon-tags-gray-bg",
     text: "text-hackathon-tags-gray-text",
-    hover: "hover:shadow-[inset_0px_0px_0px_2px_#969696]",
+    hover: "",
   },
   purple: {
     background: "bg-hackathon-tags-purple-bg",
     text: "text-hackathon-tags-purple-text",
-    hover: "hover:shadow-[inset_0px_0px_0px_2px_#825ED0]",
+    hover: "",
   },
   grayblue: {
     background: "bg-hackathon-tags-grayblue-bg",
     text: "text-hackathon-tags-grayblue-text",
-    hover: "hover:shadow-[inset_0px_0px_0px_2px_#29465B]",
+    hover: "",
   },
   teal: {
     background: "bg-hackathon-tags-teal-bg",
     text: "text-hackathon-tags-teal-text",
-    hover: "hover:shadow-[inset_0px_0px_0px_2px_#045D5D]",
+    hover: "",
   },
   lightgreen: {
     background: "bg-hackathon-tags-lightgreen-bg",
     text: "text-hackathon-tags-lightgreen-text",
-    hover: "hover:shadow-[inset_0px_0px_0px_2px_#038756]",
+    hover: "",
   },
   pink: {
     background: "bg-hackathon-tags-pink-bg",
     text: "text-hackathon-tags-pink-text",
-    hover: "hover:shadow-[inset_0px_0px_0px_2px_#e384b0]",
+    hover: "",
   },
   none: {
     background: "",
