@@ -30,22 +30,15 @@ interface Tab {
 
 interface Service {
   expand: true;
-  mt: string;
   tabs: Tab[];
 }
 
-interface UserPortal {
-  expand: true;
-  tabs: Tab[];
-}
-
-type Tabs = Record<string, Record<string, Service> | UserPortal>;
+type Tabs = Record<string, Record<string, Service>>;
 
 export const TABS: Tabs = {
   admin: {
     Dashboards: {
       expand: true,
-      mt: "mt-0",
       tabs: [
         {
           name: "participants",
@@ -85,12 +78,12 @@ export const TABS: Tabs = {
         {
           name: "sponsors",
           link: "/admin/sponsors",
-          icon: <Users className={iconStyle} />, // Replace with the correct icon if available
+          icon: <Users className={iconStyle} />,
         },
         {
           name: "panelists",
           link: "/admin/panelists",
-          icon: <Users className={iconStyle} />, // Replace with the correct icon if available
+          icon: <Users className={iconStyle} />,
         },
         {
           name: "interests",
@@ -111,7 +104,6 @@ export const TABS: Tabs = {
     },
     Services: {
       expand: true,
-      mt: "mt-3",
       tabs: [
         {
           name: "calendar",
@@ -154,7 +146,6 @@ export const TABS: Tabs = {
   user: {
     Portal: {
       expand: true,
-      mt: "mt-0",
       tabs: [
         {
           name: "dashboard",
