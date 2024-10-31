@@ -113,7 +113,7 @@ const Navigation = () => {
                   className={`flex w-full items-center justify-center py-1 [&>*]:text-white ${
                     pathName.endsWith(tab.link)
                       ? "bg-gradient-to-r from-transparent to-cutie-violet font-semibold"
-                              : "from-transparent to-cutie-violet hover:bg-gradient-to-r"
+                      : "from-transparent to-cutie-violet hover:bg-gradient-to-r"
                   }`}
                 >
                   {tab.icon}
