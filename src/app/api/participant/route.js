@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { db } from "../../../utils/firebase";
 import { doc, updateDoc } from "firebase/firestore";
 import { authenticate } from "@/utils/auth";
-import { AUTH } from "@/data/user/Participant";
+import { AUTH } from "@/data/user/participant";
 
 export const POST = async (req) => {
   const res = NextResponse;

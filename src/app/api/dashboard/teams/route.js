@@ -18,7 +18,7 @@ import {
   getCountFromServer,
 } from "firebase/firestore";
 import { authenticate } from "@/utils/auth";
-import { AUTH } from "@/data/admin/Dashboard";
+import { AUTH } from "@/data/admin/dashboard";
 
 export const GET = async (req) => {
   const direction = req.nextUrl.searchParams.get("direction");

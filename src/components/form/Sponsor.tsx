@@ -11,15 +11,15 @@ import { submit } from "@/utils/form";
 const Sponsor = () => {
   const { data: session } = useSession();
 
-  if (!session?.user) return null;
-
   const [sponsor, setSponsor] = useState({
     ...ATTRIBUTES,
-    name: session.user.name,
-    email: session.user.email,
-    roles: session.user.roles,
+    name: session?.user.name || "",
+    email: session?.user.email || "",
+    roles: session?.user.roles || {},
     form: "sponsors",
   });
+
+  if (!session?.user) return null;
 
   const onSubmit = async (
     setLoading: (value: boolean) => void,

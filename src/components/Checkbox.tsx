@@ -5,7 +5,7 @@ type checkbox = {
   id: string;
   checked: boolean;
   children?: string;
-  onClick?: (event: any) => void;
+  onClick?: (event: React.MouseEvent<HTMLElement>) => void;
 };
 
 const Checkbox = ({ id, checked, onClick, children }: checkbox) => {

@@ -18,26 +18,25 @@ type props = {
   params: { type: string };
 };
 
+const components: Record<string, React.ReactElement> = {
+  admin: <Admin />,
+  committee: <Committee />,
+  feedback: <Feedback />,
+  interest: <Interest />,
+  judge: <Judge />,
+  mentor: <Mentor />,
+  participant: <Participant />,
+  sponsor: <Sponsor />,
+  panel: <Panel />,
+  volunteer: <Volunteer />,
+  lead: <Lead />,
+  idea: <Ideas />,
+};
+const capitalizeFirstLetter = (word: string) => {
+  return word[0].toUpperCase() + word.slice(1);
+};
+
 const Page = ({ params }: props) => {
-  const components: Record<string, React.ReactElement> = {
-    admin: <Admin />,
-    committee: <Committee />,
-    feedback: <Feedback />,
-    interest: <Interest />,
-    judge: <Judge />,
-    mentor: <Mentor />,
-    participant: <Participant />,
-    sponsor: <Sponsor />,
-    panel: <Panel />,
-    volunteer: <Volunteer />,
-    lead: <Lead />,
-    idea: <Ideas />,
-  };
-
-  const capitalizeFirstLetter = (word: string) => {
-    return word[0].toUpperCase() + word.slice(1);
-  };
-
   if (components.hasOwnProperty(params.type)) {
     return (
       <ProtectedPage

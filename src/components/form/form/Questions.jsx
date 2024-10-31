@@ -1,4 +1,4 @@
-import Select from "@/components/Select";
+import Select from "@/components/select";
 import Checkbox from "@/components/checkbox";
 import { Textarea } from "@/components/ui/textarea";
 import Upload from "@/components/form/form/Upload";

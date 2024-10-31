@@ -10,15 +10,15 @@ import { submit } from "@/utils/form";
 const Ideas = () => {
   const { data: session } = useSession();
 
-  if (!session?.user) return null;
-
   const [idea, setIdea] = useState({
     ...ATTRIBUTES,
-    name: session.user.name,
-    email: session.user.email,
-    roles: session.user.roles,
+    name: session?.user.name || "",
+    email: session?.user.email || "",
+    roles: session?.user.roles || {},
     form: "idea",
   });
+
+  if (!session?.user) return null;
 
   const onSubmit = async (
     setLoading: (value: boolean) => void,

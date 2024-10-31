@@ -10,13 +10,13 @@ import { submit } from "@/utils/form";
 const Feedback = () => {
   const { data: session } = useSession();
 
-  if (!session?.user) return null;
-
   const [feedback, setFeedback] = useState({
     ...ATTRIBUTES,
-    roles: session.user.roles,
+    roles: session?.user.roles || {},
     form: "feedback",
   });
+
+  if (!session?.user) return null;
 
   const onSubmit = async (
     setLoading: (value: boolean) => void,

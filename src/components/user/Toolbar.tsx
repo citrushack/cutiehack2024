@@ -1,7 +1,9 @@
 import { InputWithClear } from "@/components/ui/input";
 
 interface props {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   setSearch: (value: any[]) => void;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   data: any[];
 }
 

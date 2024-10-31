@@ -11,16 +11,16 @@ import { submit } from "@/utils/form";
 const Panel = () => {
   const { data: session } = useSession();
 
-  if (!session?.user) return null;
-
   const [panel, setPanel] = useState({
     ...ATTRIBUTES,
-    name: session.user.name,
-    email: session.user.email,
-    roles: session.user.roles,
-    photo: session.user.photo ?? null,
+    name: session?.user.name || "",
+    email: session?.user.email || "",
+    roles: session?.user.roles || {},
+    photo: session?.user.photo ?? "",
     form: "panels",
   });
+
+  if (!session?.user) return null;
 
   const onSubmit = async (
     setLoading: (value: boolean) => void,

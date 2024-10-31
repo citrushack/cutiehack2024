@@ -22,6 +22,8 @@ export const options: NextAuthOptions = {
           email: profile.email,
           name: profile.name,
           image: profile.picture,
+          team: "",
+          photo: "",
           roles: {},
         };
       },

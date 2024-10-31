@@ -29,7 +29,7 @@ export const generateAffiliation = <TData extends Record<string, string>>(
   cell: ({ getValue }: CellContext<TData, string>) => {
     return (
       <Badge type={getValue().toLowerCase() as keyof typeof COLORS}>
-        {getValue().toLowerCase()}
+        {affiliations[getValue().toLowerCase()]}
       </Badge>
     );
   },

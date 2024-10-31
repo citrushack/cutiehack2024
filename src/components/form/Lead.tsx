@@ -11,15 +11,15 @@ import { submit } from "@/utils/form";
 const Lead = () => {
   const { data: session } = useSession();
 
-  if (!session?.user) return null;
-
   const [lead, setLead] = useState({
     ...ATTRIBUTES,
-    name: session.user.name,
-    roles: session.user.roles,
-    email: session.user.email,
+    name: session?.user.name || "",
+    roles: session?.user.roles || {},
+    email: session?.user.email || "",
     form: "leads",
   });
+
+  if (!session?.user) return null;
 
   const onSubmit = async (
     setLoading: (value: boolean) => void,

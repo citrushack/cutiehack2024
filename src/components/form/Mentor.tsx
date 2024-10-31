@@ -11,15 +11,15 @@ import { submit } from "@/utils/form";
 const Mentor = () => {
   const { data: session } = useSession();
 
-  if (!session?.user) return null;
-
   const [mentor, setMentor] = useState({
     ...ATTRIBUTES,
-    name: session.user.name,
-    email: session.user.email,
-    roles: session.user.roles,
+    name: session?.user.name || "",
+    email: session?.user.email || "",
+    roles: session?.user.roles || {},
     form: "mentors",
   });
+
+  if (!session?.user) return null;
 
   const onSubmit = async (
     setLoading: (value: boolean) => void,
