@@ -14,12 +14,14 @@ import wolfLogo from "@/public/assets/wolfram.svg";
 import star from "@/public/assets/star.svg";
 import cutieLogo from "@/public/assets/cutiehackLOGO.svg";
 import whiteStar from "@/public/assets/betterWhiteStar.svg";
-import yellowStar from "@/public/assets/betterYellowStar.svg";
+// import yellowStar from "@/public/assets/betterYellowStar.svg";
 
 const Sponsors = () => {
   return (
-    <div className="flex flex-col items-center justify-center bg-cutie-blue-300 px-10 sm:px-[107px]">
-      <Title text={"Sponsors"} subtext={"Thank you so much!"} />
+    <div className="px-50 bg-cutie-blue-300 sm:px-[107px]">
+      <div className="flex flex-col items-center justify-center">
+        <Title text={"Sponsors"} subtext={"Thank you so much!"} />
+      </div>
 
       <div className="grid grid-cols-1 gap-20 md:grid-cols-2 lg:grid-cols-3">
         <div className="relative">
@@ -95,9 +97,14 @@ const Sponsors = () => {
         </div>
       </div>
 
-      <div className="items-center">
-        <div className="ml-[100px] mt-5 flex w-[1200px] justify-evenly gap-[300px]">
-          <div className="relative">
+      <div className="">
+        <div className="lg:px[900px] relative grid grid-cols-1 items-center gap-20 lg:grid-cols-2">
+          <Image
+            src={rightswirl}
+            alt="Cover"
+            className="top[200px] rotate-220 absolute z-0 h-[800px] w-[850px] lg:ml-[720px]"
+          />
+          <div className="relative mb-20 ml-20">
             <Image
               src={blueflag}
               alt="flag"
@@ -121,11 +128,11 @@ const Sponsors = () => {
             <Image
               src={desmosLogo}
               alt="desmos"
-              className="z-15 absolute left-[30px] top-[130px] h-[240px] w-[190px] object-fill lg:left-[50px]"
+              className="z-1 absolute left-[50px] top-[130px] h-[240px] w-[190px] object-fill lg:left-[50px]"
             />
           </div>
 
-          <div className="relative mb-20">
+          <div className="relative mb-20 ml-20">
             <Image
               src={blueflag}
               alt="flag"
@@ -149,34 +156,21 @@ const Sponsors = () => {
             <Image
               src={quokkaLogo}
               alt="quokka"
-              className="z-1 absolute left-[30px] top-[130px] h-[240px] w-[190px] object-fill md:left-[50px] lg:left-[50px]"
+              className="z-1 absolute left-[50px] top-[130px] h-[240px] w-[190px] object-fill md:left-[50px] lg:left-[50px]"
             />
           </div>
-        </div>
-        <div className="w-100% relative ml-[100px] flex justify-center">
-          <Image
-            src={wolfLogo}
-            alt="wolf"
-            className="left-50 z-15 absolute top-[40px] w-[190px] object-fill"
-          />
-          <Image
-            src={yellowStar}
-            alt="star"
-            className="z-15 absolute inset-0 -top-[20px] left-[650px] h-[70px] w-[50px] scale-150"
-          />
-          <Image
-            src={ellipse}
-            alt="Cover"
-            className="-mt-2 h-[300px] w-[300px] object-fill"
-          />
-        </div>
-
-        <div className="relative w-[540px] justify-end">
-          <Image
-            src={rightswirl}
-            alt="right-swirl"
-            className="absolute -top-[800px] left-[950px]"
-          />
+          <div className="w-200 relative ml-20 items-center">
+            <Image
+              src={wolfLogo}
+              alt="wolf"
+              className="z-15 absolute left-[60px] top-[40px] w-[190px] object-fill"
+            />
+            <Image
+              src={ellipse}
+              alt="Cover"
+              className="-mt-2 h-[300px] w-[300px] object-fill"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -184,3 +178,10 @@ const Sponsors = () => {
 };
 
 export default Sponsors;
+
+/*   <Image
+src={yellowStar}
+alt="star"
+className="z-15 absolute inset-0 -top-[20px] left-[610px] h-[70px] w-[50px] scale-150 sm:hidden"
+/>
+*/
