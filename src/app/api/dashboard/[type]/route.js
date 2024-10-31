@@ -19,9 +19,9 @@ import {
   limitToLast,
 } from "firebase/firestore";
 import { authenticate } from "@/utils/auth";
-import { AUTH, ATTRIBUTES } from "@/data/admin/Dashboard";
+import { AUTH, ATTRIBUTES } from "@/data/admin/dashboard";
 import send from "@/utils/email";
-import data from "@/data/Config";
+import data from "@/data/config";
 
 const types = new Set([
   "admins",
@@ -233,8 +233,8 @@ export const PUT = async (req, { params }) => {
           const diet = object.diet;
           const school = object.school;
 
-          status === 1 &&
-            (await updateDoc(doc(db, "statistics", "statistics"), {
+          if (status === 1) {
+            await updateDoc(doc(db, "statistics", "statistics"), {
               [`${params.type}.status.1`]: increment(1),
               [`${params.type}.status.0`]: increment(-1),
               [`${params.type}.shirt.1.${size}`]: increment(1),
@@ -243,10 +243,11 @@ export const PUT = async (req, { params }) => {
               [`${params.type}.diet.0${diet}`]: increment(-1),
               [`${params}.participants.school.1.${school}`]: increment(1),
               [`${params}.participants.school.0.${school}`]: increment(-1),
-            }));
+            });
+          }
 
-          status === -1 &&
-            (await updateDoc(doc(db, "statistics", "statistics"), {
+          if (status === -1) {
+            await updateDoc(doc(db, "statistics", "statistics"), {
               [`${params.type}.status.-1`]: increment(1),
               [`${params.type}.status.0`]: increment(-1),
               [`${params.type}.shirt.-1.${size}`]: increment(1),
@@ -255,7 +256,8 @@ export const PUT = async (req, { params }) => {
               [`${params.type}.diet.0.${diet}`]: increment(-1),
               [`${params}.participants.school.-1.${school}`]: increment(1),
               [`${params}.participants.school.0.${school}`]: increment(-1),
-            }));
+            });
+          }
         }),
       );
     }

@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Toolbar from "./Toolbar";
 import Events from "./Events";
-import data from "@/data/Config";
+import data from "@/data/config";
 
 const days = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
 const date = new Date(data.date);

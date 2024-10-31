@@ -1,4 +1,4 @@
-import Email from "@/components/email/Email";
+import Email from "@/components/email";
 import { Resend, CreateEmailResponse } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY as string);
