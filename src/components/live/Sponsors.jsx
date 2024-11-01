@@ -14,7 +14,7 @@ import wolfLogo from "@/public/assets/wolfram.svg";
 import star from "@/public/assets/star.svg";
 import cutieLogo from "@/public/assets/cutiehackLOGO.svg";
 import whiteStar from "@/public/assets/betterWhiteStar.svg";
-// import yellowStar from "@/public/assets/betterYellowStar.svg";
+import yellowStar from "@/public/assets/betterYellowStar.svg";
 
 const Sponsors = () => {
   return (
@@ -98,13 +98,13 @@ const Sponsors = () => {
       </div>
 
       <div className="">
-        <div className="lg:px[900px] relative grid grid-cols-1 items-center gap-20 lg:grid-cols-2">
+        <div className="lg:px[900px] relative grid grid-cols-1 lg:grid-cols-2">
           <Image
             src={rightswirl}
             alt="Cover"
             className="top[200px] rotate-220 absolute z-0 h-[800px] w-[850px] lg:ml-[720px]"
           />
-          <div className="relative mb-20 ml-20">
+          <div className="relative mb-10 ml-[70px] w-[270px] lg:ml-[270px]">
             <Image
               src={blueflag}
               alt="flag"
@@ -132,7 +132,7 @@ const Sponsors = () => {
             />
           </div>
 
-          <div className="relative mb-20 ml-20">
+          <div className="relative mb-10 ml-[70px] w-[270px]">
             <Image
               src={blueflag}
               alt="flag"
@@ -159,11 +159,16 @@ const Sponsors = () => {
               className="z-1 absolute left-[50px] top-[130px] h-[240px] w-[190px] object-fill md:left-[50px] lg:left-[50px]"
             />
           </div>
-          <div className="w-200 relative ml-20 items-center">
+          <div className="ml-[120px] mt-3 w-[200px] lg:ml-[595px]">
+            <Image
+              src={yellowStar}
+              alt="star"
+              className="z-15 absolute bottom-[200px] ml-[130px] w-[50px] scale-125 object-fill"
+            />
             <Image
               src={wolfLogo}
               alt="wolf"
-              className="z-15 absolute left-[60px] top-[40px] w-[190px] object-fill"
+              className="z-15 absolute bottom-[110px] ml-[50px] w-[100px] scale-125 object-fill"
             />
             <Image
               src={ellipse}
@@ -179,9 +184,5 @@ const Sponsors = () => {
 
 export default Sponsors;
 
-/*   <Image
-src={yellowStar}
-alt="star"
-className="z-15 absolute inset-0 -top-[20px] left-[610px] h-[70px] w-[50px] scale-150 sm:hidden"
-/>
-*/
+/*
+ */
