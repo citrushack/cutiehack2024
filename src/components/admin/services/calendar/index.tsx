@@ -1,6 +1,6 @@
 import { ReactQuery } from "@/utils/react-query";
 import { getEvents } from "./actions";
-import Calendar from "./calendar";
+import Calendar from "./Calendar";
 
 const Index = () => {
   return (

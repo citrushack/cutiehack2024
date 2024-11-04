@@ -1,4 +1,4 @@
-import Checkin from "./checkIn";
+import Checkin from "./CheckIn";
 import { getEvents } from "./actions";
 import { ReactQuery } from "@/utils/react-query";
 

@@ -1,7 +1,8 @@
-import Navigation from "@/components/engineering/navigation";
+import Navigation from "@/components/engineering/Navigation";
+import React, { ReactNode } from "react";
 
 interface LayoutProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {

@@ -1,5 +1,5 @@
-import ProtectedPage from "@/components/protected";
-import Dashboard from "@/components/user/dashboard";
+import ProtectedPage from "@/components/ProtectedPage";
+import Dashboard from "@/components/user/Dashboard";
 
 const Page = () => {
   return (

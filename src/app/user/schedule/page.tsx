@@ -1,4 +1,4 @@
-import ProtectedPage from "@/components/protected";
+import ProtectedPage from "@/components/ProtectedPage";
 import ScheduleWrapper from "@/components/user/schedule/Wrapper";
 
 const Page = () => {

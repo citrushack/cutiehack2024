@@ -5,7 +5,7 @@ import {
   GRADES,
   MAJORS,
   AVAILABILITY,
-} from "@/data/form/information";
+} from "@/data/form/Information";
 
 export const schema = z.object({
   name: z.string().min(1, { message: "Name is invalid" }),

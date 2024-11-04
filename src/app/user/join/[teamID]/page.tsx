@@ -1,5 +1,5 @@
-import ProtectedPage from "@/components/protected";
-import Join from "@/components/user/join";
+import ProtectedPage from "@/components/ProtectedPage";
+import Join from "@/components/user/join/Join";
 
 type props = {
   params: { teamID: string };

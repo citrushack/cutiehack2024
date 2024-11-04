@@ -1,5 +1,5 @@
-import ProtectedPage from "@/components/protected";
-import CheckinPage from "@/components/user/checkIn";
+import ProtectedPage from "@/components/ProtectedPage";
+import CheckinPage from "@/components/user/CheckIn";
 
 const Page: React.FC = () => {
   return (

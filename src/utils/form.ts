@@ -2,7 +2,7 @@ import { z } from "zod";
 import { api } from "@/utils/api";
 import toaster from "@/utils/toaster";
 
-export const submit = async <T extends z.ZodObject<z.ZodRawShape>>({
+export const submit = async <T extends z.ZodObject<any>>({
   data,
   schema,
   url,
@@ -35,7 +35,7 @@ export const submit = async <T extends z.ZodObject<z.ZodRawShape>>({
     });
     toaster(`Submitted successfully!`, "success");
     setState(2);
-  } catch {
+  } catch (error) {
     toaster(`Internal Server Error`, "error");
     setState(0);
   } finally {

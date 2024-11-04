@@ -5,8 +5,8 @@ import {
   MAJORS,
   AGES,
   SOURCES,
-} from "@/data/form/information";
-import { SCHOOLS } from "@/data/form/schools";
+} from "@/data/form/Information";
+import { SCHOOLS } from "@/data/form/Schools";
 
 export const schema = z.object({
   name: z.string().min(1, { message: "Name is invalid" }),

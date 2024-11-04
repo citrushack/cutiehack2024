@@ -1,7 +1,7 @@
 type API = {
   url: string;
   method: "GET" | "POST" | "PUT" | "DELETE";
-  body?: object;
+  body?: Object;
 };
 
 export const api = async ({ url, method, body }: API) => {

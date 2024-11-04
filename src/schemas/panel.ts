@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { GENDERS, SHIRTS } from "@/data/form/information";
+import { GENDERS, SHIRTS } from "@/data/form/Information";
 
 export const schema = z.object({
   name: z.string().min(1, { message: "Name is invalid" }),

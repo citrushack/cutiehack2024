@@ -2,10 +2,8 @@
 import { useState } from "react";
 import Toolbar from "./Toolbar";
 import Events from "./Events";
-import data from "@/data/config";
 
 const days = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
-const date = new Date(data.date);
 
 const Schedule = ({ eventList }) => {
   const [events, setEvents] = useState(eventList);
@@ -27,25 +25,17 @@ const Schedule = ({ eventList }) => {
 
   return (
     <>
-      <div className="sticky top-0 z-10 flex w-full flex-col bg-gray-100 pt-4 text-white">
+      <div className="bg-cutie-200 sticky top-0 z-10 flex w-full flex-col pt-4 text-white">
         <Toolbar onFilterChange={filterChange} />
         <div className="flex">
-          {days.map((day, index) => {
-            const currentDate = new Date(date);
-            currentDate.setDate(currentDate.getDate() + index);
-            return (
-              <div
-                className="font-montserrat m-5 ml-0 flex flex-grow items-center justify-start border-b-[1px] border-black text-sm font-light text-black md:text-lg"
-                key={index}
-              >
-                {day} -{" "}
-                {currentDate.toLocaleString("default", {
-                  month: "numeric",
-                  day: "numeric",
-                })}
-              </div>
-            );
-          })}
+          {days.map((day, index) => (
+            <div
+              className="font-montserrat m-5 ml-0 flex flex-grow items-center justify-start border-b-[1px] border-white text-sm font-light text-white md:text-lg"
+              key={index}
+            >
+              {day}
+            </div>
+          ))}
         </div>
       </div>
       <div className="mr-4 flex">

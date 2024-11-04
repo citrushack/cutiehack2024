@@ -1,5 +1,5 @@
-import ProtectedPage from "@/components/protected";
-import Team from "@/components/user/team/team";
+import ProtectedPage from "@/components/ProtectedPage";
+import Team from "@/components/user/team/Team";
 
 const Page = () => {
   return (

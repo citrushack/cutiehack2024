@@ -17,7 +17,7 @@ import {
   where,
 } from "firebase/firestore";
 import { authenticate } from "@/utils/auth";
-import { AUTH } from "@/data/admin/dashboard";
+import { AUTH } from "@/data/admin/Dashboard";
 
 export const POST = async (req) => {
   const res = NextResponse;

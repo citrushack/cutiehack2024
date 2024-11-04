@@ -1,4 +1,4 @@
-import data from "@/data/config";
+import data from "@/data/Config";
 
 const sitemap = () => {
   return [

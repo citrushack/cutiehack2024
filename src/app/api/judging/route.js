@@ -11,7 +11,7 @@ import {
   or,
 } from "firebase/firestore";
 import { authenticate } from "@/utils/auth";
-import { AUTH } from "@/data/admin/dashboard";
+import { AUTH } from "@/data/admin/Dashboard";
 
 export const GET = async () => {
   const res = NextResponse;

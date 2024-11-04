@@ -51,6 +51,7 @@ export const PUT = async (req) => {
   const { uid, event, name } = await req.json();
 
   try {
+    // eslint-disable-next-line no-unused-vars
     const [_, data] = await Promise.all([
       updateDoc(doc(db, "users", uid), {
         events: arrayUnion(event),

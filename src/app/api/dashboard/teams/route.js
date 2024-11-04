@@ -18,7 +18,7 @@ import {
   getCountFromServer,
 } from "firebase/firestore";
 import { authenticate } from "@/utils/auth";
-import { AUTH } from "@/data/admin/dashboard";
+import { AUTH } from "@/data/admin/Dashboard";
 
 export const GET = async (req) => {
   const direction = req.nextUrl.searchParams.get("direction");
@@ -83,7 +83,7 @@ export const GET = async (req) => {
       const formattedDiscords = members.map((member) => member.discord);
       const formattedUids = members.map((member) => member.uid);
       const formattedLinks = Object.entries(links)
-        .filter(([_, value]) => value !== "")
+        .filter(([key, value]) => value !== "")
         .map(([key, value]) => {
           return { name: key, link: value };
         });

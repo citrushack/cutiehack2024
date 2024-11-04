@@ -9,7 +9,7 @@ import {
   deleteDoc,
 } from "firebase/firestore";
 import { authenticate } from "@/utils/auth";
-import { AUTH } from "@/data/user/members";
+import { AUTH } from "@/data/user/Members";
 
 export const DELETE = async () => {
   const res = NextResponse;
