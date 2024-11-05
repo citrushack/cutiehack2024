@@ -9,10 +9,9 @@ import Tracks from "./Tracks";
 import FAQ from "./faq/FAQ";
 import Footer from "./Footer";
 import Navigation from "./Navigation";
-import Stars from "./stars";
 const Live = () => {
   return (
-    <div className="relative">
+    <div>
       <Navigation />
       <Landing />
       <About />
@@ -24,7 +23,6 @@ const Live = () => {
       <Judges /> */}
       <FAQ />
       <Footer />
-      <Stars length={500} />
     </div>
   );
 };

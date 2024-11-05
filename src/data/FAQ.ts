@@ -46,11 +46,10 @@ export const QUESTIONS: QuestionAnswer[] = [
   {
     question: "What if I don't have a team?",
     answer:
-      "We will have oppotunites to meet new people as well as our team's page will allow you to find people to work with!",
+      "We will have oppotunites to meet new people as well as our team page will allow you to find people to work with!",
   },
   {
     question: "Where will I submit?",
-    answer:
-      "Devpost!. We will provide guidence how to submit as well during the event!",
+    answer: "Devpost. We will tell provide guidence on submission as well!",
   },
 ];
