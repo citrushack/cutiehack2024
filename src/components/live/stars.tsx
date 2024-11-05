@@ -9,7 +9,7 @@ type stars = {
   size: number;
 };
 
-const stars = ({ length }: { length: number }) => {
+const Stars = ({ length }: { length: number }) => {
   const [stars, setStars] = useState<stars[]>([]);
 
   useEffect(() => {
@@ -43,4 +43,4 @@ const stars = ({ length }: { length: number }) => {
   );
 };
 
-export default stars;
+export default Stars;
