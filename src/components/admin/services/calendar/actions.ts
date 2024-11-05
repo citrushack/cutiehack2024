@@ -1,4 +1,4 @@
-import { LABELS, label } from "@/data/admin/Calendar";
+import { LABELS, label } from "@/data/admin/calendar";
 import { api } from "@/utils/api";
 import { Event } from "@/types/calendar";
 const min = new Date(

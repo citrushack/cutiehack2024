@@ -1,5 +1,5 @@
 "use client";
-import Error from "@/components/Error";
+import Error from "@/components/error";
 import { useParams } from "next/navigation";
 
 interface Params {

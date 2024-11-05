@@ -1,5 +1,5 @@
-import Landing from "@/components/engineering/Landing";
-import What from "@/components/engineering/What";
+import Landing from "@/components/engineering/landing";
+import What from "@/components/engineering/what";
 
 const Page = () => {
   return (
