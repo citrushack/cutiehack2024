@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { QUESTIONS } from "@/data/FAQ";
+// import { QUESTIONS } from "@/data/FAQ";
 import UFO from "@/public/assets/ufo.svg";
-import Item from "./Item";
+// import Item from "./Item";
 
 const FAQ = () => {
   return (
@@ -19,7 +19,7 @@ const FAQ = () => {
         <h1>Q</h1>
       </div>
       <div className="w-11/12 rounded-3xl border-8 border-[#A22282] bg-[#61114D] p-6 shadow-lg md:w-5/12">
-        <div className="flex w-full flex-col space-y-2 overflow-hidden">
+        {/* <div className="flex w-full flex-col space-y-2 overflow-hidden">
           {QUESTIONS.map((faq, index) => (
             <div
               key={index}
@@ -32,7 +32,7 @@ const FAQ = () => {
               <Item title={faq.question}>{faq.answer}</Item>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

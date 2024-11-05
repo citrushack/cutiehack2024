@@ -5,7 +5,7 @@ import {
   GRADES,
   MAJORS,
   AFFILIATIONS,
-} from "@/data/form/Information";
+} from "@/data/form/information";
 
 export const schema = z.object({
   name: z.string().min(1, { message: "Name is required" }),

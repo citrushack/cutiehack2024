@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { Label, Pie, PieChart } from "recharts";
-import { ROLES, SIZES, DIETS, SCHOOLS } from "@/data/admin/Statistics";
+import { ROLES, SIZES, DIETS, SCHOOLS } from "@/data/admin/statistics";
 
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -10,7 +10,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
-
+// dummy
 const Chart = ({ title, status = null, data }) => {
   const ITEMS = { ...ROLES, ...SIZES, ...DIETS, ...SCHOOLS };
 
@@ -33,9 +33,9 @@ const Chart = ({ title, status = null, data }) => {
     fill: ITEMS[type].fill,
   }));
 
-  const chartConfig = Object.entries(data).map(([type, value]) => {
+  const chartConfig = Object.entries(data).map(([type, _]) => {
     const label = ITEMS[type].label;
-
+    // dummy
     return {
       label: {
         label: label,
@@ -129,3 +129,4 @@ const Chart = ({ title, status = null, data }) => {
 };
 
 export default Chart;
+

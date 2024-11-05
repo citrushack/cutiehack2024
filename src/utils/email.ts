@@ -1,5 +1,5 @@
-import Email from "@/components/email/Email";
-import { CreateEmailResponse, Resend } from "resend";
+import Email from "@/components/email";
+import { Resend, CreateEmailResponse } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY as string);
 
@@ -34,7 +34,7 @@ const send = async ({
   preview,
 }: params): Promise<CreateEmailResponse> => {
   const { data, error } = await resend.emails.send({
-    from: "CutieHack <info@cutiehack.com>",
+    from: "Hackathon <info@hackathon.com>",
     to: [email],
     subject: subject,
     text: `Hello ${name},\n\nYour position: ${position}\nPreview: ${preview}`,

@@ -1,3 +1,3 @@
-import Hackathons from "@/components/engineering/hackathons/Hackathons";
+import Hackathons from "@/components/engineering/hackathons";
 
 export default Hackathons;

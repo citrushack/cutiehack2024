@@ -1,4 +1,4 @@
-import { StatusMapping } from "@/data/Statuses";
+import { StatusMapping } from "@/data/statuses";
 import { Badge } from "../ui/badge";
 
 type color = {
