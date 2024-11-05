@@ -7,14 +7,14 @@ const FAQ = () => {
   return (
     <div
       id="faq"
-      className="bg-cutie-blue-300 font-righteous flex h-full w-full flex-col items-center py-10 text-white"
+      className="flex h-full w-full flex-col items-center bg-cutie-blue-300 py-10 font-righteous text-white"
     >
       <div className="flex items-center justify-center gap-2 py-4 align-middle text-7xl">
         <h1>F</h1>
         <Image
           src={UFO}
           alt="UFO"
-          className="animate-jiggle-12s -mt-5 size-1/3"
+          className="-mt-5 size-1/3 animate-jiggle-12s"
         />
         <h1>Q</h1>
       </div>

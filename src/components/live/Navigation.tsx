@@ -12,7 +12,7 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-cutie-blue-300 sticky top-0 z-20 flex items-center justify-between p-5 font-semibold text-white">
+    <div className="sticky top-0 z-20 flex items-center justify-between bg-cutie-blue-300 p-5 font-semibold text-white">
       {/* Desktop Nav */}
       <div className="hidden w-full justify-evenly md:flex">
         {items.map((item, index) => (
@@ -32,7 +32,7 @@ const Navigation = () => {
           Object.keys(session.user.roles).includes("participants") && (
             <Link
               href={"/user"}
-              className="border-custom-white shadow-custom-white border p-1 px-2"
+              className="border-custom-white border p-1 px-2 shadow-custom-white"
             >
               HACKER PORTAL
             </Link>
@@ -40,7 +40,7 @@ const Navigation = () => {
         ) : (
           <div
             onClick={() => signIn("google")}
-            className="border-custom-white shadow-custom-white cursor-pointer border p-1 px-2"
+            className="border-custom-white cursor-pointer border p-1 px-2 shadow-custom-white"
           >
             LOGIN
           </div>
@@ -55,7 +55,7 @@ const Navigation = () => {
         />
       </div>
       {isOpen && (
-        <div className="from-cutie-blue-200 to-cutie-blue-300 absolute left-0 top-16 flex w-full flex-col items-center bg-gradient-to-t pb-5 pt-2 shadow-2xl">
+        <div className="absolute left-0 top-16 flex w-full flex-col items-center bg-gradient-to-t from-cutie-blue-200 to-cutie-blue-300 pb-5 pt-2 shadow-2xl">
           {items.map((item, index) => (
             <Scroll
               key={index}
@@ -74,7 +74,7 @@ const Navigation = () => {
             Object.keys(session.user.roles).includes("participants") && (
               <Link
                 href={"/user"}
-                className="border-custom-white shadow-custom-white mt-2 w-fit border p-1 px-2 text-center"
+                className="border-custom-white mt-2 w-fit border p-1 px-2 text-center shadow-custom-white"
                 onClick={() => setIsOpen(false)}
               >
                 HACKER PORTAL
@@ -86,7 +86,7 @@ const Navigation = () => {
                 signIn("google");
                 setIsOpen(false);
               }}
-              className="border-custom-white shadow-custom-white mt-2 w-fit border p-1 px-2 text-center"
+              className="border-custom-white mt-2 w-fit border p-1 px-2 text-center shadow-custom-white"
             >
               LOGIN
             </div>

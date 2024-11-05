@@ -27,7 +27,7 @@ const SVGS = () => {
       <Image
         src={Galaxy}
         alt="Galaxy"
-        className="animate-spin-10s absolute left-[10%] top-[36%] z-10 hidden w-fit md:block"
+        className="absolute left-[10%] top-[36%] z-10 hidden w-fit animate-spin-10s md:block"
       />
       <Image
         src={Satellite}
@@ -40,9 +40,9 @@ const SVGS = () => {
         className="absolute -bottom-[10%] right-[0%] z-0 w-full"
       />
       <div className="absolute right-[14%] top-[38%] z-10 hidden rotate-[30deg] flex-col items-center gap-5 md:flex">
-        <p className="bg-cutie-gray w-6 animate-pulse py-0.5 text-3xl" />
-        <p className="bg-cutie-gray w-10 animate-pulse py-0.5 text-3xl" />
-        <p className="bg-cutie-gray w-14 animate-pulse py-0.5 text-3xl" />
+        <p className="w-6 animate-pulse bg-cutie-gray py-0.5 text-3xl" />
+        <p className="w-10 animate-pulse bg-cutie-gray py-0.5 text-3xl" />
+        <p className="w-14 animate-pulse bg-cutie-gray py-0.5 text-3xl" />
       </div>
     </div>
   );
