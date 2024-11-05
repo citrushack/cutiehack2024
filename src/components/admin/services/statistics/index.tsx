@@ -1,6 +1,6 @@
 import { ReactQuery } from "@/utils/react-query";
 import { getStats } from "./actions";
-import Statistics from "./Statistics";
+import Statistics from "./statistics";
 
 const Index = () => {
   return (

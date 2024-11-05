@@ -1,4 +1,4 @@
-import data from "@/data/Config";
+import data from "@/data/config";
 
 interface Manifest {
   name: string;
