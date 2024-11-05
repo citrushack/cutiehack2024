@@ -37,7 +37,7 @@ const SVGS = () => {
       <Image
         src={Edge}
         alt="Rocket Bubble"
-        className="absolute -bottom-[10%] right-[0%] z-0 w-full"
+        className="absolute -bottom-[10%] right-[0%] -z-10 w-full"
       />
       <div className="absolute right-[14%] top-[38%] z-10 hidden rotate-[30deg] flex-col items-center gap-5 md:flex">
         <p className="w-6 animate-pulse bg-cutie-gray py-0.5 text-3xl" />
