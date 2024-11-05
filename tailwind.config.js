@@ -91,9 +91,6 @@ module.exports = {
         "jiggle-5.5s": "jiggle 5.5s ease-in-out infinite",
         "jiggle-12s": "jiggle 12s ease-in-out infinite",
         "spin-10s": "spin 120s linear infinite",
-        twinkle: "twinkle 3s ease-in-out infinite",
-        crawl: "crawl 3s ease-out forwards",
-        float: "float 3s ease-in-out infinite",
       },
       keyframes: {
         bounce: {
@@ -117,18 +114,6 @@ module.exports = {
         spin: {
           "0%": { transform: "rotate(0deg)" },
           "100%": { transform: "rotate(360deg)" },
-        },
-        twinkle: {
-          "0%, 100%": { opacity: 1 },
-          "50%": { opacity: 0.3 },
-        },
-        crawl: {
-          "0%": { transform: "translateZ(0) rotateX(20deg)", opacity: 0 },
-          "100%": { transform: "translateZ(300px) rotateX(20deg)", opacity: 1 },
-        },
-        float: {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-20px)" },
         },
       },
       boxShadow: {

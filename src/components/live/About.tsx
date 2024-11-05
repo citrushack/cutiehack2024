@@ -2,7 +2,6 @@ import Image from "next/image";
 import Bubble from "@/public/assets/rocketbubble.svg";
 import { FLEX } from "@/data/live/Stats";
 import SVGS from "./SVGS";
-import Stars from "./stars";
 
 const About = () => {
   return (
@@ -10,9 +9,8 @@ const About = () => {
       <Image
         src={Bubble}
         alt="Rocket Bubble"
-        className="inset-0 z-0 min-w-full"
+        className="inset-0 z-10 min-w-full"
       />
-      <Stars length={200} />
       <div className="absolute z-10 w-8/12 rounded-xl border-8 border-cutie-blue-200 bg-cutie-violet p-4 text-center shadow md:w-4/12 md:p-8">
         <div
           id="about"
@@ -28,7 +26,7 @@ const About = () => {
           and networking.
         </p>
       </div>
-      <div className="absolute bottom-[-30%] z-0 flex w-2/3 animate-jiggle-12s flex-wrap justify-center gap-5 md:bottom-[25%] md:w-1/2">
+      <div className="absolute bottom-[-30%] z-10 flex w-2/3 animate-jiggle-12s flex-wrap justify-center gap-5 md:bottom-[25%] md:w-1/2">
         {FLEX.map((item, index) => (
           <div
             key={index}
