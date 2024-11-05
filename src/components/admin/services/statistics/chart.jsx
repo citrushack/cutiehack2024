@@ -35,7 +35,7 @@ const Chart = ({ title, status = null, data }) => {
 
   const chartConfig = Object.entries(data).map(([type, _]) => {
     const label = ITEMS[type].label;
-
+    // dummy
     return {
       label: {
         label: label,
