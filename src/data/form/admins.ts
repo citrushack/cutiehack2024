@@ -8,7 +8,7 @@ import {
 import { GENDERS, GRADES, SHIRTS, MAJORS } from "./information";
 import data from "@/data/config";
 import { AFFILIATIONS } from "./information";
-
+// dummy
 interface Attributes {
   name: string;
   email: string;

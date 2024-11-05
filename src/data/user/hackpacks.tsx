@@ -15,7 +15,7 @@ import {
   SiJupyter as Jupyter,
   SiPandas as Pandas,
 } from "@icons-pack/react-simple-icons";
-
+// dummy
 export const TECHSTACKS: Record<string, React.ReactNode> = {
   Javascript: <Javascript />,
   "Next.js": <Nextjs />,

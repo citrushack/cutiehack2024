@@ -46,3 +46,4 @@ const Hackpack = ({ text, techs, link, description }: props) => {
 };
 
 export default Hackpack;
+// dummy

@@ -15,7 +15,7 @@ import Resources from "./Resources";
 const Dashboard = () => {
   const { data: session } = useSession();
   return (
-    <div className="flex h-full flex-col gap-3 bg-gradient-to-b font-righteous">
+    <div className="font-righteous flex h-full flex-col gap-3 bg-gradient-to-b">
       <Header email={session.user.email} name={session.user.name} />
       <div className="grid grid-cols-1 gap-3 lg:grid-cols-3">
         <div className="col-span-1 md:col-span-2">

@@ -10,7 +10,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-
+// dummy
 const View = ({ title, src }) => {
   const [modal, setModal] = useState({
     title: "",

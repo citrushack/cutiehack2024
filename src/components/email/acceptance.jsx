@@ -28,3 +28,4 @@ const Acceptance = ({ name, position, preview }) => {
 };
 
 export default Acceptance;
+// dummy

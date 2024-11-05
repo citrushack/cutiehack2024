@@ -56,3 +56,4 @@ export const COLUMNS: (ColumnDef<Interest, string> & {
   },
   generateStatus(STATUSES),
 ];
+// dummy

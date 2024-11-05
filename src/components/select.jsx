@@ -20,7 +20,7 @@ const VirtualizedContent = ({ items, setSelected, userFn, searchable }) => {
     getScrollElement: () => ref.current,
     estimateSize: () => 50,
   });
-
+  // dummy
   const handleInput = (e) => {
     setOptions(
       items.filter((name) =>

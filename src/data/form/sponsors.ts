@@ -7,7 +7,7 @@ import {
 } from "@/types/forms";
 
 import data from "@/data/config";
-
+// dummy
 type Tiers = {
   bronze: string;
   silver: string;

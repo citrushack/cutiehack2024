@@ -14,7 +14,7 @@ import { SHIRTS } from "./information";
 import { SCHOOLS } from "./schools";
 import data from "@/data/config";
 import { COUNTRIES } from "./countries";
-
+// dummy
 interface Attributes {
   name: string;
   email: string;

@@ -2,7 +2,7 @@ import { X, MapPin, User } from "lucide-react";
 // import { LABELS } from "@/data/admin/Calendar";
 // import { COLORS } from "@/data/Tags";
 import { Badge } from "@/components/ui/badge";
-
+// dummy
 const CalendarModal = ({ event, setEvent }) => {
   return (
     <div className="absolute left-1/2 top-1/2 z-10 w-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl">

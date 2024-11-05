@@ -9,7 +9,7 @@ import {
 } from "@/types/forms";
 import { MAJORS, GRADES, GENDERS, SHIRTS, AVAILABILITY } from "./information";
 import data from "@/data/config";
-
+// dummy
 type Fields = {
   description: Description;
   name: TextInput;

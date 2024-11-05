@@ -11,7 +11,7 @@ import Toolbar from "./toolbar";
 import Filters from "./filters";
 import Table from "./table";
 import { Label } from "@/components/ui/label";
-
+// dummy
 const Dashboard = ({
   title,
   columns,

@@ -6,7 +6,7 @@ import { SearchParams } from "@/types/dashboard";
 type props = {
   searchParams: SearchParams;
 };
-
+// dummy
 const Feedback = ({ searchParams }: props) => {
   return (
     <div className="flex h-full flex-col gap-3 py-4 font-poppins">

@@ -1,7 +1,7 @@
 import data from "@/data/config";
 import Template from "./template";
 import { Text } from "@react-email/components";
-
+// dummy
 const Rejection = ({ name, position, preview }) => {
   return (
     <Template name={name} preview={preview}>

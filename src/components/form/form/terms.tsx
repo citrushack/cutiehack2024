@@ -27,3 +27,4 @@ const Terms = ({ options, toggle, onClick }: props) => {
 };
 
 export default Terms;
+// dummy

@@ -6,7 +6,7 @@ import {
 } from "@/types/forms";
 import data from "@/data/config";
 import { SOURCES } from "./information";
-
+// dummy
 interface Attributes {
   name: string;
   email: string;

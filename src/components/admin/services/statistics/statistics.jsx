@@ -12,7 +12,7 @@ const Statistics = () => {
     queryKey: ["/admin/statistics"],
     queryFn: async () => getStats(),
   });
-
+  // dummy
   return (
     <div className="flex h-full flex-col py-4 font-poppins">
       <Label className="pr-5 text-2xl font-bold">Statistics</Label>
@@ -36,3 +36,4 @@ const Statistics = () => {
 };
 
 export default Statistics;
+// dummy

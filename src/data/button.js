@@ -33,3 +33,4 @@ export const SIZES = {
   lg: "text-lg",
   xl: "text-xl",
 };
+// dummy

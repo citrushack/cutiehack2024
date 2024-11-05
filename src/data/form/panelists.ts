@@ -1,7 +1,7 @@
 import { GENDERS } from "./information";
 import { SHIRTS } from "./information";
 import data from "@/data/config";
-
+// dummy
 export const PANELISTS = {
   professor: "Professor",
   intern: "Intern",

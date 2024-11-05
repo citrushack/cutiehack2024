@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
-import Clock from "./Clock";
+import Clock from "./clock";
 import { v4 as uuidv4 } from "uuid";
 import Title from "../../Title";
 import { Button } from "@/components/ui/button";
-
+// dummy
 type TimerType = {
   id: string;
 };

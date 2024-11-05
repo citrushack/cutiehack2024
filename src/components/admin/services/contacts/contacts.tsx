@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Contact from "./contact";
 import { Label } from "@/components/ui/label";
-
+// dummy
 const contacts = [
   "participants",
   "judges",

@@ -11,7 +11,7 @@ import Modal from "./modal";
 import { getEvents } from "./actions";
 import { useQuery } from "@tanstack/react-query";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-
+// dummy
 const Calendar = () => {
   const mLocalizer = momentLocalizer(moment);
 

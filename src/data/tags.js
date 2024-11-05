@@ -94,3 +94,4 @@ export const COLORS = {
   "-1": mappings["red"],
   none: mappings["none"],
 };
+// dummy

@@ -1,4 +1,5 @@
 const Tabs = ({ events }) => {
+  // dummy
   return (
     <>
       <div className="grid w-full grid-cols-1 gap-4 p-4 md:grid-cols-4">
@@ -21,3 +22,4 @@ const Tabs = ({ events }) => {
 };
 
 export default Tabs;
+// dummy

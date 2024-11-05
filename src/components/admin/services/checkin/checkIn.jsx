@@ -8,7 +8,7 @@ import { getEvents, getUser } from "./actions";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
-
+// dummy
 const CheckIn = () => {
   const [event, setEvent] = useState({ name: "No events" });
   const [code, setCode] = useState("");

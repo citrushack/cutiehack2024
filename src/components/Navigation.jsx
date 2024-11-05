@@ -62,7 +62,7 @@ const Navigation = () => {
           expand ? "fixed left-0 h-screen w-1/2 pt-5" : `hidden`
         }`}
       >
-        <div className="grid h-full w-full grid-cols-1 grid-rows-10 flex-col place-items-center bg-cutie-blue-300">
+        <div className="bg-cutie-blue-300 grid h-full w-full grid-cols-1 grid-rows-10 flex-col place-items-center">
           <div className="items-center lg:flex">
             <Image src={LOGO} className="h-24 w-24" alt={`${data.name} Logo`} />
           </div>
@@ -88,8 +88,8 @@ const Navigation = () => {
                           onClick={() => setExpand(false)}
                           className={`flex w-full items-center justify-start py-1 pl-[10%] [&>*]:text-white ${
                             pathName.endsWith(tab.link)
-                              ? "bg-gradient-to-r from-transparent to-cutie-violet font-semibold"
-                              : "from-transparent to-cutie-violet hover:bg-gradient-to-r"
+                              ? "to-cutie-violet bg-gradient-to-r from-transparent font-semibold"
+                              : "to-cutie-violet from-transparent hover:bg-gradient-to-r"
                           }`}
                         >
                           {tab.icon}

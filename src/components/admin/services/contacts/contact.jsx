@@ -19,7 +19,7 @@ import { api } from "@/utils/api";
 import toaster from "@/utils/toaster";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-
+// dummy
 const STATUSES = ["confirmed", "pending", "not attending"];
 
 const MAPPINGS = {

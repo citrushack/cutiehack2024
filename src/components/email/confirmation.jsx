@@ -17,3 +17,4 @@ const Confirmation = ({ name, position, preview }) => {
 };
 
 export default Confirmation;
+// dummy
