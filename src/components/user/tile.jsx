@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+// dummy 
 const Tile = ({ icon, text, link }) => {
   return (
     <Link
