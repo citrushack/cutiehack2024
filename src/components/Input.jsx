@@ -18,7 +18,7 @@ const Input = ({
       </p>
       <input
         disabled={!editable}
-        className="w-full truncate border-b-2 border-white bg-transparent pl-3 placeholder:text-[#D9D9D9] focus:outline-none disabled:border-0"
+        className="w-full truncate border-b-2 border-white bg-[#5661C6] pl-3 placeholder:text-[#D9D9D9] focus:outline-none disabled:border-0"
         type={type}
         name={name}
         placeholder={placeholder}

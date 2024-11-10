@@ -70,7 +70,7 @@ const Upload = ({ field, user, setUser, text, maxSize, types, required }) => {
         )}
         {file && (
           <div
-            className="my-2 flex w-full items-center justify-between bg-gray-200 px-2 py-2"
+            className="my-2 flex w-full items-center justify-between border-b-2 border-white bg-transparent px-2 py-2"
             data-cy="upload-success"
           >
             <div className="flex items-center">
@@ -85,12 +85,12 @@ const Upload = ({ field, user, setUser, text, maxSize, types, required }) => {
               {file.type.split("/")[0] === "image" && (
                 <Eye
                   onClick={() => setShowModal(true)}
-                  className="mr-2 text-gray-500 hover:cursor-pointer hover:text-gray-800"
+                  className="mr-2 text-white hover:cursor-pointer hover:text-cutie-violet"
                 />
               )}
 
               <X
-                className="text-gray-500 hover:cursor-pointer hover:text-red-600"
+                className="text-white-500 hover:cursor-pointer hover:text-cutie-violet"
                 onClick={() => setFile(null)}
                 data-cy="upload-cancel"
               />
