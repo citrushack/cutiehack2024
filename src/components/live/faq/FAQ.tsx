@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { QUESTIONS } from "@/data/FAQ";
+import { QUESTIONS } from "@/data/faq";
 import UFO from "@/public/assets/ufo.svg";
 import Item from "./Item";
 

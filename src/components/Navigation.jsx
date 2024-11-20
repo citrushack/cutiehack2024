@@ -42,7 +42,7 @@ const Navigation = () => {
 
   return (
     <>
-      <div className="fixed z-20 flex h-12 w-full items-center bg-hackathon-blue-200 lg:hidden">
+      <div className="fixed z-20 flex h-12 w-full items-center bg-cutie-blue-200 lg:hidden">
         <div
           className="flex items-center hover:cursor-pointer"
           onClick={() => setExpand(!expand)}
@@ -112,8 +112,8 @@ const Navigation = () => {
                 <div
                   className={`flex w-full items-center justify-center py-1 [&>*]:text-white ${
                     pathName.endsWith(tab.link)
-                      ? "bg-hackathon-blue-100"
-                      : "[&>*]:hover:text-hackathon-blue-100"
+                      ? "bg-gradient-to-r from-transparent to-cutie-violet font-semibold"
+                      : "from-transparent to-cutie-violet hover:bg-gradient-to-r"
                   }`}
                 >
                   {tab.icon}
